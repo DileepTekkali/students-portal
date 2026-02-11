@@ -1,130 +1,143 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Certificate Preview</title>
-  <link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <div class="wrap">
-    <header class="header">
-      <h1>Certificate Preview</h1>
-      <p class="sub">Enter <b>Certificate ID</b> → Preview + Shareable Link</p>
-    </header>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Reviews</title>
 
-    <section class="card">
-      <div class="row">
-        <input id="cid" placeholder="AIK256Q1A4412" autocomplete="off" />
-        <button id="btn">Preview</button>
+  <!-- Tailwind CDN (fast premium UI) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900">
+
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl sm:text-2xl font-semibold tracking-tight">Student Reviews</h1>
+        <p class="text-sm text-slate-500">Showing real feedback with verified roll numbers</p>
+      </div>
+      <div class="text-xs text-slate-400 hidden sm:block">
+        Loaded: {{ loaded_at }}
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Filters -->
+    <form class="grid grid-cols-1 md:grid-cols-12 gap-3 mb-6">
+      <div class="md:col-span-6">
+        <label class="text-sm font-medium text-slate-700">Search</label>
+        <input name="q" value="{{ q }}" placeholder="Roll number / name / branch"
+               class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-4 focus:ring-slate-200 transition"
+        />
       </div>
 
-      <div id="msg" class="msg"></div>
+      <div class="md:col-span-3">
+        <label class="text-sm font-medium text-slate-700">Branch</label>
+        <select name="branch"
+                class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-4 focus:ring-slate-200 transition">
+          <option {% if branch=="All" %}selected{% endif %}>All</option>
+          {% for b in branches %}
+            <option value="{{ b }}" {% if branch==b %}selected{% endif %}>{{ b }}</option>
+          {% endfor %}
+        </select>
+      </div>
 
-      <div id="shareWrap" class="share" style="display:none;">
-        <div class="shareRow">
-          <span class="label">Share link:</span>
-          <a id="shareLink" href="#" target="_blank" rel="noopener noreferrer"></a>
-          <button id="copyBtn" class="copy">Copy</button>
+      <div class="md:col-span-3">
+        <label class="text-sm font-medium text-slate-700">Sort</label>
+        <select name="sort"
+                class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-4 focus:ring-slate-200 transition">
+          <option value="latest" {% if sort=="latest" %}selected{% endif %}>Latest (S.No)</option>
+          <option value="rating_desc" {% if sort=="rating_desc" %}selected{% endif %}>Rating (High → Low)</option>
+          <option value="name_asc" {% if sort=="name_asc" %}selected{% endif %}>Name (A → Z)</option>
+        </select>
+      </div>
+
+      <div class="md:col-span-12 flex items-center gap-3">
+        <button class="rounded-xl bg-slate-900 text-white px-5 py-3 font-medium hover:opacity-90 transition">
+          Apply
+        </button>
+        <a href="/" class="rounded-xl border border-slate-200 px-5 py-3 font-medium hover:bg-slate-50 transition">
+          Reset
+        </a>
+        <div class="ml-auto text-sm text-slate-500">
+          Total: <span class="font-semibold text-slate-800">{{ total }}</span>
         </div>
       </div>
+    </form>
 
-      <div class="previewWrap">
-        <img id="preview" alt="Certificate Preview" />
-      </div>
+    <!-- Cards -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for s in items %}
+      <article class="card group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition overflow-hidden">
+        <div class="p-5 flex gap-4">
+          <div class="shrink-0">
+            <img
+              src="{{ s.img_url if s.img_url else '/static/placeholder.png' }}"
+              alt="{{ s.name }}"
+              class="h-16 w-16 rounded-2xl object-cover ring-1 ring-slate-200 bg-slate-100"
+              onerror="this.onerror=null; this.src='/static/placeholder.png';"
+            />
+          </div>
+
+          <div class="min-w-0 flex-1">
+            <div class="flex items-start justify-between gap-2">
+              <div class="min-w-0">
+                <h3 class="font-semibold text-slate-900 leading-tight truncate">{{ s.name }}</h3>
+                <p class="text-sm text-slate-500 truncate">
+                  <span class="font-medium text-slate-700">{{ s.roll }}</span> • {{ s.branch }}
+                </p>
+              </div>
+
+              <div class="text-right">
+                <div class="flex items-center justify-end gap-1">
+                  <span class="text-amber-500">{{ "★" * int(s.rating|round(0)) }}</span>
+                  <span class="text-slate-300">{{ "★" * (5 - int(s.rating|round(0))) }}</span>
+                </div>
+                <div class="text-xs text-slate-500">{{ "%.1f"|format(s.rating) }}/5</div>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <p class="review text-slate-700 text-[15px] leading-relaxed line-clamp-4" data-full="{{ s.comment|e }}">
+                {{ s.comment }}
+              </p>
+              <button type="button" class="mt-2 text-sm font-medium text-slate-900 hover:underline readmore hidden">
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-5 pb-5 pt-0 text-xs text-slate-400 flex justify-between">
+          <span>S.No: {{ s.sno }}</span>
+          <span class="opacity-0 group-hover:opacity-100 transition">Verified</span>
+        </div>
+      </article>
+      {% endfor %}
     </section>
 
-    <footer class="footer">
-      Powered by Vercel + Supabase Storage
-    </footer>
-  </div>
+    <!-- Pagination -->
+    <div class="mt-8 flex items-center justify-between gap-3">
+      <div class="text-sm text-slate-500">
+        Page <span class="font-semibold text-slate-800">{{ page }}</span> / {{ pages }}
+      </div>
 
-  <script>
-    const input = document.getElementById("cid");
-    const btn = document.getElementById("btn");
-    const msg = document.getElementById("msg");
-    const img = document.getElementById("preview");
+      <div class="flex gap-2">
+        {% set base = "?q=" ~ q ~ "&branch=" ~ branch ~ "&sort=" ~ sort ~ "&page=" %}
+        <a class="px-4 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 transition {% if page<=1 %}pointer-events-none opacity-50{% endif %}"
+           href="{{ base }}{{ page-1 }}">Prev</a>
 
-    const shareWrap = document.getElementById("shareWrap");
-    const shareLink = document.getElementById("shareLink");
-    const copyBtn = document.getElementById("copyBtn");
+        <a class="px-4 py-2 rounded-xl border border-slate-200 hover:bg-slate-50 transition {% if page>=pages %}pointer-events-none opacity-50{% endif %}"
+           href="{{ base }}{{ page+1 }}">Next</a>
+      </div>
+    </div>
 
-    function setMsg(text, type="info") {
-      msg.className = "msg " + type;
-      msg.textContent = text || "";
-    }
+  </main>
 
-    function buildShareUrl(id) {
-      const u = new URL(window.location.href);
-      u.searchParams.set("id", id);
-      return u.toString();
-    }
-
-    async function previewById(id) {
-      setMsg("Loading preview…", "info");
-      shareWrap.style.display = "none";
-      img.removeAttribute("src");
-      img.style.display = "none";
-
-      try {
-        const res = await fetch(`/api?id=${encodeURIComponent(id)}`);
-        const data = await res.json();
-
-        if (!res.ok || !data.ok) {
-          throw new Error(data.error || "API error");
-        }
-
-        const imageUrl = data.image_url;
-
-        const sUrl = buildShareUrl(id);
-        shareLink.textContent = sUrl;
-        shareLink.href = sUrl;
-        shareWrap.style.display = "block";
-
-        img.onload = () => {
-          img.style.display = "block";
-          setMsg("Preview loaded ✅", "ok");
-        };
-
-        img.onerror = () => {
-          setMsg("Image not found. Check: bucket=photos, folder=student_images, filename must be ID.jpg", "err");
-          img.style.display = "none";
-        };
-
-        img.src = imageUrl;
-
-      } catch (e) {
-        setMsg(e.message || "Something went wrong", "err");
-      }
-    }
-
-    btn.addEventListener("click", () => {
-      const id = input.value.trim();
-      if (!id) return setMsg("Please enter Certificate ID", "err");
-      previewById(id);
-    });
-
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") btn.click();
-    });
-
-    copyBtn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(shareLink.href);
-        setMsg("Share link copied ✅", "ok");
-      } catch {
-        setMsg("Copy failed. Please copy manually.", "err");
-      }
-    });
-
-    // Auto-load if opened via share link ?id=...
-    const params = new URLSearchParams(window.location.search);
-    const idFromUrl = params.get("id");
-    if (idFromUrl) {
-      input.value = idFromUrl;
-      previewById(idFromUrl);
-    }
-  </script>
+  <script src="/static/app.js"></script>
 </body>
 </html>
 
