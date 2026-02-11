@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | AIML & Beyond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS RESET & VARIABLES ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #16161f;
+            --bg-card-hover: #1c1c28;
+            --bg-glass: rgba(22, 22, 31, 0.8);
+            --accent: #6c5ce7;
+            --accent-light: #a29bfe;
+            --accent-glow: rgba(108, 92, 231, 0.4);
+            --gold: #feca57;
+            --gold-dim: #5c4d1a;
+            --text-primary: #eaeaea;
+            --text-secondary: #8b8b9e;
+            --text-muted: #55556a;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(108, 92, 231, 0.3);
+            --danger: #ff6b6b;
+            --success: #51cf66;
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-full: 9999px;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ===== AMBIENT BACKGROUND ===== */
+        .ambient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .ambient-bg .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .ambient-bg .orb:nth-child(1) {
+            width: 600px;
+            height: 600px;
+            background: #6c5ce7;
+            top: -200px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .ambient-bg .orb:nth-child(2) {
+            width: 500px;
+            height: 500px;
+            background: #e84393;
+            bottom: -200px;
+            right: -100px;
+            animation-delay: -7s;
+        }
+
+        .ambient-bg .orb:nth-child(3) {
+            width: 400px;
+            height: 400px;
+            background: #00cec9;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: -14s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, -30px) scale(1.05); }
+            50% { transform: translate(-30px, 50px) scale(0.95); }
+            75% { transform: translate(30px, 30px) scale(1.02); }
+        }
+
+        /* ===== MAIN CONTAINER ===== */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== NAVIGATION / HEADER ===== */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding-left: 24px;
+            padding-right: 24px;
+            margin-left: -24px;
+            margin-right: -24px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-logo {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--accent), #e84393);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .nav-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-title span {
+            color: var(--accent-light);
+        }
+
+        .nav-stats {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .stat-chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .stat-chip .num {
+            color: var(--accent-light);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            color: var(--accent-light);
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto 36px;
+            line-height: 1.6;
+        }
+
+        /* ===== SEARCH BAR ===== */
+        .search-wrapper {
+            max-width: 560px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 20px 16px 52px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-primary);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px var(--accent-glow);
+        }
+
+        .search-input:focus + .search-icon-wrapper .search-icon,
+        .search-input:focus ~ .search-icon {
+            color: var(--accent-light);
+        }
+
+        .search-shortcut {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 4px 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            pointer-events: none;
+        }
+
+        /* ===== FILTER CHIPS ===== */
+        .filter-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-chip {
+            padding: 8px 18px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+        }
+
+        .filter-chip:hover,
+        .filter-chip.active {
+            background: rgba(108, 92, 231, 0.15);
+            border-color: rgba(108, 92, 231, 0.4);
+            color: var(--accent-light);
+        }
+
+        /* ===== STUDENTS GRID ===== */
+        .students-section {
+            padding: 40px 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .section-title span {
+            color: var(--text-primary);
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 4px;
+            background: var(--bg-secondary);
+            padding: 4px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .view-btn {
+            padding: 8px 12px;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .view-btn.active {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .students-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .students-grid.list-view {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        /* ===== STUDENT CARD ===== */
+        .student-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            animation: cardIn 0.5s ease forwards;
+            opacity: 0;
+            transform: translateY(20px);
+            position: relative;
+        }
+
+        .student-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), #e84393, #00cec9);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .student-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow), 0 0 40px var(--accent-glow);
+            background: var(--bg-card-hover);
+        }
+
+        .student-card:hover::before {
+            opacity: 1;
+        }
+
+        @keyframes cardIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Card Image */
+        .card-img-wrap {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            position: relative;
+            background: var(--bg-secondary);
+        }
+
+        .card-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .student-card:hover .card-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, var(--bg-card) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .card-img-placeholder {
+            width: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            gap: 8px;
+        }
+
+        .card-img-placeholder .avatar-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(108, 92, 231, 0.1);
+            border: 2px solid rgba(108, 92, 231, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+        }
+
+        .card-img-placeholder span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Card Body */
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-roll {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.15);
+            border-radius: var(--radius-full);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-light);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-roll .hash {
+            color: var(--text-muted);
+        }
+
+        .card-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .card-branch {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .card-branch .branch-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .branch-AIML { background: #6c5ce7; }
+        .branch-CSE { background: #00cec9; }
+        .branch-ECE { background: #e84393; }
+        .branch-MECH { background: #fdcb6e; }
+        .branch-EEE { background: #e17055; }
+        .branch-CIVIL { background: #55efc4; }
+        .branch-IT { background: #74b9ff; }
+        .branch-DEFAULT { background: #636e72; }
+
+        /* Rating */
+        .card-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 14px;
+        }
+
+        .star {
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .star.filled {
+            color: var(--gold);
+            text-shadow: 0 0 8px rgba(254, 202, 87, 0.5);
+        }
+
+        .star.empty {
+            color: var(--gold-dim);
+        }
+
+        .star.half {
+            position: relative;
+            color: var(--gold-dim);
+        }
+
+        .star.half::before {
+            content: '★';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            overflow: hidden;
+            color: var(--gold);
+            text-shadow: 0 0 8px rgba(254, 202, 87, 0.5);
+        }
+
+        .rating-value {
+            margin-left: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        .rating-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-left: 4px;
+        }
+
+        /* Comment */
+        .card-comment {
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--accent);
+            position: relative;
+        }
+
+        .card-comment .quote-icon {
+            position: absolute;
+            top: -6px;
+            left: 12px;
+            font-size: 1.8rem;
+            color: var(--accent);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .card-comment p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* ===== LIST VIEW CARD ===== */
+        .students-grid.list-view .student-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .students-grid.list-view .card-img-wrap {
+            width: 80px;
+            height: 80px;
+            min-width: 80px;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            margin: 16px;
+        }
+
+        .students-grid.list-view .card-img-wrap img {
+            border-radius: 12px;
+        }
+
+        .students-grid.list-view .card-img-overlay {
+            display: none;
+        }
+
+        .students-grid.list-view .card-img-placeholder {
+            border-radius: 12px;
+        }
+
+        .students-grid.list-view .card-img-placeholder .avatar-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.4rem;
+        }
+
+        .students-grid.list-view .card-img-placeholder span {
+            display: none;
+        }
+
+        .students-grid.list-view .card-body {
+            padding: 16px 20px 16px 0;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex: 1;
+        }
+
+        .students-grid.list-view .card-roll {
+            margin-bottom: 0;
+        }
+
+        .students-grid.list-view .card-name {
+            margin-bottom: 0;
+            min-width: 200px;
+        }
+
+        .students-grid.list-view .card-branch {
+            margin-bottom: 0;
+            min-width: 80px;
+        }
+
+        .students-grid.list-view .card-rating {
+            margin-bottom: 0;
+            min-width: 140px;
+        }
+
+        .students-grid.list-view .card-comment {
+            flex: 1;
+            margin: 0;
+        }
+
+        .students-grid.list-view .student-card::before {
+            width: 3px;
+            height: 100%;
+            right: unset;
+        }
+
+        /* ===== PAGINATION ===== */
+        .pagination-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 50px 0 80px;
+        }
+
+        .page-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 44px;
+            height: 44px;
+            padding: 0 14px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .page-btn:hover:not(:disabled):not(.active) {
+            border-color: var(--border-hover);
+            color: var(--text-primary);
+            background: var(--bg-card);
+        }
+
+        .page-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .page-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .page-btn.nav-arrow {
+            font-size: 1.1rem;
+            gap: 6px;
+        }
+
+        .page-ellipsis {
+            color: var(--text-muted);
+            padding: 0 4px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* ===== LOADING STATE ===== */
+        .loading-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+            gap: 24px;
+        }
+
+        .loader {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-state p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ===== SKELETON ===== */
+        .skeleton-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skeleton-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .skeleton-img {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-card) 50%, var(--bg-secondary) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in-out infinite;
+        }
+
+        .skeleton-body {
+            padding: 20px;
+        }
+
+        .skeleton-line {
+            height: 14px;
+            background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-card-hover) 50%, var(--bg-secondary) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in-out infinite;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .skeleton-line.short { width: 40%; }
+        .skeleton-line.medium { width: 65%; }
+        .skeleton-line.long { width: 90%; }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* ===== EMPTY STATE ===== */
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            grid-column: 1 / -1;
+        }
+
+        .empty-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(108, 92, 231, 0.08);
+            border: 2px dashed rgba(108, 92, 231, 0.2);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 20px;
+        }
+
+        .empty-state h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .empty-state p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* ===== ERROR STATE ===== */
+        .error-state {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .error-state .error-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+
+        .error-state h3 {
+            color: var(--danger);
+            margin-bottom: 8px;
+        }
+
+        .error-state p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .retry-btn {
+            padding: 12px 32px;
+            background: var(--danger);
+            border: none;
+            border-radius: var(--radius-full);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .retry-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.82rem;
+        }
+
+        .footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        /* ===== SCROLLBAR ===== */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--bg-card);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .nav-stats {
+                display: none;
+            }
+
+            .students-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+
+            .card-body {
+                padding: 14px;
+            }
+
+            .card-name {
+                font-size: 0.95rem;
+            }
+
+            .search-shortcut {
+                display: none;
+            }
+
+            .students-grid.list-view .student-card {
+                flex-direction: column;
+            }
+
+            .students-grid.list-view .card-img-wrap {
+                width: 100%;
+                height: 200px;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .students-grid.list-view .card-body {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .students-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 40px 0 30px;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .filter-bar {
+                gap: 6px;
+            }
+
+            .filter-chip {
+                padding: 6px 14px;
+                font-size: 0.78rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="nav-logo">SP</div>
+                <div class="nav-title">Student<span>Portal</span></div>
+            </div>
+            <div class="nav-stats" id="navStats">
+                <div class="stat-chip">
+                    📊 Total: <span class="num" id="totalCount">—</span>
+                </div>
+                <div class="stat-chip">
+                    📄 Page: <span class="num" id="pageInfo">—</span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Live Student Database
+            </div>
+            <h1>Student Profiles<br>& Reviews</h1>
+            <p>Browse through student profiles, check their ratings, and read reviews — all in one place.</p>
+
+            <!-- Search -->
+            <div class="search-wrapper">
+                <input
+                    type="text"
+                    class="search-input"
+                    id="searchInput"
+                    placeholder="Search name, roll number, or branch..."
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+                <span class="search-shortcut">Ctrl+K</span>
+            </div>
+
+            <!-- Filter Chips -->
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-chip active" data-branch="ALL" onclick="filterBranch('ALL', this)">All</button>
+            </div>
+        </section>
+
+        <!-- Section Header -->
+        <div class="section-header">
+            <div class="section-title" id="sectionTitle">
+                Showing <span>all students</span>
+            </div>
+            <div class="view-toggle">
+                <button class="view-btn active" onclick="setView('grid', this)" title="Grid View">⊞</button>
+                <button class="view-btn" onclick="setView('list', this)" title="List View">☰</button>
+            </div>
+        </div>
+
+        <!-- Students Content -->
+        <div id="studentsContent">
+            <!-- Skeleton Loading -->
+            <div class="skeleton-grid">
+                <div class="skeleton-card" style="animation-delay:0s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+                <div class="skeleton-card" style="animation-delay:0.1s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+                <div class="skeleton-card" style="animation-delay:0.2s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+                <div class="skeleton-card" style="animation-delay:0.3s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+                <div class="skeleton-card" style="animation-delay:0.4s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+                <div class="skeleton-card" style="animation-delay:0.5s"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div><div class="skeleton-line short"></div></div></div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-wrapper" id="pagination"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with 💜 | Student Information Portal &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // ===== STATE =====
+        let currentPage = 1;
+        let currentSearch = '';
+        let currentBranch = 'ALL';
+        let currentView = 'grid';
+        let allBranches = new Set();
+        let debounceTimer;
+
+        // ===== INIT =====
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchStudents(1);
+
+            // Keyboard shortcut
+            document.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    document.getElementById('searchInput').focus();
+                }
+            });
+        });
+
+        // Search input
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                currentSearch = e.target.value.trim();
+                currentPage = 1;
+                fetchStudents(1);
+            }, 350);
+        });
+
+        // ===== FETCH STUDENTS =====
+        async function fetchStudents(page) {
+            try {
+                let url = `/api/students?page=${page}`;
+                if (currentSearch) url += `&search=${encodeURIComponent(currentSearch)}`;
+
+                const res = await fetch(url);
+                const data = await res.json();
+
+                if (!data.success) {
+                    showError(data.message || 'Unknown error');
+                    return;
+                }
+
+                let students = data.students;
+
+                // Collect branches for filter chips
+                students.forEach(s => {
+                    if (s.branch) allBranches.add(s.branch.toUpperCase());
+                });
+                updateFilterChips();
+
+                // Apply branch filter client-side
+                if (currentBranch !== 'ALL') {
+                    students = students.filter(s =>
+                        s.branch.toUpperCase() === currentBranch
+                    );
+                }
+
+                currentPage = data.current_page;
+
+                // Update stats
+                document.getElementById('totalCount').textContent = data.total_students;
+                document.getElementById('pageInfo').textContent = `${data.current_page}/${data.total_pages}`;
+
+                // Update section title
+                const titleEl = document.getElementById('sectionTitle');
+                if (currentSearch) {
+                    titleEl.innerHTML = `Results for <span>"${escapeHtml(currentSearch)}"</span> — ${data.total_students} found`;
+                } else if (currentBranch !== 'ALL') {
+                    titleEl.innerHTML = `Showing <span>${currentBranch}</span> students`;
+                } else {
+                    titleEl.innerHTML = `Showing <span>all students</span>`;
+                }
+
+                renderStudents(students);
+                renderPagination(data.current_page, data.total_pages);
+
+            } catch (err) {
+                showError('Unable to connect to server. Please check if the backend is running.');
+            }
+        }
+
+        // ===== RENDER STUDENTS =====
+        function renderStudents(students) {
+            const container = document.getElementById('studentsContent');
+
+            if (students.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-icon">🔍</div>
+                        <h3>No Students Found</h3>
+                        <p>Try adjusting your search or filter criteria</p>
+                    </div>
+                `;
+                return;
+            }
+
+            const viewClass = currentView === 'list' ? 'list-view' : '';
+
+            let html = `<div class="students-grid ${viewClass}">`;
+
+            students.forEach((s, i) => {
+                const stars = renderStars(s.rating || 0);
+                const branchClass = `branch-${s.branch ? s.branch.toUpperCase() : 'DEFAULT'}`;
+                const delay = i * 0.04;
+
+                html += `
+                    <div class="student-card" style="animation-delay: ${delay}s">
+                        <div class="card-img-wrap">
+                            ${s.image_url
+                                ? `<img src="${s.image_url}" alt="${escapeHtml(s.full_name)}" loading="lazy"
+                                     onerror="this.parentElement.innerHTML = noImageHTML('${escapeHtml(s.full_name)}')">`
+                                : `<div class="card-img-placeholder">
+                                     <div class="avatar-icon">👤</div>
+                                     <span>No Photo</span>
+                                   </div>`
+                            }
+                            <div class="card-img-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <div class="card-roll"><span class="hash">#</span>${escapeHtml(s.roll_number)}</div>
+                            </div>
+                            <div>
+                                <div class="card-name">${escapeHtml(s.full_name)}</div>
+                                <div class="card-branch">
+                                    <span class="branch-dot ${branchClass}"></span>
+                                    ${escapeHtml(s.branch)}
+                                </div>
+                            </div>
+                            <div class="card-rating">
+                                ${stars}
+                                <span class="rating-value">${Number(s.rating).toFixed(1)}</span>
+                                <span class="rating-label">/ 5</span>
+                            </div>
+                            ${s.comment ? `
+                                <div class="card-comment">
+                                    <span class="quote-icon">❝</span>
+                                    <p>${escapeHtml(s.comment)}</p>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            container.innerHTML = html;
+        }
+
+        // ===== RENDER STARS =====
+        function renderStars(rating) {
+            let html = '';
+            const full = Math.floor(rating);
+            const hasHalf = (rating % 1) >= 0.25 && (rating % 1) < 0.75;
+            const roundUp = (rating % 1) >= 0.75;
+
+            for (let i = 1; i <= 5; i++) {
+                if (i <= full || (roundUp && i <= full + 1)) {
+                    html += '<span class="star filled">★</span>';
+                } else if (i === full + 1 && hasHalf) {
+                    html += '<span class="star half">★</span>';
+                } else {
+                    html += '<span class="star empty">★</span>';
+                }
+            }
+            return html;
+        }
+
+        // ===== RENDER PAGINATION =====
+        function renderPagination(current, total) {
+            const wrapper = document.getElementById('pagination');
+
+            if (total <= 1) {
+                wrapper.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+
+            // Prev
+            html += `<button class="page-btn nav-arrow" onclick="goToPage(${current - 1})" ${current === 1 ? 'disabled' : ''}>← Prev</button>`;
+
+            // Page numbers with ellipsis
+            const pages = getPageNumbers(current, total);
+            pages.forEach(p => {
+                if (p === '...') {
+                    html += '<span class="page-ellipsis">•••</span>';
+                } else {
+                    html += `<button class="page-btn ${p === current ? 'active' : ''}" onclick="goToPage(${p})">${p}</button>`;
+                }
+            });
+
+            // Next
+            html += `<button class="page-btn nav-arrow" onclick="goToPage(${current + 1})" ${current === total ? 'disabled' : ''}>Next →</button>`;
+
+            wrapper.innerHTML = html;
+        }
+
+        function getPageNumbers(current, total) {
+            const pages = [];
+            if (total <= 7) {
+                for (let i = 1; i <= total; i++) pages.push(i);
+            } else {
+                pages.push(1);
+                if (current > 3) pages.push('...');
+                for (let i = Math.max(2, current - 1); i <= Math.min(total - 1, current + 1); i++) {
+                    pages.push(i);
+                }
+                if (current < total - 2) pages.push('...');
+                pages.push(total);
+            }
+            return pages;
+        }
+
+        // ===== PAGE NAVIGATION =====
+        function goToPage(page) {
+            currentPage = page;
+            fetchStudents(page);
+            window.scrollTo({ top: 300, behavior: 'smooth' });
+        }
+
+        // ===== BRANCH FILTER =====
+        function updateFilterChips() {
+            const bar = document.getElementById('filterBar');
+            let html = `<button class="filter-chip ${currentBranch === 'ALL' ? 'active' : ''}" onclick="filterBranch('ALL', this)">All</button>`;
+
+            [...allBranches].sort().forEach(branch => {
+                html += `<button class="filter-chip ${currentBranch === branch ? 'active' : ''}" onclick="filterBranch('${branch}', this)">${branch}</button>`;
+            });
+
+            bar.innerHTML = html;
+        }
+
+        function filterBranch(branch, el) {
+            currentBranch = branch;
+            currentPage = 1;
+
+            // Update active state
+            document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+            el.classList.add('active');
+
+            fetchStudents(1);
+        }
+
+        // ===== VIEW TOGGLE =====
+        function setView(view, el) {
+            currentView = view;
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+
+            const grid = document.querySelector('.students-grid');
+            if (grid) {
+                grid.classList.toggle('list-view', view === 'list');
+            }
+        }
+
+        // ===== ERROR =====
+        function showError(msg) {
+            document.getElementById('studentsContent').innerHTML = `
+                <div class="error-state">
+                    <div class="error-icon">⚠️</div>
+                    <h3>Something went wrong</h3>
+                    <p>${escapeHtml(msg)}</p>
+                    <button class="retry-btn" onclick="fetchStudents(1)">🔄 Try Again</button>
+                </div>
+            `;
+            document.getElementById('pagination').innerHTML = '';
+        }
+
+        // ===== HELPERS =====
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text || '';
+            return div.innerHTML;
+        }
+
+        function noImageHTML(name) {
+            return `<div class="card-img-placeholder"><div class="avatar-icon">👤</div><span>No Photo</span></div>`;
+        }
+    </script>
+</body>
+</html>
