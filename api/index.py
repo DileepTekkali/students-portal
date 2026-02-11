@@ -3,48 +3,41 @@ import json
 from http.server import BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
-# This is the handler format Vercel expects for Python serverless functions.
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         try:
             qs = parse_qs(urlparse(self.path).query)
-
-            # Accept ?id=AIK256Q1A4412
             certificate_id = (qs.get("id") or [""])[0].strip()
 
-            # You MUST set these in Vercel Environment Variables
-            supabase_url = (os.environ.get("SUPABASE_URL") or "").rstrip("/")
-            bucket = os.environ.get("SUPABASE_BUCKET") or "photos"
+            # You can set these in Vercel Env Vars.
+            # If not set, we default to your exact values.
+            supabase_url = (os.environ.get("SUPABASE_URL") or "https://scvfcifruoqsjfzptwbf.supabase.co").rstrip("/")
+            bucket = (os.environ.get("SUPABASE_BUCKET") or "photos").strip()
+            prefix = (os.environ.get("SUPABASE_PREFIX") or "student_images").strip().strip("/")
 
-            if not supabase_url:
-                self._send_json(500, {
-                    "ok": False,
-                    "error": "Missing SUPABASE_URL in Vercel Environment Variables"
-                })
-                return
-
-            # Health check (open /api without id)
             if not certificate_id:
-                self._send_json(200, {
+                example = f"{supabase_url}/storage/v1/object/public/{bucket}/{prefix}/AIK256Q1A4412.jpg"
+                return self._json(200, {
                     "ok": True,
-                    "message": "Pass ?id=AIK256Q1A4412",
-                    "example": f"{supabase_url}/storage/v1/object/public/{bucket}/AIK256Q1A4412.jpg"
+                    "message": "Use /api?id=AIK256Q1A4412",
+                    "example_public_url": example
                 })
-                return
 
-            # Build public URL (bucket is public)
-            image_url = f"{supabase_url}/storage/v1/object/public/{bucket}/{certificate_id}.jpg"
+            # Build URL (public bucket)
+            filename = f"{certificate_id}.jpg"
+            object_path = f"{prefix}/{filename}" if prefix else filename
+            image_url = f"{supabase_url}/storage/v1/object/public/{bucket}/{object_path}"
 
-            self._send_json(200, {
+            return self._json(200, {
                 "ok": True,
                 "certificate_id": certificate_id,
                 "image_url": image_url
             })
 
         except Exception as e:
-            self._send_json(500, {"ok": False, "error": str(e)})
+            return self._json(500, {"ok": False, "error": str(e)})
 
-    def _send_json(self, status_code: int, payload: dict):
+    def _json(self, status_code, payload):
         body = json.dumps(payload).encode("utf-8")
         self.send_response(status_code)
         self.send_header("Content-Type", "application/json; charset=utf-8")
