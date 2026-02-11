@@ -1,0 +1,4402 @@
+[
+  {
+    "name": "DEGALA NAGA DEVIKA",
+    "roll_number": "AIK25B21A4218",
+    "branch": "AIML",
+    "rating": 1,
+    "review": "VERY LAG",
+    "image": "student_images/AIK25B21A4218.jpg"
+  },
+  {
+    "name": "THORATHI SURYA",
+    "roll_number": "AIK25B21A4649",
+    "branch": "CSC CYBER",
+    "rating": 5,
+    "review": "VERY USEFULL TO SOMETHING DO BIG",
+    "image": "student_images/AIK25B21A4649.jpg"
+  },
+  {
+    "name": "jakku sunayana",
+    "roll_number": "AIK25B21A45F2",
+    "branch": "Artificial intelligence and data science",
+    "rating": 5,
+    "review": "nice opportunity and usable",
+    "image": "student_images/AIK25B21A45F2.jpg"
+  },
+  {
+    "name": "MADHULKA PANDILLAPLLI",
+    "roll_number": "AIK25B21A45E3",
+    "branch": "AID-HS",
+    "rating": 4,
+    "review": "IT IS A GOOD EXPERIENCE",
+    "image": "student_images/AIK25B21A45E3.jpg"
+  },
+  {
+    "name": "NAGA SATISH REDDY KARRI",
+    "roll_number": "AIK25B21A4257",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4257.png"
+  },
+  {
+    "name": "Tamarapalli manasa",
+    "roll_number": "AIK25B21A45E2",
+    "branch": "AID",
+    "rating": 5,
+    "review": "good experience and useful information",
+    "image": "student_images/AIK25B21A45E2.jpg"
+  },
+  {
+    "name": "DHARMASNANAM SAI ROHITH",
+    "roll_number": "AIK25B21A4370",
+    "branch": "CAI-H",
+    "rating": 5,
+    "review": "I learnt a lot in ai bootcamp.",
+    "image": "student_images/AIK25B21A4370.jpg"
+  },
+  {
+    "name": "Narra Sridivya",
+    "roll_number": "AIK256Q1A4256",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "excellent",
+    "image": "student_images/AIK256Q1A4256.jpg"
+  },
+  {
+    "name": "Tejaswi Chittala",
+    "roll_number": "AIK25B21A42C8",
+    "branch": "CSMH",
+    "rating": 4,
+    "review": "...",
+    "image": "student_images/AIK25B21A42C8.jpg"
+  },
+  {
+    "name": "Sowkya sakalabhaktula",
+    "roll_number": "AIK25B21A42E0",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Nothing",
+    "image": "student_images/AIK25B21A42E0.jpg"
+  },
+  {
+    "name": "Rapaka.Meghana",
+    "roll_number": "AIK25B21A45A5",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A45A5.jpg"
+  },
+  {
+    "name": "K Rukmini",
+    "roll_number": "AIK25B21A4375",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "Excellent",
+    "image": "student_images/AIK25B21A4375.jpg"
+  },
+  {
+    "name": "kannedari uday",
+    "roll_number": "AIK25B21A42A0",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "GOOD NOT BAD",
+    "image": "student_images/AIK25B21A42A0.jpg"
+  },
+  {
+    "name": "manikanteswari",
+    "roll_number": "AIK25B21A42B4",
+    "branch": "csm",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25B21A42B4.jpg"
+  },
+  {
+    "name": "Sravana sandhya",
+    "roll_number": "AIK25B21A4243",
+    "branch": "CSM(AI/ML)",
+    "rating": 4,
+    "review": "Not bad",
+    "image": "student_images/AIK25B21A4243.jpg"
+  },
+  {
+    "name": "PALLA YASWANTH",
+    "roll_number": "AIK25B21A42B1",
+    "branch": "CSM-H",
+    "rating": 3,
+    "review": "NOTHING EXPERIENCED",
+    "image": "student_images/AIK25B21A42B1.jpg"
+  },
+  {
+    "name": "Akula Jashvita",
+    "roll_number": "AIK25B21A4237",
+    "branch": "AI&ML",
+    "rating": 3,
+    "review": "NOT SASTISFIED",
+    "image": "student_images/AIK25B21A4237.jpg"
+  },
+  {
+    "name": "M.Yuva Lakshmi Nalini",
+    "roll_number": "AIK25B21A4538",
+    "branch": "AID",
+    "rating": 3,
+    "review": "..",
+    "image": "student_images/AIK25B21A4538.jpg"
+  },
+  {
+    "name": "A.priya keerthana",
+    "roll_number": "AIK25B21A4507",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4507.jpg"
+  },
+  {
+    "name": "mungara poojitha",
+    "roll_number": "AIK25B21A4639",
+    "branch": "csc(ds)",
+    "rating": 3,
+    "review": "good",
+    "image": "student_images/AIK25B21A4639.jpg"
+  },
+  {
+    "name": "SUNKARA TEJA BHARATH MOULI",
+    "roll_number": "AIK256Q1A4226",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4226.jpg"
+  },
+  {
+    "name": "Rongali.Jyotsna",
+    "roll_number": "AIK25B21A42F7",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A42F7.jpg"
+  },
+  {
+    "name": "MOUNIKA DEVI CHENNAM",
+    "roll_number": "AIK25B21A45C2",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "IT IS A VERY GOOD EXPERIENCE.LEARNED A LOT",
+    "image": "student_images/AIK25B21A45C2.jpg"
+  },
+  {
+    "name": "CHABANDI SRAVANI",
+    "roll_number": "AIK256Q1A4255",
+    "branch": "AI&ML",
+    "rating": 5,
+    "review": "ITS GOOD AND HELPFUL FOR THE STUDENTS TO LEARN MORE ABOUT AI AND HOW TO USE AI TOOLS",
+    "image": "student_images/AIK256Q1A4255.jpg"
+  },
+  {
+    "name": "VEERAGATTAPU PAVAN KUMAR",
+    "roll_number": "AIK25B21A45F1",
+    "branch": "CSE-AIDD",
+    "rating": 4,
+    "review": "VERY USEFUL .\nEASILY UNDERSTOOD",
+    "image": "student_images/AIK25B21A45F1.jpg"
+  },
+  {
+    "name": "yarrabolu venkata satya narayana swamy",
+    "roll_number": "AIK25B21A4283",
+    "branch": "CSM H",
+    "rating": 5,
+    "review": "GOOD AND USEFUL",
+    "image": "student_images/AIK25B21A4283.jpg"
+  },
+  {
+    "name": "Kanchi srivalli",
+    "roll_number": "AIK25B21A45A4",
+    "branch": "Aid",
+    "rating": 5,
+    "review": "Gud",
+    "image": "student_images/AIK25B21A45A4.jpg"
+  },
+  {
+    "name": "KANCHUMARTHI PAVANI SRI",
+    "roll_number": "AIK25B21A4210",
+    "branch": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING",
+    "rating": 5,
+    "review": "LEARNED ABOUT CREATING QR CODES AND CREATING WEBSITES IN GITHUB",
+    "image": "student_images/AIK25B21A4210.jpg"
+  },
+  {
+    "name": "nishitha vedullapalli",
+    "roll_number": "AIK25B21A45C4",
+    "branch": "Artificial intelligence and Data science",
+    "rating": 4,
+    "review": "its very good experience and good opportunity to learn",
+    "image": "student_images/AIK25B21A45C4.jpg"
+  },
+  {
+    "name": "Rapaka Reena",
+    "roll_number": "AIK25B21A45A2",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A45A2.jpg"
+  },
+  {
+    "name": "kota sai prasanna",
+    "roll_number": "AIK25B21A4601",
+    "branch": "CSCD",
+    "rating": 4,
+    "review": "good experience in the bootcamp",
+    "image": "student_images/AIK25B21A4601.jpg"
+  },
+  {
+    "name": "Matta.Jayalaxmi",
+    "roll_number": "AIK25B21A42D1",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A42D1.jpg"
+  },
+  {
+    "name": "Ishwarya Neredimelli",
+    "roll_number": "AIK25B21A4324",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Helpful for 1st year students to learn basics",
+    "image": "student_images/AIK25B21A4324.jpg"
+  },
+  {
+    "name": "Neelam Hyma Sri Lakshmi",
+    "roll_number": "AIK256Q1A4616",
+    "branch": "CSE - cybersecurity",
+    "rating": 4,
+    "review": "Got to learn about commands and algorithms and GitHub, and useful for future projects.",
+    "image": "student_images/AIK256Q1A4616.jpg"
+  },
+  {
+    "name": "utala siri",
+    "roll_number": "AIK25B21A4239",
+    "branch": "AIML",
+    "rating": 3,
+    "review": "NOT SASTISFIED",
+    "image": "student_images/AIK25B21A4239.jpg"
+  },
+  {
+    "name": "Besetti Anil",
+    "roll_number": "AIK25B21A4230",
+    "branch": "CSM-D1",
+    "rating": 5,
+    "review": "I LEARN A MORE EXPERIENCE TOOLS AND CREATE A OWN SONG WITH THE HELP OF SONO.COM",
+    "image": "student_images/AIK25B21A4230.jpg"
+  },
+  {
+    "name": "panniru eekshitha",
+    "roll_number": "AIK25B21A45E4",
+    "branch": "AID",
+    "rating": 5,
+    "review": "good experince by bootcamp\nintersting and enjoy",
+    "image": "student_images/AIK25B21A45E4.jpg"
+  },
+  {
+    "name": "TOYAKA RAMA",
+    "roll_number": "AIK25B21A4646",
+    "branch": "CSC CYBER SECURITY",
+    "rating": 4,
+    "review": "It is very interesting camp to learn how to create reel and song and we played 2048game",
+    "image": "student_images/AIK25B21A4646.jpg"
+  },
+  {
+    "name": "B.LIKHITH SAI",
+    "roll_number": "AIK25B214607",
+    "branch": "CSC-D",
+    "rating": 4,
+    "review": "OVERALL GOOD EXPERIENCE AND EXELLENT FACULTY",
+    "image": "student_images/AIK25B214607.jpg"
+  },
+  {
+    "name": "Valavala Gayatri Sowmya",
+    "roll_number": "AIK25B21A4238",
+    "branch": "AIML",
+    "rating": 3,
+    "review": "NOT SASTIFIED",
+    "image": "student_images/AIK25B21A4238.jpg"
+  },
+  {
+    "name": "yaramalla shanmuk vinay",
+    "roll_number": "AIK25B21A4293",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "super experience with this camp",
+    "image": "student_images/AIK25B21A4293.jpg"
+  },
+  {
+    "name": "Putluri Geethanjali",
+    "roll_number": "AIK25B21A4380",
+    "branch": "CAIH",
+    "rating": 4,
+    "review": "We learned many new things\nin this boot camp",
+    "image": "student_images/AIK25B21A4380.jpg"
+  },
+  {
+    "name": "Alavala Dhenuka",
+    "roll_number": "AIK25B21A42F5",
+    "branch": "CSM (AIML)",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A42F5.jpg"
+  },
+  {
+    "name": "kantam satya amrutha",
+    "roll_number": "AIK25B21A4425",
+    "branch": "csd",
+    "rating": 5,
+    "review": "excellent",
+    "image": "student_images/AIK25B21A4425.jpg"
+  },
+  {
+    "name": "B.Sri Manojna",
+    "roll_number": "AIK25B21A4222",
+    "branch": "AIML",
+    "rating": 5,
+    "review": "It is an very good experience to me ,I learned  a lot from this sessions",
+    "image": "student_images/AIK25B21A4222.jpg"
+  },
+  {
+    "name": "k.navya sri",
+    "roll_number": "AIK25B21A4450",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "GOOD EXPERIENCE AND GOOD EXPLANAING",
+    "image": "student_images/AIK25B21A4450.jpg"
+  },
+  {
+    "name": "Arasada dimpul padmaja rani",
+    "roll_number": "AIK25B21A4377",
+    "branch": "cai",
+    "rating": 5,
+    "review": "good",
+    "image": "student_images/AIK25B21A4377.jpg"
+  },
+  {
+    "name": "voonna sahithi",
+    "roll_number": "AIK256Q1A4414",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK256Q1A4414.jpg"
+  },
+  {
+    "name": "AKHILKUMAR",
+    "roll_number": "AIK25B21A4223",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "An worthy experience for learning and mentors are also supportive and the way of teaching context is good but the utilization of time is very poor",
+    "image": "student_images/AIK25B21A4223.jpg"
+  },
+  {
+    "name": "SURNEEDI THANUJA",
+    "roll_number": "AIK25B21A4226",
+    "branch": "CSE(AIML)",
+    "rating": 4,
+    "review": "its nice to experience this ai bootcamp",
+    "image": "student_images/AIK25B21A4226.jpg"
+  },
+  {
+    "name": "B Mahaboob basha",
+    "roll_number": "AIK25B21A4574",
+    "branch": "AIDS",
+    "rating": 3,
+    "review": "NICE",
+    "image": "student_images/AIK25B21A4574.jpg"
+  },
+  {
+    "name": "Potla Rohith",
+    "roll_number": "AIK256Q1A4248",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "In boot camp i learn such og things like ai song , game , qr code generation my overall experience is very good",
+    "image": "student_images/AIK256Q1A4248.jpg"
+  },
+  {
+    "name": "BUDITHI JAHNAVI PRIYA DARSHINI",
+    "roll_number": "AIK25B21A4202",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "i liked to learn ike this and we are glad to join in this bootcmap",
+    "image": "student_images/AIK25B21A4202.jpg"
+  },
+  {
+    "name": "POTHURI NAGA VINITHA",
+    "roll_number": "AIK25B21A4530",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Great experience",
+    "image": "student_images/AIK25B21A4530.jpg"
+  },
+  {
+    "name": "VASUPALLI APPALARAJU",
+    "roll_number": "AIK25B21A4280",
+    "branch": "AI AND ML",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4280.jpg"
+  },
+  {
+    "name": "Meka Sivani",
+    "roll_number": "AIK25B21A4479",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "It's very good experience for me to participate in this boot camp\nin this boot camp I have learned some new things which are useful in future",
+    "image": "student_images/AIK25B21A4479.jpg"
+  },
+  {
+    "name": "KONA AYYAPPA",
+    "roll_number": "AIK256Q1A4610",
+    "branch": "CSC-D",
+    "rating": 3,
+    "review": "Yes it is useful for students but please explain clearly and disscus with students",
+    "image": "student_images/AIK256Q1A4610.jpg"
+  },
+  {
+    "name": "p.nagavalli",
+    "roll_number": "AIK25B21A4522",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It was good experience and all brother and sister explined in proper way",
+    "image": "student_images/AIK25B21A4522.jpg"
+  },
+  {
+    "name": "Bali.Bhavana",
+    "roll_number": "AIK25B21A4494",
+    "branch": "Csd",
+    "rating": 3,
+    "review": "It's very good experience to learn new things in boot camp",
+    "image": "student_images/AIK25B21A4494.jpg"
+  },
+  {
+    "name": "PAPPALA THANUJA",
+    "roll_number": "AIK256Q1A4216",
+    "branch": "CSE(AIML)",
+    "rating": 4,
+    "review": "ITS NICE TO EXPERIENCE THIS AI BOOTCAMP",
+    "image": "student_images/AIK256Q1A4216.jpg"
+  },
+  {
+    "name": "Karni Dharani",
+    "roll_number": "AIK25B21A42D9",
+    "branch": "CSMH",
+    "rating": 5,
+    "review": "IN THIS BOOTCAMP I LEARNT UBUNTU INSTALLATIONS QR GENERATION AND SO MANY TOOLS IT IS VERY USEFUL TO ME THANK YOU!",
+    "image": "student_images/AIK25B21A42D9.jpg"
+  },
+  {
+    "name": "pasupuleti srinivasu",
+    "roll_number": "AIK25B21A4573",
+    "branch": "AID",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4573.jpg"
+  },
+  {
+    "name": "V.L.NRUSIMHA",
+    "roll_number": "AIK256Q1A4607",
+    "branch": "CSCD",
+    "rating": 5,
+    "review": "It helped me very well, Because of installing Ubuntu in systems I came to know about so many Commands in UBUNTU \nAnd came to know about many errors",
+    "image": "student_images/AIK256Q1A4607.jpg"
+  },
+  {
+    "name": "A.HWMA SURYA SRI",
+    "roll_number": "AIK256Q1A4512",
+    "branch": "AID-D",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK256Q1A4512.jpg"
+  },
+  {
+    "name": "kasireddy rama devi",
+    "roll_number": "AIK256Q1A4220",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "it is an good experience to me, I learned a lot from this setion",
+    "image": "student_images/AIK256Q1A4220.jpg"
+  },
+  {
+    "name": "reddi deva",
+    "roll_number": "AIK25B21A4491",
+    "branch": "CSDH",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4491.jpg"
+  },
+  {
+    "name": "Seekolu nikitha",
+    "roll_number": "AIK256Q1A4205",
+    "branch": "csm",
+    "rating": 4,
+    "review": "It is easy to learn",
+    "image": "student_images/AIK256Q1A4205.jpg"
+  },
+  {
+    "name": "hasini",
+    "roll_number": "AIK25B21A42C2",
+    "branch": "AI&ML",
+    "rating": 5,
+    "review": "NICE WITH THIS BOOT I LEARN ALL AI TOOLS THANK YOU",
+    "image": "student_images/AIK25B21A42C2.jpg"
+  },
+  {
+    "name": "Tubati Dinesh",
+    "roll_number": "AIK256Q1A4315",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "it is very usfull to us but not clearty to understand due to online class",
+    "image": "student_images/AIK256Q1A4315.jpg"
+  },
+  {
+    "name": "VANDITHA CHEEPURUPALLI",
+    "roll_number": "AIK25B21A4381",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "its intresting",
+    "image": "student_images/AIK25B21A4381.jpg"
+  },
+  {
+    "name": "Jasmin Mohanty",
+    "roll_number": "AIK25B21A45E5",
+    "branch": "Aid",
+    "rating": 3,
+    "review": "It's Good, everyone is helpful",
+    "image": "student_images/AIK25B21A45E5.jpg"
+  },
+  {
+    "name": "magam. teja sri",
+    "roll_number": "AIK25B21A42C5",
+    "branch": "AIML",
+    "rating": 3,
+    "review": "IT IS VERY USEFUL TO LEARN SOMETHING NEW  AND NEW VERSTIONS OF AI",
+    "image": "student_images/AIK25B21A42C5.jpg"
+  },
+  {
+    "name": "CHINTHA JASWANTH",
+    "roll_number": "AIK25B21A45F3",
+    "branch": "AID",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A45F3.jpg"
+  },
+  {
+    "name": "MALYADA BESHAJA MANASVINI",
+    "roll_number": "AIK25B21A45A6",
+    "branch": "AID",
+    "rating": 4,
+    "review": "my overall experience on bootcamp is that i am satisfied with the activity and i am happy thta we are learing about AI tools in our first year and we are thanking the team AIKARYASALA for this amazing experience.",
+    "image": "student_images/AIK25B21A45A6.jpg"
+  },
+  {
+    "name": "Lanka Teja Venkata Satyanarayana Swamy",
+    "roll_number": "AIK25B21A4622",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "good explaination \nnice uderstanding",
+    "image": "student_images/AIK25B21A4622.jpg"
+  },
+  {
+    "name": "UPPU DURGA",
+    "roll_number": "AIK25B21A4549",
+    "branch": "AID-D",
+    "rating": 5,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4549.jpg"
+  },
+  {
+    "name": "Balla Datta Siva Naga Vinayak",
+    "roll_number": "AIK25B21A4537",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It is good for learning But the time is not sufficient \nAll the process is good and the friendly mentors and sir teaching and explaination was good",
+    "image": "student_images/AIK25B21A4537.jpg"
+  },
+  {
+    "name": "Grandhi.varshitha",
+    "roll_number": "AIK25B21A4328",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "I have experienced very good",
+    "image": "student_images/AIK25B21A4328.jpg"
+  },
+  {
+    "name": "Golagana Jahnavi",
+    "roll_number": "AIK25B21A45B8",
+    "branch": "AID",
+    "rating": 5,
+    "review": "VERY GOOD EXPERIENCE",
+    "image": "student_images/AIK25B21A45B8.jpg"
+  },
+  {
+    "name": "Vallipalli Indira",
+    "roll_number": "AIK256Q1A4317",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "It is very interesting. I learned how to use ai tools",
+    "image": "student_images/AIK256Q1A4317.jpg"
+  },
+  {
+    "name": "kandregula syamala",
+    "roll_number": "AIK25B21A4486",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "IT WAS THE BEST EXPERIENCE",
+    "image": "student_images/AIK25B21A4486.jpg"
+  },
+  {
+    "name": "PRABHAKAR MAGANTI",
+    "roll_number": "AIK25B21A4597",
+    "branch": "AIDS",
+    "rating": 5,
+    "review": "LEARN LOT OF THINGS BY USING AI TOOLS",
+    "image": "student_images/AIK25B21A4597.jpg"
+  },
+  {
+    "name": "Yallamelli Blessi",
+    "roll_number": "AIK25B21A45A3",
+    "branch": "AID",
+    "rating": 5,
+    "review": "GOOD experience",
+    "image": "student_images/AIK25B21A45A3.jpg"
+  },
+  {
+    "name": "mirampalli harshitha",
+    "roll_number": "AIK25B21A42C4",
+    "branch": "AIML",
+    "rating": 5,
+    "review": "IT IS USEFULL FOR LEARING ABOUT AI TOOLS AND IT IS A GOOD EXPERIENCE .THE MENTORS EXPLAINED WITH GOOD PATIENCE. AD IT IS EXCELENT CAMP FOR US.",
+    "image": "student_images/AIK25B21A42C4.jpg"
+  },
+  {
+    "name": "Anjali yaka",
+    "roll_number": "AIK25B21A45D0",
+    "branch": "Artificial intelligence and data science",
+    "rating": 4,
+    "review": "We learned so many new things in this bootcamp.Its very usefull.",
+    "image": "student_images/AIK25B21A45D0.jpg"
+  },
+  {
+    "name": "PECCHETTI JESHMA SRI BHAVANI",
+    "roll_number": "AIK25B21A4376",
+    "branch": "CAI-H",
+    "rating": 4,
+    "review": "",
+    "image": "student_images/AIK25B21A4376.jpg"
+  },
+  {
+    "name": "MAJJI RUTHVIKA SWATHI",
+    "roll_number": "AIK25B21A42C3",
+    "branch": "AIML",
+    "rating": 4,
+    "review": "IT IS VERY USEFUL FOR LEARNING AI TOOLS AND CODINGS \nIT IS A GOOD EXPERIANCE AND MENTORS ALSO WELL EXPLAINED",
+    "image": "student_images/AIK25B21A42C3.jpg"
+  },
+  {
+    "name": "Guthula krishna Suryaprasad",
+    "roll_number": "AIK25B21A4570",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "It's overall Good,but Some issues is there like mic problem,live streaming prblm etc.. overall explanation and boot camp is very good and usefull for us",
+    "image": "student_images/AIK25B21A4570.jpg"
+  },
+  {
+    "name": "NAVEEN KUMAR CHINTHAKUNTA",
+    "roll_number": "AIK25B21A4490",
+    "branch": "CSD-H",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4490.jpg"
+  },
+  {
+    "name": "vigneswari pendem",
+    "roll_number": "AIK25B21A4302",
+    "branch": "CAI D",
+    "rating": 4,
+    "review": "G00D",
+    "image": "student_images/AIK25B21A4302.jpg"
+  },
+  {
+    "name": "v.ravindranadh",
+    "roll_number": "AIK256Q1A4604",
+    "branch": "CYBER",
+    "rating": 5,
+    "review": "ITS OVER FIRST TIME EXPERIENCE AT THE BOOT CAMP ITS WAS VERY USE FULL TO US AND WE ARE SATISFIED THAT ALL KNOWING THE BASICS",
+    "image": "student_images/AIK256Q1A4604.jpg"
+  },
+  {
+    "name": "PADALA NEEHARIKA SRIVALLI",
+    "roll_number": "AIK25B21A4276",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "The actual experience was all good. We learned about the song making, QR code making, about creating a video by using python in Linux. we also learnt about some keywords in c.",
+    "image": "student_images/AIK25B21A4276.jpg"
+  },
+  {
+    "name": "Illa Anusri",
+    "roll_number": "AIK25B21A4247",
+    "branch": "AIML",
+    "rating": 4,
+    "review": "such a nice experience , encouraged learning and trying new things",
+    "image": "student_images/AIK25B21A4247.jpg"
+  },
+  {
+    "name": "P.yamini naga sri",
+    "roll_number": "AIK25B21A45311",
+    "branch": "Cse (aid)",
+    "rating": 4,
+    "review": "It is good for learning about AI tools",
+    "image": "student_images/AIK25B21A45311.jpg"
+  },
+  {
+    "name": "MATTAPARTHI SAI SARATH SWAMY",
+    "roll_number": "AIK25B21A4545",
+    "branch": "AID-D",
+    "rating": 3,
+    "review": "IT IS HELPFULL TO OUR AND BUT SOME ISSUES IS THIER IF IT IS RETIFY IT WILL HELPFULL TO US",
+    "image": "student_images/AIK25B21A4545.jpg"
+  },
+  {
+    "name": "BALABHADRUNI PRASAD",
+    "roll_number": "AIK25B21A4233",
+    "branch": "CSM D-1",
+    "rating": 5,
+    "review": "IN THIS WE MAIN LEARN IN GITHUB HOW TO BUILD PROFILE WITH OUR DETAILS AND IN THIS CAMP WE KNOW HOW THE CODES WILL RUN BEHIND THE WEBSITE AND HOW TO USE AI TOOLS  FOR OUR USAGE LIKE SUNO.COM,NOTEBOOKLM,ETC AND  WE ALSO LEARN BINARY WITH 2048 PUZZLE GAME.",
+    "image": "student_images/AIK25B21A4233.jpg"
+  },
+  {
+    "name": "G.VENKATA SRINIDHI",
+    "roll_number": "AIK25B21A4508",
+    "branch": "AID-D",
+    "rating": 5,
+    "review": "GOOD EXPLANTION AND EXPERIENCES,WE LEARNT SOME IMPORTANT TOPICS",
+    "image": "student_images/AIK25B21A4508.jpg"
+  },
+  {
+    "name": "VEESAM SANJAY",
+    "roll_number": "AIK256Q1A4212",
+    "branch": "CSM-D2",
+    "rating": 5,
+    "review": "Very good",
+    "image": "student_images/AIK256Q1A4212.jpg"
+  },
+  {
+    "name": "manugulanikhilesh",
+    "roll_number": "AIK256Q1A4203",
+    "branch": "csm",
+    "rating": 3,
+    "review": "cool and  interesting i had a great time",
+    "image": "student_images/AIK256Q1A4203.jpg"
+  },
+  {
+    "name": "K. Charitha sreeja",
+    "roll_number": "AIK25B21A4614",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "This bootcamp help me soo much to learn new skills",
+    "image": "student_images/AIK25B21A4614.jpg"
+  },
+  {
+    "name": "MUMMIDI REVATHI",
+    "roll_number": "AIK256Q1A4302",
+    "branch": "CAI-D",
+    "rating": 1,
+    "review": "Very bad",
+    "image": "student_images/AIK256Q1A4302.jpg"
+  },
+  {
+    "name": "Bhargavi",
+    "roll_number": "AIK25B21A4484",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "BEST EXPERIENCE TO SHARE WE LEARNED NEW DEVELOPMENTS AND SKILLS WHICH ARE TEACHED, BOTH KNOWLEDGE GAINED AND GOOD EXPERIENCE",
+    "image": "student_images/AIK25B21A4484.jpg"
+  },
+  {
+    "name": "M.KALYANI",
+    "roll_number": "AIK25B21A4520",
+    "branch": "AID",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4520.jpg"
+  },
+  {
+    "name": "VAVILAPALLI GNANA SARASWATHI",
+    "roll_number": "AIK25B21A45C8",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "LEARNT ABOUT THE TOOLS WHICH WERE EASY AND HAD FUN.NICE EXPERINCE",
+    "image": "student_images/AIK25B21A45C8.jpg"
+  },
+  {
+    "name": "Inaparthi Moses",
+    "roll_number": "AIK25B21A4598",
+    "branch": "AID-H",
+    "rating": 3,
+    "review": "Not met the expectations",
+    "image": "student_images/AIK25B21A4598.jpg"
+  },
+  {
+    "name": "R.S.S.V.Mounika",
+    "roll_number": "AIK25B21A4418",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "It is good.",
+    "image": "student_images/AIK25B21A4418.jpg"
+  },
+  {
+    "name": "Nandiki Gressella",
+    "roll_number": "AIK25B21A4532",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Useful concepts mentors are very helped us to clear the doubts",
+    "image": "student_images/AIK25B21A4532.jpg"
+  },
+  {
+    "name": "P.SUJITHA",
+    "roll_number": "AIK256Q1A4311",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "MY OVERALL EXPERIENCE WITH THE BOOTCAMP WAS VERY POSITIVE AND ENRICHING.",
+    "image": "student_images/AIK256Q1A4311.jpg"
+  },
+  {
+    "name": "j.ram charan teja",
+    "roll_number": "AIK25B21A4458",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "IT is a great experience in working in this boot camp. \nThis boot camp is really useful for students",
+    "image": "student_images/AIK25B21A4458.jpg"
+  },
+  {
+    "name": "s. Jaya pujitha",
+    "roll_number": "AIK25B21A4417",
+    "branch": "CSD",
+    "rating": 3,
+    "review": "NICE",
+    "image": "student_images/AIK25B21A4417.jpg"
+  },
+  {
+    "name": "Hema Sri",
+    "roll_number": "AIK256Q1A4303",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "My overall experience with bootcamp was very positive and enriching.",
+    "image": "student_images/AIK256Q1A4303.jpg"
+  },
+  {
+    "name": "karneni guna sekhar veera chaitanya",
+    "roll_number": "AIK256Q1A4246",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK256Q1A4246.jpg"
+  },
+  {
+    "name": "K.H.S.N.Varshitha",
+    "roll_number": "AIK25B21A4556",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4556.jpg"
+  },
+  {
+    "name": "GUMMADIDALA ARAVIND",
+    "roll_number": "AIK256Q1A4238",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good expience in learning ai tools",
+    "image": "student_images/AIK256Q1A4238.jpg"
+  },
+  {
+    "name": "hemendra.d",
+    "roll_number": "AIK256Q1A4211",
+    "branch": "csm",
+    "rating": 3,
+    "review": "the camp and the way of teaching is perfect but the hosting and connecting to other class errors made the class quality poor and students attention damaged. the complete time is not used perfectly",
+    "image": "student_images/AIK256Q1A4211.jpg"
+  },
+  {
+    "name": "Botta.Ragini",
+    "roll_number": "AIK25B21A42B6",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A42B6.jpg"
+  },
+  {
+    "name": "Nandini.Thanu sri",
+    "roll_number": "AIK25B21A4215",
+    "branch": "Csm",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4215.jpg"
+  },
+  {
+    "name": "M . Gayatri",
+    "roll_number": "AIK256Q1A4316",
+    "branch": "CAI",
+    "rating": 4,
+    "review": ".",
+    "image": "student_images/AIK256Q1A4316.jpg"
+  },
+  {
+    "name": "p.venkat durga prasad",
+    "roll_number": "AIK25B21A4409",
+    "branch": "CSD-D",
+    "rating": 4,
+    "review": "SIR CLASS IS VERY NICE SIR TOLD NICELY I UNDERSTAND WELL BUT; WHEN SIR IS SAYING THE CLASS THERE IS A VOICE DISTURBANCE THATS ALL THANK YOU",
+    "image": "student_images/AIK25B21A4409.jpg"
+  },
+  {
+    "name": "challa sharmila",
+    "roll_number": "AIK25B21A42B0",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "OK",
+    "image": "student_images/AIK25B21A42B0.jpg"
+  },
+  {
+    "name": "mulagapati jashmini devi",
+    "roll_number": "AIK25B21A4252",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "nice experence we learn about many thing",
+    "image": "student_images/AIK25B21A4252.jpg"
+  },
+  {
+    "name": "KADALI Chaitanya Kushal",
+    "roll_number": "AIK25B21A4647",
+    "branch": "Cyber security",
+    "rating": 5,
+    "review": "I learned how to create a qr code and so many",
+    "image": "student_images/AIK25B21A4647.jpg"
+  },
+  {
+    "name": "leela charan santhosh",
+    "roll_number": "AIK256Q1A4602",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK256Q1A4602.jpg"
+  },
+  {
+    "name": "Ch. Satya Siva Lahari",
+    "roll_number": "AIK25B21A4431",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "Nice way of explanation",
+    "image": "student_images/AIK25B21A4431.jpg"
+  },
+  {
+    "name": "chodavarapu Rakesh",
+    "roll_number": "AIK25B21A45A7",
+    "branch": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A45A7.jpg"
+  },
+  {
+    "name": "LINITH KUMAR DUDAKA",
+    "roll_number": "AIK256Q1A4249",
+    "branch": "CSM-H",
+    "rating": 3,
+    "review": "Not met the expectations",
+    "image": "student_images/AIK256Q1A4249.jpg"
+  },
+  {
+    "name": "J VINNY VICTOR",
+    "roll_number": "AIK25B21A4659",
+    "branch": "Csc",
+    "rating": 5,
+    "review": "Some tasks are finish",
+    "image": "student_images/AIK25B21A4659.jpg"
+  },
+  {
+    "name": "M.jyothiswaroop",
+    "roll_number": "AIK25B21A4215",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "I learn some commands and generated some qr codes using ubuntu and this bootcamp created some interest on coding",
+    "image": "student_images/AIK25B21A4215.jpg"
+  },
+  {
+    "name": "harshithasannamuri",
+    "roll_number": "AIK25B21A45B5",
+    "branch": "AIDS",
+    "rating": 4,
+    "review": ".",
+    "image": "student_images/AIK25B21A45B5.jpg"
+  },
+  {
+    "name": "Gara.chinnari",
+    "roll_number": "AIK25B21A4611",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "> This boot camp help me soo much to learn new skills and awarance of ai \n>i am thankfull to give this oportunity to join this boot camp",
+    "image": "student_images/AIK25B21A4611.jpg"
+  },
+  {
+    "name": "Soudhem . sanjana",
+    "roll_number": "AIK256Q1A4524",
+    "branch": "AID-H",
+    "rating": 5,
+    "review": "Good experience",
+    "image": "student_images/AIK256Q1A4524.jpg"
+  },
+  {
+    "name": "m.sailaja",
+    "roll_number": "AIK25B21A4404",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "NICE WAY OF EXPLANATION",
+    "image": "student_images/AIK25B21A4404.jpg"
+  },
+  {
+    "name": "NARAHARASETTI PARVATHISH KUMAR",
+    "roll_number": "AIK25B21A4656",
+    "branch": "Csc (cyber security)",
+    "rating": 5,
+    "review": "I learned how to create qr code and so",
+    "image": "student_images/AIK25B21A4656.jpg"
+  },
+  {
+    "name": "Ch.Dharshini",
+    "roll_number": "AIK25B21A42B5",
+    "branch": "CSM",
+    "rating": 1,
+    "review": "BAD",
+    "image": "student_images/AIK25B21A42B5.jpg"
+  },
+  {
+    "name": "Nakka syam",
+    "roll_number": "AIK256Q1A4611",
+    "branch": "Csc",
+    "rating": 5,
+    "review": "Very good",
+    "image": "student_images/AIK256Q1A4611.jpg"
+  },
+  {
+    "name": "KATHARI VAMSI SIVA CHARAN",
+    "roll_number": "AIK25B21A4227",
+    "branch": "CSM-D2",
+    "rating": 5,
+    "review": "VERY GOOD",
+    "image": "student_images/AIK25B21A4227.jpg"
+  },
+  {
+    "name": "DEVARA JAASWANTH VEERANAGENDRA SANKAR BHAGAVAN",
+    "roll_number": "AIK25B21A4204",
+    "branch": "CSM",
+    "rating": 2,
+    "review": "AVERAGE",
+    "image": "student_images/AIK25B21A4204.jpg"
+  },
+  {
+    "name": "Kurupudi.Sai Ganesh",
+    "roll_number": "AIK256Q1A4502",
+    "branch": "AID-DS",
+    "rating": 4,
+    "review": "overall the experience of four sections of bootcamp the bootcamp is very help full but there are some issues of mic and live streaming disturbances etc.",
+    "image": "student_images/AIK256Q1A4502.jpg"
+  },
+  {
+    "name": "B yana",
+    "roll_number": "AIK25B21A42A6",
+    "branch": "CSM",
+    "rating": 1,
+    "review": "BAD",
+    "image": "student_images/AIK25B21A42A6.jpg"
+  },
+  {
+    "name": "kolapuri sai vindya vahini",
+    "roll_number": "AIK25B21A45E1",
+    "branch": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A45E1.jpg"
+  },
+  {
+    "name": "Sadanala nissy prajeeth nath",
+    "roll_number": "AIK25B21A4648",
+    "branch": "Csc",
+    "rating": 5,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4648.jpg"
+  },
+  {
+    "name": "billa ramalingeswararao",
+    "roll_number": "AIK25B21A4248",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "well in overall experience is quite new for me cuz this is the first bootcamp maybe becuz of that I have taken a bit time to catch up with the bootcamp mentors and they planned everything correctly according to the availability and time constrain by this bootcamp my interest in virtual machine has came to a passion and Im looking more forward of learning the whole ubuntu machine and I learned the commands terminals and simple tasks in ubuntu and also the using of ai tools like song and video generation and hosting in localhost",
+    "image": "student_images/AIK25B21A4248.jpg"
+  },
+  {
+    "name": "reddyharshavardhan",
+    "roll_number": "AIK25B21A4423",
+    "branch": "CSD-D",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4423.jpg"
+  },
+  {
+    "name": "mudadla tejesh",
+    "roll_number": "AIK25B21A4581",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "NO",
+    "image": "student_images/AIK25B21A4581.jpg"
+  },
+  {
+    "name": "Ponnala Tanooja",
+    "roll_number": "AIK25B21A4551",
+    "branch": "AID",
+    "rating": 3,
+    "review": "This is very useful to us to build up our skills, Ai karyashala students ( mentors) explained very well to clear our doubts about bootcamp.",
+    "image": "student_images/AIK25B21A4551.jpg"
+  },
+  {
+    "name": "RAVURI MANIKANTA SWAMI",
+    "roll_number": "AIK25B21A4232",
+    "branch": "Csm",
+    "rating": 5,
+    "review": "this boot camp accelerated my learning",
+    "image": "student_images/AIK25B21A4232.jpg"
+  },
+  {
+    "name": "Pudi.Kalyani",
+    "roll_number": "AIK25B21A4355",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "overall experience with the bootcamp is very difficult to learn but me can learn means its very essay",
+    "image": "student_images/AIK25B21A4355.jpg"
+  },
+  {
+    "name": "VADREVU LAVANYA",
+    "roll_number": "AIK25B21A4638",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "In this bootcamp we learn some use full tips and then we are learn commands also and we create qr codes",
+    "image": "student_images/AIK25B21A4638.jpg"
+  },
+  {
+    "name": "KUNIBILLI RAKESH",
+    "roll_number": "AIK25B21A42A5",
+    "branch": "CSM - H",
+    "rating": 3,
+    "review": "Not met the expectations",
+    "image": "student_images/AIK25B21A42A5.jpg"
+  },
+  {
+    "name": "p.nagasri",
+    "roll_number": "AIK25B21A4509",
+    "branch": "AID",
+    "rating": 4,
+    "review": "it was a very good experience for participating in boot camp \nit was very interesting to create qr code, linux,",
+    "image": "student_images/AIK25B21A4509.jpg"
+  },
+  {
+    "name": "PENUMALLU BHAVITHA",
+    "roll_number": "AIK25B21A4613",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "From this we have learned types of commands and it will be very usefull for us while executing the programs.",
+    "image": "student_images/AIK25B21A4613.jpg"
+  },
+  {
+    "name": "Jayasri bommidi",
+    "roll_number": "AIK25B21A42D0",
+    "branch": "AIML",
+    "rating": 5,
+    "review": "The experience about bootcamp is good experience and learn more",
+    "image": "student_images/AIK25B21A42D0.jpg"
+  },
+  {
+    "name": "MANDAVILLI NAGA THANISH",
+    "roll_number": "AIK256Q1A4308",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "IT IS HELP FOR ME WEII MANY MORE BECAUSE THE BOOTCAMP IS  WELL TRAINED TRAINERS",
+    "image": "student_images/AIK256Q1A4308.jpg"
+  },
+  {
+    "name": "S Karuna Sagar",
+    "roll_number": "AIK25B21A4660",
+    "branch": "Cyber security",
+    "rating": 5,
+    "review": "I have nice by knowing some about some things in the laptop",
+    "image": "student_images/AIK25B21A4660.jpg"
+  },
+  {
+    "name": "LAKSHMI LAVANYA KODI",
+    "roll_number": "AIK25B21A4245",
+    "branch": "CSE-AI&ML",
+    "rating": 3,
+    "review": "LEARN EASY STEPS FOR THE PROGRAM AND NICE EXPERIENCES",
+    "image": "student_images/AIK25B21A4245.jpg"
+  },
+  {
+    "name": "N.Ganga Bhavani",
+    "roll_number": "AIK25B21A42C7",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "The overall camp was very interesting .\ni learned a lot through this camp about web designing.\nit was very great time with them 🙂",
+    "image": "student_images/AIK25B21A42C7.jpg"
+  },
+  {
+    "name": "Pedapudi Naga Spurthi Vedasri",
+    "roll_number": "AIK25B21A45C6",
+    "branch": "AID",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25B21A45C6.jpg"
+  },
+  {
+    "name": "Kada manjula devi",
+    "roll_number": "AIK25B21A4331",
+    "branch": "Cai",
+    "rating": 5,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4331.jpg"
+  },
+  {
+    "name": "G.mahalakshmi",
+    "roll_number": "AIK25B22A4306",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Very good explanation",
+    "image": "student_images/AIK25B22A4306.jpg"
+  },
+  {
+    "name": "BURTHI KISHON KUMAR",
+    "roll_number": "AIK25B21A4560",
+    "branch": "AID-D",
+    "rating": 5,
+    "review": "EASY TO LERAN AI TOOLS AND \nCREATE A OWN SONGS USING SUNO AI.COM\nCREATING CONTACT GENERATOR IS VERY INTERSTING😍\nCREATE A GITHUB WEBSITE OF MY OWN PROFILE\nINTERACTING KARYASALA TEAM FRIENDLY",
+    "image": "student_images/AIK25B21A4560.jpg"
+  },
+  {
+    "name": "Bhashini amara",
+    "roll_number": "AIK25B21A42A3",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A42A3.jpg"
+  },
+  {
+    "name": "Penumaka Anil kumar",
+    "roll_number": "AIK25B21A4588",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "Very good",
+    "image": "student_images/AIK25B21A4588.jpg"
+  },
+  {
+    "name": "Pedapathimahalaxmi",
+    "roll_number": "AIK25B21A4635",
+    "branch": "Csc",
+    "rating": 5,
+    "review": "I learn new skills and awareness of ai",
+    "image": "student_images/AIK25B21A4635.jpg"
+  },
+  {
+    "name": "Ch.Dharshini",
+    "roll_number": "AIK25B21A42B5",
+    "branch": "CSM",
+    "rating": 1,
+    "review": "BAD",
+    "image": "student_images/AIK25B21A42B5.jpg"
+  },
+  {
+    "name": "b.naga venkata sruthi",
+    "roll_number": "AIK25B21A4564",
+    "branch": "AID ds",
+    "rating": 3,
+    "review": "It helped me build discipline,confidence,and teamwork skills much faster than i expected",
+    "image": "student_images/AIK25B21A4564.jpg"
+  },
+  {
+    "name": "PATHAN JAHIR",
+    "roll_number": "AIK25B21A45B9",
+    "branch": "AID",
+    "rating": 4,
+    "review": "GOOD EXPERIENCE",
+    "image": "student_images/AIK25B21A45B9.jpg"
+  },
+  {
+    "name": "Gollamandhala shalini",
+    "roll_number": "AIK25B21A45A1",
+    "branch": "AID-H",
+    "rating": 3,
+    "review": "Good experience",
+    "image": "student_images/AIK25B21A45A1.jpg"
+  },
+  {
+    "name": "Karri Venkata Ganesh",
+    "roll_number": "AIK256Q1A4223",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "The AI bootcamp was a great learning experience that helped me understand new technologies in a practical way. It boosted my confidence and motivated me to explore more about artificial intelligence.",
+    "image": "student_images/AIK256Q1A4223.jpg"
+  },
+  {
+    "name": "Peddinti Rohith Kumar",
+    "roll_number": "AIK25B21A4517",
+    "branch": "Artificial intelligence and data science",
+    "rating": 4,
+    "review": "I think we are lucky to have Rohini rohini barla sir \nAnd team .",
+    "image": "student_images/AIK25B21A4517.jpg"
+  },
+  {
+    "name": "JANAPAREDDY PUSHPAK",
+    "roll_number": "AIK25B21A4650",
+    "branch": "CSE(cybersecurity)",
+    "rating": 4,
+    "review": "This bootcamp is very useful and it is gives good experience to us...",
+    "image": "student_images/AIK25B21A4650.jpg"
+  },
+  {
+    "name": "VASA HEMA",
+    "roll_number": "AIK25B21A4263",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "excellent experience and i like the ai bootcamp",
+    "image": "student_images/AIK25B21A4263.jpg"
+  },
+  {
+    "name": "Boddu Niharika",
+    "roll_number": "AIK25B21A42A4",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A42A4.jpg"
+  },
+  {
+    "name": "NARLA SRI VENKATA KISHORE",
+    "roll_number": "AIK25B21A4255",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "COOL AND INTERESTING I HAD A GREAT TIME",
+    "image": "student_images/AIK25B21A4255.jpg"
+  },
+  {
+    "name": "Rekhapalli.satya murali durga",
+    "roll_number": "AIK25B21A45C3",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Bootcamp is very excited and coding also very  important and enjoy full",
+    "image": "student_images/AIK25B21A45C3.jpg"
+  },
+  {
+    "name": "Ramisetti vinay",
+    "roll_number": "AIK25B21A4524",
+    "branch": "AI&DS",
+    "rating": 5,
+    "review": "Its good experience actually and iam learn a new thing how to create a QR code with phone contact",
+    "image": "student_images/AIK25B21A4524.jpg"
+  },
+  {
+    "name": "THUPATI PAVAN VENKAT",
+    "roll_number": "AIK25B21A4652",
+    "branch": "csc",
+    "rating": 3,
+    "review": "Average",
+    "image": "student_images/AIK25B21A4652.jpg"
+  },
+  {
+    "name": "B.Bala Venkata Sai Pavan Sri Ram",
+    "roll_number": "AIK25B21A4475",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "it is very useful to our future",
+    "image": "student_images/AIK25B21A4475.jpg"
+  },
+  {
+    "name": "Kusuma Kumari Bonda",
+    "roll_number": "AIK25B21A4664",
+    "branch": "CYBER SECURITY",
+    "rating": 3,
+    "review": "I have learned  some AI  tools and I have better experience of participating in this bootcamp",
+    "image": "student_images/AIK25B21A4664.jpg"
+  },
+  {
+    "name": "NNARRA YASHODA KRISHNA",
+    "roll_number": "AIK25B21A4654",
+    "branch": "Csc",
+    "rating": 3,
+    "review": "Some task are finish",
+    "image": "student_images/AIK25B21A4654.jpg"
+  },
+  {
+    "name": "CHIKKALA SAI RISHIITHA",
+    "roll_number": "AIK25B21A4260",
+    "branch": "CSMD2",
+    "rating": 4,
+    "review": "we learned new things .But we expected more than this",
+    "image": "student_images/AIK25B21A4260.jpg"
+  },
+  {
+    "name": "SURA KUMAR VENKATESWARLU",
+    "roll_number": "AIK25B21A4655",
+    "branch": "CSE( CYBERSECURITY )",
+    "rating": 4,
+    "review": "This bootcamp is very usefull and good experience to us",
+    "image": "student_images/AIK25B21A4655.jpg"
+  },
+  {
+    "name": "Kuna. Triveni",
+    "roll_number": "AIK25B21A42F1",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "we learned new things but we expected more than this",
+    "image": "student_images/AIK25B21A42F1.jpg"
+  },
+  {
+    "name": "charan teja",
+    "roll_number": "AIK25B21A4274",
+    "branch": "csm",
+    "rating": 3,
+    "review": "good",
+    "image": "student_images/AIK25B21A4274.jpg"
+  },
+  {
+    "name": "K. Tejasri",
+    "roll_number": "AIK25B21A45C5",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Yes",
+    "image": "student_images/AIK25B21A45C5.jpg"
+  },
+  {
+    "name": "raghu ram jammula",
+    "roll_number": "AIK256Q1A4235",
+    "branch": "csm",
+    "rating": 4,
+    "review": "GOOD EXPERIENCE \nBUT WE EXPECTED MORE ABOUT CONCEPTS AND PROGRAMS",
+    "image": "student_images/AIK256Q1A4235.jpg"
+  },
+  {
+    "name": "MURAPAKA PAVAN VEERA SAI SANTHOSH",
+    "roll_number": "AIK25B21A4567",
+    "branch": "AID-D",
+    "rating": 5,
+    "review": "Easy learning linux comands and my creativite development skills",
+    "image": "student_images/AIK25B21A4567.jpg"
+  },
+  {
+    "name": "karaka jyotshna",
+    "roll_number": "AIK25B21A4363",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "overall experience was very good.As i have learnt many new things like creating my own song , system internals , creating my git hub profile  and many more",
+    "image": "student_images/AIK25B21A4363.jpg"
+  },
+  {
+    "name": "M.harika",
+    "roll_number": "AIK25B21A4493",
+    "branch": "csd",
+    "rating": 5,
+    "review": "ITS IS EXCELLENT, I LEARN SKILLS AND AI TOLLS",
+    "image": "student_images/AIK25B21A4493.jpg"
+  },
+  {
+    "name": "S.S.D.S.Dinesh",
+    "roll_number": "AIK25B21A4429",
+    "branch": "CSD-D",
+    "rating": 4,
+    "review": "KNOWING ABOUT NEW AI TOOLS WAS VERY GOOD AND GOOD EXPERIENCE",
+    "image": "student_images/AIK25B21A4429.jpg"
+  },
+  {
+    "name": "shanmuk vinay yaramalla",
+    "roll_number": "AIK25B21A4293",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "super expericene in boot camp",
+    "image": "student_images/AIK25B21A4293.jpg"
+  },
+  {
+    "name": "Sk Abdul Rehaman",
+    "roll_number": "AIK25B21A4466",
+    "branch": "CSD-H",
+    "rating": 4,
+    "review": "1.gain some knowledge which i dont know before through this bootcamp\n2.gain some knowledge about ai",
+    "image": "student_images/AIK25B21A4466.jpg"
+  },
+  {
+    "name": "GUDIVADA HEMANTH KUMAR",
+    "roll_number": "AIK25B21A4657",
+    "branch": "CSC(Cyber security )",
+    "rating": 4,
+    "review": "This bootcamp is very useful",
+    "image": "student_images/AIK25B21A4657.jpg"
+  },
+  {
+    "name": "Karthik Bonu",
+    "roll_number": "AIK25B21A4279",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good experience\n But expected more about concepts and programs",
+    "image": "student_images/AIK25B21A4279.jpg"
+  },
+  {
+    "name": "M. Rajeswari",
+    "roll_number": "AIK25B21A4526",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4526.jpg"
+  },
+  {
+    "name": "Mavuri Chirudepp Raju",
+    "roll_number": "AIK25B21A4250",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "It is so interesting .we can learn what is BOOTCAMP and we generated the QR code and create the website using GitHub etc... Thanks",
+    "image": "student_images/AIK25B21A4250.jpg"
+  },
+  {
+    "name": "Magupalli Sivaji",
+    "roll_number": "AIK25B21A4642",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "It was nice experience to Learn bootcamp",
+    "image": "student_images/AIK25B21A4642.jpg"
+  },
+  {
+    "name": "D.Aditya Sai",
+    "roll_number": "AIK25B21A4468",
+    "branch": "CSD-H",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4468.jpg"
+  },
+  {
+    "name": "Akula. siri",
+    "roll_number": "AIK25B21A4615",
+    "branch": "csc",
+    "rating": 4,
+    "review": "I learned lot of things which i don't know",
+    "image": "student_images/AIK25B21A4615.jpg"
+  },
+  {
+    "name": "A.srinivasarao",
+    "roll_number": "AIK25B21A4403",
+    "branch": "CSD-DS",
+    "rating": 3,
+    "review": "I was learned create songs and also learn some codes and sir voice is clear and explain in good",
+    "image": "student_images/AIK25B21A4403.jpg"
+  },
+  {
+    "name": "ASAPU NIHAL KRISHNA",
+    "roll_number": "AIK256Q1A4613",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "BETTER EXPERINCE FOR THE AI BOOTCAMP , OVER ALL IT WAS  BEST EXPERINCE FOR ME , THANK YOU KIET FOR THIS AMAZMING BOOTCAMP",
+    "image": "student_images/AIK256Q1A4613.jpg"
+  },
+  {
+    "name": "Avala Lakshmi Venkata Saiteja",
+    "roll_number": "AIK25B21A4212",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "this boot camp is very useful for   generated some QR codes using Ubuntu and Github and experience is very well",
+    "image": "student_images/AIK25B21A4212.jpg"
+  },
+  {
+    "name": "SAKA SRIRAM",
+    "roll_number": "AIK25B21A4653",
+    "branch": "CSC",
+    "rating": 3,
+    "review": "1. Boot camp is a new A1 software we have learned here",
+    "image": "student_images/AIK25B21A4653.jpg"
+  },
+  {
+    "name": "Siri Vennela Nagidi",
+    "roll_number": "AIK25B21A45A8",
+    "branch": "AID",
+    "rating": 4,
+    "review": "My overall experience with the best camp was very good and informative",
+    "image": "student_images/AIK25B21A45A8.jpg"
+  },
+  {
+    "name": "suhitha.kavuri",
+    "roll_number": "AIK25B21A42C7",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "EXPERIENCING MANY THINGS AND ENJOYED THROUGHOUT THE CAMP.",
+    "image": "student_images/AIK25B21A42C7.jpg"
+  },
+  {
+    "name": "Dunga prasanns",
+    "roll_number": "AIK25B21A4208",
+    "branch": "AI&ML",
+    "rating": 3,
+    "review": "A coding boot campprovides an intens  immersive and hands on learning experience that rapidly build in demand skills",
+    "image": "student_images/AIK25B21A4208.jpg"
+  },
+  {
+    "name": "CH.ABHISHEK",
+    "roll_number": "AIK25B21A4421",
+    "branch": "CSD-D",
+    "rating": 5,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4421.jpg"
+  },
+  {
+    "name": "Geetha Charan",
+    "roll_number": "AIK256Q1A4508",
+    "branch": "AID",
+    "rating": 5,
+    "review": "I learned how to install Linux in windows PowerShell and run basic commands to create file and open file using commands.\nQr code generation in Linux terminals and more other stuff",
+    "image": "student_images/AIK256Q1A4508.jpg"
+  },
+  {
+    "name": "Veerababu mummidi",
+    "roll_number": "AIK256Q1A4505",
+    "branch": "AIDS",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4505.jpg"
+  },
+  {
+    "name": "Jalluri prashanthi",
+    "roll_number": "AIK25B21A4637",
+    "branch": "Csc",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4637.jpg"
+  },
+  {
+    "name": "SETTI V V DURGA PRASAD",
+    "roll_number": "AIK25B21A4321",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "this bootcamp nice we learn lot of things",
+    "image": "student_images/AIK25B21A4321.jpg"
+  },
+  {
+    "name": "Gali Tarun sai",
+    "roll_number": "AIK25B21A4349",
+    "branch": "CAI-H",
+    "rating": 4,
+    "review": "it is very useful",
+    "image": "student_images/AIK25B21A4349.jpg"
+  },
+  {
+    "name": "T.VISHNU",
+    "roll_number": "AIK25B21A4645",
+    "branch": "CSE",
+    "rating": 4,
+    "review": "1.we have learned some knowledge from this boot camp.\n2.we learned various  information which we don't know we learned here.",
+    "image": "student_images/AIK25B21A4645.jpg"
+  },
+  {
+    "name": "Ramya malla",
+    "roll_number": "AIK25B21A4473",
+    "branch": "Csd",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4473.jpg"
+  },
+  {
+    "name": "BHEEMUNI GANAVARDHAN RAO",
+    "roll_number": "AIK256Q1A4401",
+    "branch": "CSD D",
+    "rating": 3,
+    "review": "I LEARNED ABOUT THAT HOW CAN WE UTILISE MORE EFFECTIVELY THROUGH THE AI TOOLS TO MAKE OR GENERATE OR CREATE NEW VIDEOS ,SONGS AND ILEARN NEW WORDS IN C-CODE",
+    "image": "student_images/AIK256Q1A4401.jpg"
+  },
+  {
+    "name": "B sravani",
+    "roll_number": "AIK25B21A4242",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "We learned new things but we expected more than this",
+    "image": "student_images/AIK25B21A4242.jpg"
+  },
+  {
+    "name": "ASWINI RATNAM BOMMISETTI",
+    "roll_number": "AIK256Q1A4403",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "Its well and good .The staff was friendly and helpful .",
+    "image": "student_images/AIK256Q1A4403.jpg"
+  },
+  {
+    "name": "Saiteja T",
+    "roll_number": "AIK25B21A42D7",
+    "branch": "CSM H",
+    "rating": 3,
+    "review": "I will learn some knowledge",
+    "image": "student_images/AIK25B21A42D7.jpg"
+  },
+  {
+    "name": "SANNAMURI VENKATA NAGA KALYAN",
+    "roll_number": "AIK256Q1A4241",
+    "branch": "CSM-HS",
+    "rating": 3,
+    "review": "good experience",
+    "image": "student_images/AIK256Q1A4241.jpg"
+  },
+  {
+    "name": "k charan teja",
+    "roll_number": "AIK25B21A4544",
+    "branch": "AID",
+    "rating": 4,
+    "review": "GOOD EXPERICENCE",
+    "image": "student_images/AIK25B21A4544.jpg"
+  },
+  {
+    "name": "Jessi kollabathula",
+    "roll_number": "AIK25B21A42C9",
+    "branch": "CSM-HS",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A42C9.jpg"
+  },
+  {
+    "name": "Rongali jyotsna",
+    "roll_number": "AIK25B21A42F7",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25B21A42F7.jpg"
+  },
+  {
+    "name": "Doddipatla Malathi",
+    "roll_number": "AIK25B21A4413",
+    "branch": "CSD-DS",
+    "rating": 5,
+    "review": "very good and excellent",
+    "image": "student_images/AIK25B21A4413.jpg"
+  },
+  {
+    "name": "SAHITHI PRIYA PULIPATI",
+    "roll_number": "AIK25B21A42C6",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A42C6.jpg"
+  },
+  {
+    "name": "p. charan kumar",
+    "roll_number": "AIK25B21A4236",
+    "branch": "CSM-D",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4236.jpg"
+  },
+  {
+    "name": "Madu Venkata Krishna",
+    "roll_number": "AIK25B21A4662",
+    "branch": "CSC-H",
+    "rating": 4,
+    "review": "GOOD EXCELLENT",
+    "image": "student_images/AIK25B21A4662.jpg"
+  },
+  {
+    "name": "Thodeti Daveedu",
+    "roll_number": "AIK25B21A4335",
+    "branch": "Cai",
+    "rating": 3,
+    "review": "Average",
+    "image": "student_images/AIK25B21A4335.jpg"
+  },
+  {
+    "name": "S.HARSHINI",
+    "roll_number": "AIK25B21A4540",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It's such a good &interesting experience with AI karyashala.To learn Qr code,linux commands and creating video .the coordinators are so good",
+    "image": "student_images/AIK25B21A4540.jpg"
+  },
+  {
+    "name": "D.HARSHA VARDHAN",
+    "roll_number": "AIK256Q1A4306",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK256Q1A4306.jpg"
+  },
+  {
+    "name": "Sarakanam Lokanadh Venkatesh",
+    "roll_number": "AIK25B21A4234",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Nice",
+    "image": "student_images/AIK25B21A4234.jpg"
+  },
+  {
+    "name": "PIDUGU CHODAN SRI VENKATA VARDHAN",
+    "roll_number": "AIK25B21A4606",
+    "branch": "CSC-CYBER",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4606.jpg"
+  },
+  {
+    "name": "Kodukulapudi Hema vamsi",
+    "roll_number": "AIK25B21A4523",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4523.jpg"
+  },
+  {
+    "name": "Manepalli Rajasekhara Aditya",
+    "roll_number": "AIK25B21A4442",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4442.jpg"
+  },
+  {
+    "name": "Kesavadasu moulika",
+    "roll_number": "AIK25B21A4553",
+    "branch": "Aids",
+    "rating": 3,
+    "review": "This boot camp is very useful",
+    "image": "student_images/AIK25B21A4553.jpg"
+  },
+  {
+    "name": "AYINAVILLI VEERA ANANATHALAKSHMI",
+    "roll_number": "AIK25B21A4217",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Learn to new things like QR code ,create song",
+    "image": "student_images/AIK25B21A4217.jpg"
+  },
+  {
+    "name": "kapu sai santosh kumar",
+    "roll_number": "AIK25B21A4209",
+    "branch": "CSE(AIMl)",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4209.jpg"
+  },
+  {
+    "name": "saladi seetha mahalakshmi",
+    "roll_number": "AIK25B21A4669",
+    "branch": "CSE(cyber security)",
+    "rating": 5,
+    "review": "A very good experience  and we studied a lot",
+    "image": "student_images/AIK25B21A4669.jpg"
+  },
+  {
+    "name": "SAMUEL PACHIPALA",
+    "roll_number": "AIK25B21A4277",
+    "branch": "AIML(CSM)",
+    "rating": 4,
+    "review": "EXCELLENT",
+    "image": "student_images/AIK25B21A4277.jpg"
+  },
+  {
+    "name": "sadi veerendra",
+    "roll_number": "AIK25B21A4568",
+    "branch": "AID DS",
+    "rating": 5,
+    "review": "good experience",
+    "image": "student_images/AIK25B21A4568.jpg"
+  },
+  {
+    "name": "gundubilli joshua rakshit",
+    "roll_number": "AIK25B21A4206",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "It is very usefully and i learned a lot",
+    "image": "student_images/AIK25B21A4206.jpg"
+  },
+  {
+    "name": "Gudala havinash",
+    "roll_number": "AIK25B21A4438",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "Concepts understandble",
+    "image": "student_images/AIK25B21A4438.jpg"
+  },
+  {
+    "name": "INTI.SUBBARAO",
+    "roll_number": "AIK25B21A4515",
+    "branch": "AID-D",
+    "rating": 4,
+    "review": "Super program",
+    "image": "student_images/AIK25B21A4515.jpg"
+  },
+  {
+    "name": "Varada Jaya sivasri",
+    "roll_number": "AIK25B21A4557",
+    "branch": "AID-DS",
+    "rating": 5,
+    "review": "we learned a lot about computers and uses of ai tools",
+    "image": "student_images/AIK25B21A4557.jpg"
+  },
+  {
+    "name": "M.T.V.VINEEL",
+    "roll_number": "AIK25B21A4407",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "I had improved many skills in this bootcamp and easy to understand the concepts",
+    "image": "student_images/AIK25B21A4407.jpg"
+  },
+  {
+    "name": "Bonthu sandeep",
+    "roll_number": "AIK256Q1A4310",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Nice",
+    "image": "student_images/AIK256Q1A4310.jpg"
+  },
+  {
+    "name": "TELUGU LAKSHMI SAHITHI",
+    "roll_number": "AIK25B21A4629",
+    "branch": "CSC DS",
+    "rating": 4,
+    "review": "different experience",
+    "image": "student_images/AIK25B21A4629.jpg"
+  },
+  {
+    "name": "G.Arjun Ganesh",
+    "roll_number": "AIK25B21A4235",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Yes good",
+    "image": "student_images/AIK25B21A4235.jpg"
+  },
+  {
+    "name": "NALLABELLI SUDHEER",
+    "roll_number": "AIK25B21A4546",
+    "branch": "AID-D",
+    "rating": 4,
+    "review": "This is my first bootcamp from this we learn a lot about AI tools \nin this we use AI tools to generate QR code, video generation, own website building, github profile creating and many things\nfinally, this Bootcamp sessions are very useful to us",
+    "image": "student_images/AIK25B21A4546.jpg"
+  },
+  {
+    "name": "Perumalla Rama durga naga pavan",
+    "roll_number": "AIK25B21A4416",
+    "branch": "Csd",
+    "rating": 2,
+    "review": "Concepts are nice but \nWay of teaching is not clear to understand",
+    "image": "student_images/AIK25B21A4416.jpg"
+  },
+  {
+    "name": "Javvadula archana",
+    "roll_number": "AIK256Q1A4407",
+    "branch": "CSD",
+    "rating": 3,
+    "review": "1St day class was really clumsy \n2Nd day class is better than 1st day",
+    "image": "student_images/AIK256Q1A4407.jpg"
+  },
+  {
+    "name": "NANDIKOLLA VEERA VENKATA SAI SUBRAHMANYAM",
+    "roll_number": "AIK25B21A4443",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "IT WAS NICE EXPERIENCE\nI HAD LEARN SOME NEW THINGS ABOUT AI TOOLS",
+    "image": "student_images/AIK25B21A4443.jpg"
+  },
+  {
+    "name": "H4CK3R",
+    "roll_number": "AIKroll the dice to get number",
+    "branch": "german",
+    "rating": 4,
+    "review": "no experience, but got wifi for downloading games",
+    "image": "student_images/AIKroll the dice to get number.jpg"
+  },
+  {
+    "name": "ANJALI PAVITHRA EDURU",
+    "roll_number": "AIK25B21A4478",
+    "branch": "CSD",
+    "rating": 3,
+    "review": "good, i hope it is useful for our future.",
+    "image": "student_images/AIK25B21A4478.jpg"
+  },
+  {
+    "name": "P.Dileswar",
+    "roll_number": "AIK25B21A4454",
+    "branch": "CSD-D",
+    "rating": 3,
+    "review": "feels better we expected",
+    "image": "student_images/AIK25B21A4454.jpg"
+  },
+  {
+    "name": "Jatprlou myhtili",
+    "roll_number": "AIK25B21A4313",
+    "branch": "Cai",
+    "rating": 3,
+    "review": "Best experience",
+    "image": "student_images/AIK25B21A4313.jpg"
+  },
+  {
+    "name": "anil kumar",
+    "roll_number": "AIK256Q1A4511",
+    "branch": "data science",
+    "rating": 3,
+    "review": "poor",
+    "image": "student_images/AIK256Q1A4511.jpg"
+  },
+  {
+    "name": "anishetty manohar",
+    "roll_number": "AIK25B21A4213",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "YES,I LIKE IT AND WE LEARN ABOUT AI TOOLS,QR CODE",
+    "image": "student_images/AIK25B21A4213.jpg"
+  },
+  {
+    "name": "Koppisetti Phaneendra Jaswanth",
+    "roll_number": "AIK25B21A4329",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "How to build a qr code explain in easy to understand and explain more",
+    "image": "student_images/AIK25B21A4329.jpg"
+  },
+  {
+    "name": "USA JAGADEESH HARI CHANDRA PRASAD",
+    "roll_number": "AIK256Q1A4218",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Very good",
+    "image": "student_images/AIK256Q1A4218.jpg"
+  },
+  {
+    "name": "Navadeep",
+    "roll_number": "AIK25B21A4408",
+    "branch": "CSD - DS",
+    "rating": 3,
+    "review": "3 - Could be better if pre installation works are done far before. \nMeeting video and audio are not comfortable for the students.",
+    "image": "student_images/AIK25B21A4408.jpg"
+  },
+  {
+    "name": "PENKE LAKSHMI SAI KALYAN",
+    "roll_number": "AIK25B21A4254",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4254.jpg"
+  },
+  {
+    "name": "B.pavan sandeep",
+    "roll_number": "AIK25B21A4512",
+    "branch": "AID",
+    "rating": 4,
+    "review": "LEARNING A QR CODE GENERATE AND WEB SITE DEVELOP....",
+    "image": "student_images/AIK25B21A4512.jpg"
+  },
+  {
+    "name": "viyyapu.venkata satya avinashyadav",
+    "roll_number": "AIK25B21A4618",
+    "branch": "csc",
+    "rating": 5,
+    "review": "it is very nice and usefull.",
+    "image": "student_images/AIK25B21A4618.jpg"
+  },
+  {
+    "name": "B. Sindhura devi",
+    "roll_number": "AIK25B21A4504",
+    "branch": "AID",
+    "rating": 5,
+    "review": "we have done many activities and learned about some AI tools",
+    "image": "student_images/AIK25B21A4504.jpg"
+  },
+  {
+    "name": "G.Sasi",
+    "roll_number": "AIK25B21A4516",
+    "branch": "AID (DS)",
+    "rating": 3,
+    "review": "It’s was amazing",
+    "image": "student_images/AIK25B21A4516.jpg"
+  },
+  {
+    "name": "Rayideva maruthi veera rama Krishna",
+    "roll_number": "AIK25B21A4415",
+    "branch": "Csd",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4415.jpg"
+  },
+  {
+    "name": "Karri . Indhu",
+    "roll_number": "AIK25B21A4542",
+    "branch": "AID",
+    "rating": 5,
+    "review": "we learned a lot about computers and AI tools",
+    "image": "student_images/AIK25B21A4542.jpg"
+  },
+  {
+    "name": "Matta jaswanth",
+    "roll_number": "AIK25B21A4334",
+    "branch": "Cai",
+    "rating": 5,
+    "review": ".",
+    "image": "student_images/AIK25B21A4334.jpg"
+  },
+  {
+    "name": "KOWJU CHARAN TEJA",
+    "roll_number": "AIK25B21A4272",
+    "branch": "CSE (AIML)",
+    "rating": 4,
+    "review": "👍 Nice",
+    "image": "student_images/AIK25B21A4272.jpg"
+  },
+  {
+    "name": "Indla Anand kumar",
+    "roll_number": "AIK25B21A4636",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "it is and good",
+    "image": "student_images/AIK25B21A4636.jpg"
+  },
+  {
+    "name": "PULAGALA SAI KRISHNA",
+    "roll_number": "AIK25B21A4519",
+    "branch": "AID",
+    "rating": 4,
+    "review": "SUPER",
+    "image": "student_images/AIK25B21A4519.jpg"
+  },
+  {
+    "name": "K.Akhil",
+    "roll_number": "AIK25B21A4575",
+    "branch": "AIDH",
+    "rating": 4,
+    "review": "WE ENJOYED THE BOOTCAMP",
+    "image": "student_images/AIK25B21A4575.jpg"
+  },
+  {
+    "name": "VASAMSETTI VENKATA SATYA REVANTH",
+    "roll_number": "AIK25B21A4401",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "Nice experience",
+    "image": "student_images/AIK25B21A4401.jpg"
+  },
+  {
+    "name": "ganesh",
+    "roll_number": "AIK25B21A4609",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "VERY GOOD",
+    "image": "student_images/AIK25B21A4609.jpg"
+  },
+  {
+    "name": "KADIYAPU NAGA NIHANTH",
+    "roll_number": "AIK25B21A4555",
+    "branch": "AID-D",
+    "rating": 4,
+    "review": "*THIS IS MY FIRST EXPERIENCE IN  BOOT CAMP.\n*I LEARNT MORE ABOUT AI TOOLS AND IT'S VERY USEFUL FOR ME.\n*I PLAYED 2048 GAME,GENERATED A SONG BY USING SUNO.COM,CREATED A QR CODE ,CREATED MY GIT HUB PROFILE,GENERATED AN AI VIDEO.\n*I LEARENT ABOUT FUNDAMENTALS OF COMPUTING AND FUNDAMENTALS OF C PROGRAMMING.",
+    "image": "student_images/AIK25B21A4555.jpg"
+  },
+  {
+    "name": "BURADAPATI KARTHIKEYE",
+    "roll_number": "AIK25B21A45B6",
+    "branch": "AIDH",
+    "rating": 3,
+    "review": "Average",
+    "image": "student_images/AIK25B21A45B6.jpg"
+  },
+  {
+    "name": "Pagadala saiteja",
+    "roll_number": "AIK25B21A4430",
+    "branch": "CSD",
+    "rating": 3,
+    "review": "*Bootcamp is a very usefull program",
+    "image": "student_images/AIK25B21A4430.jpg"
+  },
+  {
+    "name": "G. Arjun Ganesh",
+    "roll_number": "AIK25B21A4235",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4235.jpg"
+  },
+  {
+    "name": "AKETI SRAVANA SURYA MANI SRI GANESH",
+    "roll_number": "AIK25B21A4548",
+    "branch": "AID",
+    "rating": 4,
+    "review": "I really learn new skill ,enjoy the teaching skills of the mentors",
+    "image": "student_images/AIK25B21A4548.jpg"
+  },
+  {
+    "name": "V.Lakshmi Santhosh",
+    "roll_number": "AIK25B21A4339",
+    "branch": "CAI-D",
+    "rating": 5,
+    "review": "Nice excellent",
+    "image": "student_images/AIK25B21A4339.jpg"
+  },
+  {
+    "name": "K Gowri Rama Chandana",
+    "roll_number": "AIK25B21A4529",
+    "branch": "AID-DS",
+    "rating": 4,
+    "review": "NICE",
+    "image": "student_images/AIK25B21A4529.jpg"
+  },
+  {
+    "name": "Thirumanadam.Yashwanth lakshmi sri sai",
+    "roll_number": "AIK256Q1A4511",
+    "branch": "AID(Artificial intellegence & data science)",
+    "rating": 5,
+    "review": "*The ai bootcamp was an incredible intensive experience that i had learned theoretical learning in two days.\n*computer vision gave me the confidence to transition into a new career.",
+    "image": "student_images/AIK256Q1A4511.jpg"
+  },
+  {
+    "name": "vijay",
+    "roll_number": "AIK25B21A4229",
+    "branch": "CSM-D1",
+    "rating": 3,
+    "review": "OK BUT MUST BE BETTER",
+    "image": "student_images/AIK25B21A4229.jpg"
+  },
+  {
+    "name": "ch  jaswanth kumar",
+    "roll_number": "AIK25B21A4273",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "GOOD BOOTCAMP",
+    "image": "student_images/AIK25B21A4273.jpg"
+  },
+  {
+    "name": "Karri Deekshitha",
+    "roll_number": "AIK25B21A4670",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "I have experienced a real life team work and improve coding skills",
+    "image": "student_images/AIK25B21A4670.jpg"
+  },
+  {
+    "name": "Harsha manohar",
+    "roll_number": "AIK25B21A4258",
+    "branch": "AIML",
+    "rating": 3,
+    "review": "better,but not better",
+    "image": "student_images/AIK25B21A4258.jpg"
+  },
+  {
+    "name": "tatipaka mukesh",
+    "roll_number": "AIK25B21A4624",
+    "branch": "CSC",
+    "rating": 5,
+    "review": "This bootcamp is very usefull to my future , i  learned so many things by bootcamp , my overall experience was very good",
+    "image": "student_images/AIK25B21A4624.jpg"
+  },
+  {
+    "name": "Manni Sri Ram Satya Vinay",
+    "roll_number": "AIK256Q1A4617",
+    "branch": "CSC",
+    "rating": 3,
+    "review": "Meeting audio are not clear to understand",
+    "image": "student_images/AIK256Q1A4617.jpg"
+  },
+  {
+    "name": "Karri Veera venkata satya narayana Reddy",
+    "roll_number": "AIK256Q1A4608",
+    "branch": "CSC",
+    "rating": 3,
+    "review": "3 - Could be better if pre installation works are done far before. \nMeeting video are not comfortable for the students.",
+    "image": "student_images/AIK256Q1A4608.jpg"
+  },
+  {
+    "name": "NAIDU JAGADHISH",
+    "roll_number": "AIK25B21A4251",
+    "branch": "CSM-D1",
+    "rating": 4,
+    "review": "I like the bootcamp very much\nAnd the way of your explanation is very good sir like tasks etc",
+    "image": "student_images/AIK25B21A4251.jpg"
+  },
+  {
+    "name": "KALAGA SIVA BALAJI",
+    "roll_number": "AIK256Q1A4207",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Expected something more",
+    "image": "student_images/AIK256Q1A4207.jpg"
+  },
+  {
+    "name": "killada srinu",
+    "roll_number": "AIK25B21A4211",
+    "branch": "CSM D1",
+    "rating": 4,
+    "review": "ok",
+    "image": "student_images/AIK25B21A4211.jpg"
+  },
+  {
+    "name": "Kandregula Jyothi pavan",
+    "roll_number": "AIK25B21A4436",
+    "branch": "CSD",
+    "rating": 2,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4436.jpg"
+  },
+  {
+    "name": "madiki nanaji",
+    "roll_number": "AIK256Q1A4210",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "OK",
+    "image": "student_images/AIK256Q1A4210.jpg"
+  },
+  {
+    "name": "SOMISETTI DEVICHARAN",
+    "roll_number": "AIK256Q1A4209",
+    "branch": "CSE(AI&ML)",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4209.jpg"
+  },
+  {
+    "name": "P. Amarendra reddy",
+    "roll_number": "AIK25B21A4446",
+    "branch": "CSD-D",
+    "rating": 4,
+    "review": "Very good",
+    "image": "student_images/AIK25B21A4446.jpg"
+  },
+  {
+    "name": "J.Harsha",
+    "roll_number": "AIK256Q1A4520",
+    "branch": "AID",
+    "rating": 3,
+    "review": "My overall experience with the boot camp was very good. The sessions were informative and well-structured, and I learned many new concepts and practical skills. The trainers were supportive and explained topics clearly",
+    "image": "student_images/AIK256Q1A4520.jpg"
+  },
+  {
+    "name": "Venturi Moses",
+    "roll_number": "AIK25B21A4547",
+    "branch": "AID",
+    "rating": 4,
+    "review": "I really learn new skills from this bootcamp",
+    "image": "student_images/AIK25B21A4547.jpg"
+  },
+  {
+    "name": "G.V.S.S MANIKANTA",
+    "roll_number": "AIK25B21A4266",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "great experience for students",
+    "image": "student_images/AIK25B21A4266.jpg"
+  },
+  {
+    "name": "S.GANGADHAR",
+    "roll_number": "AIK256Q1A4503",
+    "branch": "AIDS",
+    "rating": 5,
+    "review": "VERY GOOD",
+    "image": "student_images/AIK256Q1A4503.jpg"
+  },
+  {
+    "name": "KOYYA SIMHADRI",
+    "roll_number": "AIK25B21A4511",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Learning A QR code generate",
+    "image": "student_images/AIK25B21A4511.jpg"
+  },
+  {
+    "name": "VEMU SRI CHARAN",
+    "roll_number": "AIK25B21A4225",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "we have learned new things",
+    "image": "student_images/AIK25B21A4225.jpg"
+  },
+  {
+    "name": "P VARUN SAMPATH",
+    "roll_number": "AIK25B21A4534",
+    "branch": "AID.D",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4534.jpg"
+  },
+  {
+    "name": "BATTULA SRAVAN KUMAR",
+    "roll_number": "AIK25B21A4501",
+    "branch": "AID",
+    "rating": 5,
+    "review": "I really hadd a best experience by participating in this AI bootcamp and i was very happy for that my college has been taking this type of  activities to encouraging the young minds",
+    "image": "student_images/AIK25B21A4501.jpg"
+  },
+  {
+    "name": "vittanala sairam",
+    "roll_number": "AIK25B21A4259",
+    "branch": "CSM D2",
+    "rating": 4,
+    "review": "I MORE intreast to learn this",
+    "image": "student_images/AIK25B21A4259.jpg"
+  },
+  {
+    "name": "p.shyambabu",
+    "roll_number": "AIK25B21A4228",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "NICE EXPERIENCE OVERALL WITH THE BOOTCAMP",
+    "image": "student_images/AIK25B21A4228.jpg"
+  },
+  {
+    "name": "PIRADI NAGAPAVANESWAR",
+    "roll_number": "AIK25B21A4216",
+    "branch": "CSM_D1",
+    "rating": 3,
+    "review": "It was good but...the google meet classes were very bad and difficult to understand...it will be better if we have deep explanation",
+    "image": "student_images/AIK25B21A4216.jpg"
+  },
+  {
+    "name": "G. Lohith Sai Kumar",
+    "roll_number": "AIK256Q1A4201",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4201.jpg"
+  },
+  {
+    "name": "P Aswin",
+    "roll_number": "AIK256Q1A4204",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "BOOTCAMP BOOTCAMP BOOTCAMP",
+    "image": "student_images/AIK256Q1A4204.jpg"
+  },
+  {
+    "name": "addala ayyappa",
+    "roll_number": "AIK25B21A4314",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "KARYASHALA STUDENTS WAS GOOD",
+    "image": "student_images/AIK25B21A4314.jpg"
+  },
+  {
+    "name": "n hiranya naga manikanta",
+    "roll_number": "AIK25B21A4617",
+    "branch": "CSC",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25B21A4617.jpg"
+  },
+  {
+    "name": "Chowdalla venkata Tataji",
+    "roll_number": "AIK25B21A4261",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4261.jpg"
+  },
+  {
+    "name": "K teja",
+    "roll_number": "AIK25B21A4535",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Excellent",
+    "image": "student_images/AIK25B21A4535.jpg"
+  },
+  {
+    "name": "TOLATI LAKSHMAN",
+    "roll_number": "AIK25B21A4231",
+    "branch": "CSM D1",
+    "rating": 5,
+    "review": "Now i am so interested in coding",
+    "image": "student_images/AIK25B21A4231.jpg"
+  },
+  {
+    "name": "JAVVADULA ARCHANA",
+    "roll_number": "AIK256Q1A4407",
+    "branch": "CSD",
+    "rating": 3,
+    "review": "2Nd day is better than 1st day of the bootcamp \n1St was fully clumsy",
+    "image": "student_images/AIK256Q1A4407.jpg"
+  },
+  {
+    "name": "Sidda Bala Gangadhar",
+    "roll_number": "AIK256Q1A4213",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "The concept was good but the execution was poor \nAnd the Google meet classes was not good",
+    "image": "student_images/AIK256Q1A4213.jpg"
+  },
+  {
+    "name": "Vuda .Veera govinda",
+    "roll_number": "AIK256Q1A4501",
+    "branch": "Aid-ds",
+    "rating": 5,
+    "review": "Since I am an AI, I don't \"experience\" a bootcamp in the way a human student does, but I find the structured environment incredibly effective for processing complex information. I enjoy the challenge of breaking down technical concepts into clear, actionable insights while keeping pace with a rigorous curriculum.",
+    "image": "student_images/AIK256Q1A4501.jpg"
+  },
+  {
+    "name": "MUDDANA SIVA LOKESH",
+    "roll_number": "AIK256Q1A4206",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "It very useful i larned coding",
+    "image": "student_images/AIK256Q1A4206.jpg"
+  },
+  {
+    "name": "m.vamsi",
+    "roll_number": "AIK25B21A4347",
+    "branch": "CAIHS",
+    "rating": 4,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4347.jpg"
+  },
+  {
+    "name": "r.ramcharan",
+    "roll_number": "AIK256Q1A4208",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "GOOGLEMEET IS VERY BAD VOICE IS DEVISIBLE AND NOT HAPPY THIS CAMP NOT REPEAT THIS CAMP AGAIN",
+    "image": "student_images/AIK256Q1A4208.jpg"
+  },
+  {
+    "name": "p. durga prasad",
+    "roll_number": "AIK25B21A4309",
+    "branch": "CAI",
+    "rating": 2,
+    "review": "AI karyashala students was good teach",
+    "image": "student_images/AIK25B21A4309.jpg"
+  },
+  {
+    "name": "ABOTHULA SIVA",
+    "roll_number": "AIK25B21A4338",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "GOOD and i have learn to more information for this camp",
+    "image": "student_images/AIK25B21A4338.jpg"
+  },
+  {
+    "name": "Ch Poorna Teja",
+    "roll_number": "AIK256Q1A4214",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "the experience is ok but time management was not good",
+    "image": "student_images/AIK256Q1A4214.jpg"
+  },
+  {
+    "name": "K.A.S.S Varahala Sai",
+    "roll_number": "AIK256Q1A4304",
+    "branch": "CAI-DS",
+    "rating": 3,
+    "review": "I understood",
+    "image": "student_images/AIK256Q1A4304.jpg"
+  },
+  {
+    "name": "P.Hemanth Sai",
+    "roll_number": "AIK25B21A45E0",
+    "branch": "ARITIFICIAL INTELLGENCE AND DATA SCIENCE",
+    "rating": 3,
+    "review": "it is wonderful.",
+    "image": "student_images/AIK25B21A45E0.jpg"
+  },
+  {
+    "name": "SARELLA SYAM MANOJ",
+    "roll_number": "AIK25B21A4536",
+    "branch": "AID",
+    "rating": 2,
+    "review": "Well, I cannot explain Guys",
+    "image": "student_images/AIK25B21A4536.jpg"
+  },
+  {
+    "name": "Vaibhav",
+    "roll_number": "AIK25B21A4616",
+    "branch": "Cyber",
+    "rating": 5,
+    "review": "It's our 1st time in bootcamp.",
+    "image": "student_images/AIK25B21A4616.jpg"
+  },
+  {
+    "name": "Amudala sakshinadh",
+    "roll_number": "AIK25B21A4270",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good experience",
+    "image": "student_images/AIK25B21A4270.jpg"
+  },
+  {
+    "name": "Raju",
+    "roll_number": "AIK25B21A4256",
+    "branch": "AIML",
+    "rating": 3,
+    "review": "good,  but not satisfied",
+    "image": "student_images/AIK25B21A4256.jpg"
+  },
+  {
+    "name": "chetan",
+    "roll_number": "AIK25B21A4602",
+    "branch": "CSC",
+    "rating": 3,
+    "review": "good",
+    "image": "student_images/AIK25B21A4602.jpg"
+  },
+  {
+    "name": "VINOD",
+    "roll_number": "AIK25B21A4527",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Nice experience",
+    "image": "student_images/AIK25B21A4527.jpg"
+  },
+  {
+    "name": "K kiran kumar",
+    "roll_number": "AIK25B21A4219",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Ok good I got good experience in windows and Linux",
+    "image": "student_images/AIK25B21A4219.jpg"
+  },
+  {
+    "name": "mallela peddiraju",
+    "roll_number": "AIK25B21A4220",
+    "branch": "CSM(AI&ML)",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4220.jpg"
+  },
+  {
+    "name": "Vinay",
+    "roll_number": "AIK25B21A4426",
+    "branch": "C.S.D",
+    "rating": 2,
+    "review": "Bad",
+    "image": "student_images/AIK25B21A4426.jpg"
+  },
+  {
+    "name": "Pavan Kumar",
+    "roll_number": "AIK256Q1A4609",
+    "branch": "CscD",
+    "rating": 5,
+    "review": "Gaining knowledge about how ai tools work",
+    "image": "student_images/AIK256Q1A4609.jpg"
+  },
+  {
+    "name": "Gunuru Shri Satya Sai Likeeth",
+    "roll_number": "AIK25B21A4214",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "It was a great experience and I had gained some basic knowledge about many websites.And the staff was very friendly.They explained everything in a simple way and ofcourse we had spent a great time in boot camp",
+    "image": "student_images/AIK25B21A4214.jpg"
+  },
+  {
+    "name": "TEJA MACHAVARUPU",
+    "roll_number": "AIK25B21A45A9",
+    "branch": "ARTIFICIAL INTELLIGENCE AND DATA SCIENCE",
+    "rating": 5,
+    "review": "1.I REALLY THANK TO KIET FOR GIVING INCREDIBLE OPPURTUNITY... \nCOMING TO BOOTCAMP ITS TOO HELPFUL MAY THIS CHANCE COME AGAIN TO KIET",
+    "image": "student_images/AIK25B21A45A9.jpg"
+  },
+  {
+    "name": "Mutyala Veera Venkata Satya Sai Krishna",
+    "roll_number": "AIK25B21A4680",
+    "branch": "CSC-D",
+    "rating": 2,
+    "review": "Ok",
+    "image": "student_images/AIK25B21A4680.jpg"
+  },
+  {
+    "name": "Thangella Vasu",
+    "roll_number": "AIK25B21A4269",
+    "branch": "CSM (AIML)",
+    "rating": 4,
+    "review": "It was a great experience",
+    "image": "student_images/AIK25B21A4269.jpg"
+  },
+  {
+    "name": "NALLAJARLA MANOHAR NAGA SANKAR",
+    "roll_number": "AIK25B21A4586",
+    "branch": "AIDS",
+    "rating": 4,
+    "review": "Overall experience was very good I learned about QR code generator and Github usages etc.",
+    "image": "student_images/AIK25B21A4586.jpg"
+  },
+  {
+    "name": "Pasupuleti Syam siri",
+    "roll_number": "AIK25B21A4550",
+    "branch": "AID",
+    "rating": 3,
+    "review": "i am learn imp topics about system, how to genaraye qr, ..... etc",
+    "image": "student_images/AIK25B21A4550.jpg"
+  },
+  {
+    "name": "sandaka gnana deep sai",
+    "roll_number": "AIK256Q1A4222",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "i am happy with this bootcamp because of i learn the how to do the QR code with code ,github and ubuntu and i think it was used for job also",
+    "image": "student_images/AIK256Q1A4222.jpg"
+  },
+  {
+    "name": "mohith sa ranga rao",
+    "roll_number": "AIK25B21A4303",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Gained Good experience in using github and ubuntu commands\nlearned how to generate QR codes using commands",
+    "image": "student_images/AIK25B21A4303.jpg"
+  },
+  {
+    "name": "NAGIDI SANJAY",
+    "roll_number": "AIK25B21A4265",
+    "branch": "AIML",
+    "rating": 5,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4265.jpg"
+  },
+  {
+    "name": "RAMOJU VAMSI KRISHNA",
+    "roll_number": "AIK256Q1A4217",
+    "branch": "Csm d1",
+    "rating": 4,
+    "review": "Very interesting and want to gain more knowledge",
+    "image": "student_images/AIK256Q1A4217.jpg"
+  },
+  {
+    "name": "Krishna Sai",
+    "roll_number": "AIK25B21A4627",
+    "branch": "CSC",
+    "rating": 3,
+    "review": "worst expereience but enjoyed",
+    "image": "student_images/AIK25B21A4627.jpg"
+  },
+  {
+    "name": "Y.vamsi",
+    "roll_number": "AIK25B21A4310",
+    "branch": "Cai",
+    "rating": 5,
+    "review": "More experience",
+    "image": "student_images/AIK25B21A4310.jpg"
+  },
+  {
+    "name": "ADARI DURGA DEVA SAI SURYA",
+    "roll_number": "AIK25B21A4435",
+    "branch": "CSD-DS",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25B21A4435.jpg"
+  },
+  {
+    "name": "varaprasad",
+    "roll_number": "AIK256Q1a4202",
+    "branch": "csm",
+    "rating": 2,
+    "review": "averge",
+    "image": "student_images/AIK256Q1a4202.jpg"
+  },
+  {
+    "name": "chokka anil gandhi",
+    "roll_number": "AIK25B21A4513",
+    "branch": "AID",
+    "rating": 5,
+    "review": "its very useable",
+    "image": "student_images/AIK25B21A4513.jpg"
+  },
+  {
+    "name": "dhulipudiveera satya harish",
+    "roll_number": "AIK25B21A4506",
+    "branch": "AID",
+    "rating": 4,
+    "review": "my experience in this bootcamp is good but accomodation is not good and teaching and interaction with students is very poor.",
+    "image": "student_images/AIK25B21A4506.jpg"
+  },
+  {
+    "name": "G. VINAY KUMAR",
+    "roll_number": "AIK256Q1A4506",
+    "branch": "AID-DAYSCHOLARS",
+    "rating": 3,
+    "review": "It is very useful and i have learned about github and uses of linux",
+    "image": "student_images/AIK256Q1A4506.jpg"
+  },
+  {
+    "name": "Gandi Gowtham",
+    "roll_number": "AIK25B21A4558",
+    "branch": "ARTIFICAL INTELLIGENCE AND DATA SCIENCE (AID)",
+    "rating": 5,
+    "review": "i will experience the websites like suno etc..",
+    "image": "student_images/AIK25B21A4558.jpg"
+  },
+  {
+    "name": "Kundrapu Bharath",
+    "roll_number": "AIK25B21A4518",
+    "branch": "AID-D",
+    "rating": 4,
+    "review": "Now I have clarity on about how to make a project and uses of github",
+    "image": "student_images/AIK25B21A4518.jpg"
+  },
+  {
+    "name": "Neela datha sai",
+    "roll_number": "AIK25B21A4552",
+    "branch": "AIDD",
+    "rating": 4,
+    "review": "very good experince to create a website and also create a songs with the help of using AI over all better",
+    "image": "student_images/AIK25B21A4552.jpg"
+  },
+  {
+    "name": "Gubbala Manikanta",
+    "roll_number": "AIK25B21A4554",
+    "branch": "ARTIFICIAL INTILLIGENCE AND DATA SCIENCE(AID)",
+    "rating": 5,
+    "review": "I EXPERINENCE A NEW WEBSITES LIKE SUNO.COM,LINUX CREATION ETC...",
+    "image": "student_images/AIK25B21A4554.jpg"
+  },
+  {
+    "name": "Munnam.Ravindra Reddy",
+    "roll_number": "AIK25B21A4510",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good experience",
+    "image": "student_images/AIK25B21A4510.jpg"
+  },
+  {
+    "name": "Chollangi Narendra",
+    "roll_number": "AIK256Q1A4232",
+    "branch": "CSM D2",
+    "rating": 3,
+    "review": "Best experience",
+    "image": "student_images/AIK256Q1A4232.jpg"
+  },
+  {
+    "name": "P Raman Deepraj",
+    "roll_number": "AIK25B21A4327",
+    "branch": "CAI",
+    "rating": 3,
+    "review": ".",
+    "image": "student_images/AIK25B21A4327.jpg"
+  },
+  {
+    "name": "Manjusha",
+    "roll_number": "AIK25B21A4362",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "It was really good.I was learn new things",
+    "image": "student_images/AIK25B21A4362.jpg"
+  },
+  {
+    "name": "jasmitha devi kuchipudi",
+    "roll_number": "AIK25JN1A45C5",
+    "branch": "AIDS",
+    "rating": 3,
+    "review": "EXCELLENT",
+    "image": "student_images/AIK25JN1A45C5.jpg"
+  },
+  {
+    "name": "Akula Ashok",
+    "roll_number": "AIK256Q1A4510",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4510.jpg"
+  },
+  {
+    "name": "Boyina mokshitha",
+    "roll_number": "AIK25B21A4364",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "Ok we learn lots of things",
+    "image": "student_images/AIK25B21A4364.jpg"
+  },
+  {
+    "name": "Golakoti sharon varshitha",
+    "roll_number": "AIK25JN1A4551",
+    "branch": "Artificial intelligence and data science",
+    "rating": 4,
+    "review": "I'm soo excited about it these us useful for Mr and I learn more within those two days",
+    "image": "student_images/AIK25JN1A4551.jpg"
+  },
+  {
+    "name": "undru asish",
+    "roll_number": "AIK256Q1A4413",
+    "branch": "CSD-H",
+    "rating": 3,
+    "review": "nice",
+    "image": "student_images/AIK256Q1A4413.jpg"
+  },
+  {
+    "name": "M. Venkata gopi",
+    "roll_number": "AIK 25B21A4298",
+    "branch": "Csm-H",
+    "rating": 2,
+    "review": "It is very nice experience \nIt is useful for students",
+    "image": "student_images/AIK 25B21A4298.jpg"
+  },
+  {
+    "name": "Ajay",
+    "roll_number": "AIK25B21A4414",
+    "branch": "CSD D",
+    "rating": 3,
+    "review": "Better experience",
+    "image": "student_images/AIK25B21A4414.jpg"
+  },
+  {
+    "name": "Sevendra kumar",
+    "roll_number": "AIK25B21A42D5",
+    "branch": "CSM-H",
+    "rating": 3,
+    "review": "Ok",
+    "image": "student_images/AIK25B21A42D5.jpg"
+  },
+  {
+    "name": "kavya venu kakarla",
+    "roll_number": "AIK25JN1A4535",
+    "branch": "AID",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25JN1A4535.jpg"
+  },
+  {
+    "name": "K.Tanish",
+    "roll_number": "AIK25B21A4461",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4461.jpg"
+  },
+  {
+    "name": "IPPILI SATYANARAYANA",
+    "roll_number": "AIK25B21A45B0",
+    "branch": "Aid",
+    "rating": 3,
+    "review": "Super",
+    "image": "student_images/AIK25B21A45B0.jpg"
+  },
+  {
+    "name": "Kondru Isaak",
+    "roll_number": "AIK25B21A42A1",
+    "branch": "CSM-H",
+    "rating": 2,
+    "review": "No",
+    "image": "student_images/AIK25B21A42A1.jpg"
+  },
+  {
+    "name": "TADI BHAGYA SUJITH NARAYANA",
+    "roll_number": "AIK25B21A45E8",
+    "branch": "AID-H",
+    "rating": 5,
+    "review": "Good \nNice",
+    "image": "student_images/AIK25B21A45E8.jpg"
+  },
+  {
+    "name": "Chinthapalli stalin",
+    "roll_number": "AIK25B21A4291",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Yes",
+    "image": "student_images/AIK25B21A4291.jpg"
+  },
+  {
+    "name": "Pericharla Navya Santhoshini",
+    "roll_number": "AIK25JN1A45A9",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Excellent work learning",
+    "image": "student_images/AIK25JN1A45A9.jpg"
+  },
+  {
+    "name": "pagadam navyasri",
+    "roll_number": "AIK25JN1A4514",
+    "branch": "AID",
+    "rating": 4,
+    "review": "my experiance was good and i have learned many topics through ai",
+    "image": "student_images/AIK25JN1A4514.jpg"
+  },
+  {
+    "name": "Seethala Rohini",
+    "roll_number": "AIK25JN1A45A8",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good working experience",
+    "image": "student_images/AIK25JN1A45A8.jpg"
+  },
+  {
+    "name": "SRI RAMALAKSHMI DEVI GAYATRI DANDAKADIYALA",
+    "roll_number": "AIK25JN1A4510",
+    "branch": "AID",
+    "rating": 4,
+    "review": "IT HAD BEEN A PLATFORM FOR ME TO EXPLORE NEW THINHG WHICH ARE REALLY USEFUL FOR ME",
+    "image": "student_images/AIK25JN1A4510.jpg"
+  },
+  {
+    "name": "G.Sujan Kumar",
+    "roll_number": "AIK25B21A4459",
+    "branch": "CSD",
+    "rating": 5,
+    "review": "Good and Excellent I have learn from this event...",
+    "image": "student_images/AIK25B21A4459.jpg"
+  },
+  {
+    "name": "KOMATLAPALLI LEELA CHOWDARY",
+    "roll_number": "AIK25B21A4455",
+    "branch": "CSD",
+    "rating": 4,
+    "review": "Boat experience is very good  and l have gained a knowledge",
+    "image": "student_images/AIK25B21A4455.jpg"
+  },
+  {
+    "name": "ADDANKI GOPI KRISHNA",
+    "roll_number": "AIK25B21A42D6",
+    "branch": "CSM_H",
+    "rating": 2,
+    "review": "No",
+    "image": "student_images/AIK25B21A42D6.jpg"
+  },
+  {
+    "name": "SHIVANI CHELLURU",
+    "roll_number": "AIK25JN1A4501",
+    "branch": "AID",
+    "rating": 5,
+    "review": "the experience is nice we came know so many notes",
+    "image": "student_images/AIK25JN1A4501.jpg"
+  },
+  {
+    "name": "HARIKA SIVAKOTI",
+    "roll_number": "AIK25JN1A4504",
+    "branch": "AIDS",
+    "rating": 5,
+    "review": "YUP!! all good and we experienced a good time with this bootcamp . I was amazed by their explanation process. And thank you!!",
+    "image": "student_images/AIK25JN1A4504.jpg"
+  },
+  {
+    "name": "Pilli Naga Mani Satya Harini",
+    "roll_number": "AIK25JN1A4539",
+    "branch": "AIDS",
+    "rating": 4,
+    "review": "we learned and enjoyed at the same time.we really learned about new things.we liked how the bootcamp team interacted with students.",
+    "image": "student_images/AIK25JN1A4539.jpg"
+  },
+  {
+    "name": "Rentachintala.bala sri gayathri",
+    "roll_number": "AIK25JN1A4584",
+    "branch": "AID",
+    "rating": 4,
+    "review": "GOOD TO EXPERIENCE",
+    "image": "student_images/AIK25JN1A4584.jpg"
+  },
+  {
+    "name": "Raga Vaishnavi Pedamallu",
+    "roll_number": "AIK25JN1A4574",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "I was excited to learn about these features \nIt was great experience for me I had learned something new👍🏻",
+    "image": "student_images/AIK25JN1A4574.jpg"
+  },
+  {
+    "name": "Goru.Sravani",
+    "roll_number": "AIK25JN1A4517",
+    "branch": "AID.Days scholars",
+    "rating": 4,
+    "review": "We should learn many things in the boot camp",
+    "image": "student_images/AIK25JN1A4517.jpg"
+  },
+  {
+    "name": "B.Chaithanya Sri",
+    "roll_number": "AIK25JN1A4573",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It was very exiting camp to learn about some easy techniques of web development.\nOverall experience was good.",
+    "image": "student_images/AIK25JN1A4573.jpg"
+  },
+  {
+    "name": "harishitha,p",
+    "roll_number": "AIK25jn1a4560",
+    "branch": "AID",
+    "rating": 3,
+    "review": "classes adiuo promblem.",
+    "image": "student_images/AIK25jn1a4560.jpg"
+  },
+  {
+    "name": "gullapalli yakanya",
+    "roll_number": "AIK25JN1A4594",
+    "branch": "AIDH",
+    "rating": 4,
+    "review": "Very good and informative and the trainers explained concepts clearly \nthanks for this sessions",
+    "image": "student_images/AIK25JN1A4594.jpg"
+  },
+  {
+    "name": "mareedu likitha",
+    "roll_number": "AIK25JN1A4595",
+    "branch": "AID",
+    "rating": 4,
+    "review": "My overall  experience with the bootcamp was excellent the trainers explained concepts clearly and the hands on practice helped improve my confidence and skills",
+    "image": "student_images/AIK25JN1A4595.jpg"
+  },
+  {
+    "name": "Posina.Sai Durga",
+    "roll_number": "AIK25JN1A4524",
+    "branch": "AID",
+    "rating": 4,
+    "review": "FIRST I THANK FULL TO BOOT CAMP ROHINI SIRAND HIS TEAM TO TEACH AND CLEAR DOUBTS I AM GLAD TO PARTICIPATE IN BOOT CAMP",
+    "image": "student_images/AIK25JN1A4524.jpg"
+  },
+  {
+    "name": "bandi sruthi",
+    "roll_number": "AIK25JN1A4590",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Very good information and the trainers explained concept clearly thanks for this sessions",
+    "image": "student_images/AIK25JN1A4590.jpg"
+  },
+  {
+    "name": "BUDDARAJU DATTA SESHA NAGA AMUKTHA",
+    "roll_number": "AIK25JN1A4521",
+    "branch": "AID",
+    "rating": 4,
+    "review": "firstly what is meant by bootcamp and how is it useful and what is the basics of bootcamp",
+    "image": "student_images/AIK25JN1A4521.jpg"
+  },
+  {
+    "name": "Ganjala vardhini",
+    "roll_number": "AIK25JN1A4593",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Very good excellent mentors to explain",
+    "image": "student_images/AIK25JN1A4593.jpg"
+  },
+  {
+    "name": "Chodisetti Swathi sri satya",
+    "roll_number": "AIK25JN1A4248",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "The bootcamp was a very informative experience for me",
+    "image": "student_images/AIK25JN1A4248.jpg"
+  },
+  {
+    "name": "Pusuluri. Gnanalahari",
+    "roll_number": "AIK25JN1A4575",
+    "branch": "AID-H",
+    "rating": 4,
+    "review": "My overall experience with the bootcamp was very positive and enriching. I learned many new skills, improved my confidence, and gained practical knowledge through hands-on activities.",
+    "image": "student_images/AIK25JN1A4575.jpg"
+  },
+  {
+    "name": "VADAPALLI MOHAN NAGA SRINIVAS",
+    "roll_number": "AIK256Q1A4518",
+    "branch": "ARTIFICIAL INTELLIGENCE & DATA SCIENCE(AID))",
+    "rating": 4,
+    "review": "I LEARNED, 2048 GAME EXPERANCE,  SONO.COM SONGS &MUSIC GENERATION , ALGORITHOM TRACER,GITHUB PROFILE CREATING ETC....",
+    "image": "student_images/AIK256Q1A4518.jpg"
+  },
+  {
+    "name": "NUNNA DEEPIKA BHARATHI",
+    "roll_number": "AIK25JN1A4549",
+    "branch": "AID",
+    "rating": 3,
+    "review": "FIRSTLY, THEY HAVE STARTED WITH A GAME OF 2048 WHICH MADE US THINK ABOUT HOW IT WORKS AND THEN WE MOVED ON TO SUNO.COM AND GENERATED A SONG AND THEN CREATED A GITHUB ACCOUNT AND LASTLY, WE CAME TO ABOUT THE INNER PROCESS OF THE PC HOW IT ACTUALLY HAPPENS AND ALL SO YAA WITH THE NETWORKS AND ALGORITHMS CAME TO AN END .",
+    "image": "student_images/AIK25JN1A4549.jpg"
+  },
+  {
+    "name": "s.vimala durga devi",
+    "roll_number": "AIK25JN1A4552",
+    "branch": "AID",
+    "rating": 4,
+    "review": "yes i experienced  that how to develop the website. and how to generate qr code,\ninstallation......",
+    "image": "student_images/AIK25JN1A4552.jpg"
+  },
+  {
+    "name": "Srivinay",
+    "roll_number": "AIK25B21A4296",
+    "branch": "CSM -H",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25B21A4296.jpg"
+  },
+  {
+    "name": "MANYAM DEVI SRI MANASA",
+    "roll_number": "AIK25JN1A4555",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It was good experince to communicate with guides and mentors to clarify my doubts",
+    "image": "student_images/AIK25JN1A4555.jpg"
+  },
+  {
+    "name": "saragadam akhila",
+    "roll_number": "AIK25JN1A4581",
+    "branch": "AID",
+    "rating": 3,
+    "review": "yes",
+    "image": "student_images/AIK25JN1A4581.jpg"
+  },
+  {
+    "name": "Kasi harinadh",
+    "roll_number": "AIK25B21A4241",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4241.jpg"
+  },
+  {
+    "name": "undru asish",
+    "roll_number": "AIK256Q1A4413",
+    "branch": "CSD-H",
+    "rating": 3,
+    "review": "nice",
+    "image": "student_images/AIK256Q1A4413.jpg"
+  },
+  {
+    "name": "Surampudi venkata Hemanth kumar",
+    "roll_number": "AIK256Q1A4233",
+    "branch": "CSMD2",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK256Q1A4233.jpg"
+  },
+  {
+    "name": "namburi akhil",
+    "roll_number": "AIK25B21A4483",
+    "branch": "csd",
+    "rating": 4,
+    "review": "ok",
+    "image": "student_images/AIK25B21A4483.jpg"
+  },
+  {
+    "name": "Kotipalli sri venkata satya sai Durga pavan",
+    "roll_number": "AIK256Q1A4224",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Yes",
+    "image": "student_images/AIK256Q1A4224.jpg"
+  },
+  {
+    "name": "Chagalamarri Nafil",
+    "roll_number": "AIK25B21A4368",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "I have get an idea how to implement the git hub or Suno ai music or intilisation of the laptop in the 6 phases and creating the Qr code.",
+    "image": "student_images/AIK25B21A4368.jpg"
+  },
+  {
+    "name": "Kuna Venkata Durga Rama Gangadhar",
+    "roll_number": "AIK25B21A4221",
+    "branch": "Artificial Intelligence",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25B21A4221.jpg"
+  },
+  {
+    "name": "Medicharla Vaishnavi Devi",
+    "roll_number": "AIK25JN1A4537",
+    "branch": "ARTIFICIAL INTELLIGENCE & DATA SCIENCE",
+    "rating": 4,
+    "review": "I am glad to participate in bootcamp , especially thanks to the Rohini sir and his team members to teach us and cleared our doubts.",
+    "image": "student_images/AIK25JN1A4537.jpg"
+  },
+  {
+    "name": "KOTIPALLI ISWARYA",
+    "roll_number": "AIK25JN1A4542",
+    "branch": "AID",
+    "rating": 3,
+    "review": "We have learnt some basic information of ai",
+    "image": "student_images/AIK25JN1A4542.jpg"
+  },
+  {
+    "name": "Yogavarshini k",
+    "roll_number": "AIK25JN1A4569",
+    "branch": "Aid",
+    "rating": 2,
+    "review": "Ntg",
+    "image": "student_images/AIK25JN1A4569.jpg"
+  },
+  {
+    "name": "Sravani sayela",
+    "roll_number": "AIK25JN1A4277",
+    "branch": "Csm",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4277.jpg"
+  },
+  {
+    "name": "Dadi Swathi",
+    "roll_number": "AIK25JN1A2B2",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A2B2.jpg"
+  },
+  {
+    "name": "Nallamilli Rupa Gagana sri",
+    "roll_number": "AIK25JN1A4307",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "Better",
+    "image": "student_images/AIK25JN1A4307.jpg"
+  },
+  {
+    "name": "Pratyusha Polmarasetty",
+    "roll_number": "AIK25JN1A4262",
+    "branch": "CSM",
+    "rating": 2,
+    "review": "Nice",
+    "image": "student_images/AIK25JN1A4262.jpg"
+  },
+  {
+    "name": "Not bad",
+    "roll_number": "AIK25JN1A45B8",
+    "branch": "AID",
+    "rating": 2,
+    "review": "I am not satisified.",
+    "image": "student_images/AIK25JN1A45B8.jpg"
+  },
+  {
+    "name": "Chavvakula Prameela Rani",
+    "roll_number": "AIK25JN1A4519",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Ok",
+    "image": "student_images/AIK25JN1A4519.jpg"
+  },
+  {
+    "name": "Keerthana Raj",
+    "roll_number": "AIK25JN1A45B9",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good Experience",
+    "image": "student_images/AIK25JN1A45B9.jpg"
+  },
+  {
+    "name": "B. Suja sri",
+    "roll_number": "AIK25JN1A45B7",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Nice experience",
+    "image": "student_images/AIK25JN1A45B7.jpg"
+  },
+  {
+    "name": "Jureddy hasini",
+    "roll_number": "AIK25JN1A42B0",
+    "branch": "Csm",
+    "rating": 3,
+    "review": "It's poor good",
+    "image": "student_images/AIK25JN1A42B0.jpg"
+  },
+  {
+    "name": "K. Sindhu Naga Sri",
+    "roll_number": "AIK25JN1A4566",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4566.jpg"
+  },
+  {
+    "name": "Lingala Venu Priya Sri",
+    "roll_number": "AIK25JN1A45A7",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A45A7.jpg"
+  },
+  {
+    "name": "samankousaur",
+    "roll_number": "AIK25JN1A4208",
+    "branch": "CSMD",
+    "rating": 4,
+    "review": "really interesting",
+    "image": "student_images/AIK25JN1A4208.jpg"
+  },
+  {
+    "name": "Pinipe pavani",
+    "roll_number": "AIK25JN1A4289",
+    "branch": "CSM",
+    "rating": 2,
+    "review": "Okay Good",
+    "image": "student_images/AIK25JN1A4289.jpg"
+  },
+  {
+    "name": "Petla Mythri",
+    "roll_number": "AIK25JN1A4261",
+    "branch": "CSM",
+    "rating": 2,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4261.jpg"
+  },
+  {
+    "name": "Mehana naga anu Gurram",
+    "roll_number": "AIK25JN1A4243",
+    "branch": "Csm",
+    "rating": 3,
+    "review": "My overall experience in boot gap is good and useful",
+    "image": "student_images/AIK25JN1A4243.jpg"
+  },
+  {
+    "name": "Shivani chelluru",
+    "roll_number": "AIK25JN1A4501",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Explaining very well and good concept",
+    "image": "student_images/AIK25JN1A4501.jpg"
+  },
+  {
+    "name": "Potnuru Hasini",
+    "roll_number": "AIK25JN1A42B1",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Very interested",
+    "image": "student_images/AIK25JN1A42B1.jpg"
+  },
+  {
+    "name": "pilli satya pallavi",
+    "roll_number": "AIK25JN1A4239",
+    "branch": "CSM",
+    "rating": 2,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4239.jpg"
+  },
+  {
+    "name": "Devika Matta",
+    "roll_number": "AIK25JN1A45B3",
+    "branch": "AID",
+    "rating": 5,
+    "review": "We learn installations,GitHub account creation",
+    "image": "student_images/AIK25JN1A45B3.jpg"
+  },
+  {
+    "name": "Sheik majanbee",
+    "roll_number": "AIK25JN1A4270",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "Good experience",
+    "image": "student_images/AIK25JN1A4270.jpg"
+  },
+  {
+    "name": "Chodisetti siva Durga",
+    "roll_number": "AIK25JN1A4242",
+    "branch": "Csm",
+    "rating": 3,
+    "review": "My overall experience with the bootcamp is good",
+    "image": "student_images/AIK25JN1A4242.jpg"
+  },
+  {
+    "name": "MANIKALA.TANUJA",
+    "roll_number": "AIK25JN1A4271",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good experience",
+    "image": "student_images/AIK25JN1A4271.jpg"
+  },
+  {
+    "name": "Sahithi uppu",
+    "roll_number": "AIK25JN1A42A3",
+    "branch": "CSM",
+    "rating": 1,
+    "review": "My experience with the boot camp was poor and disappointing. The training lacked proper structure and planning. Many topics were explained in a rush without clear basics, which made it difficult to understand.",
+    "image": "student_images/AIK25JN1A42A3.jpg"
+  },
+  {
+    "name": "Sindhu sri",
+    "roll_number": "AIK25JN1A42A4",
+    "branch": "CSM",
+    "rating": 1,
+    "review": "My experience with the boot camp was poor and disappointing. The training lacked proper structure and planning. Many topics were explained in a rush without clear basics, which made it difficult to understand.",
+    "image": "student_images/AIK25JN1A42A4.jpg"
+  },
+  {
+    "name": "Tejaswini peela",
+    "roll_number": "AIK25JN1A4264",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4264.jpg"
+  },
+  {
+    "name": "Mukunda sri saladi",
+    "roll_number": "AIK25JN1A4312",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "It's good but too clumsy mentors explaining well",
+    "image": "student_images/AIK25JN1A4312.jpg"
+  },
+  {
+    "name": "K.Vijaya Lakshmi Durga Devi",
+    "roll_number": "AIK25JN1A4330",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "This experience was good, because this boot camp was very interesting",
+    "image": "student_images/AIK25JN1A4330.jpg"
+  },
+  {
+    "name": "P.thanusri sai devi",
+    "roll_number": "AIK25JN1A4596",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4596.jpg"
+  },
+  {
+    "name": "Neelagiri Poojitha Dhanasri",
+    "roll_number": "AIK25JN1A4232",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4232.jpg"
+  },
+  {
+    "name": "Devada Prathyusha santhosh kumari",
+    "roll_number": "AIK25JN1A4280",
+    "branch": "CSM-H",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4280.jpg"
+  },
+  {
+    "name": "Nakkina Bhavya",
+    "roll_number": "AIK25JN1A4234",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good experience to overall bootcamp",
+    "image": "student_images/AIK25JN1A4234.jpg"
+  },
+  {
+    "name": "Bandi yasaswini",
+    "roll_number": "AIK25JN1A4318",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "This was nice experience",
+    "image": "student_images/AIK25JN1A4318.jpg"
+  },
+  {
+    "name": "Gayatri perugu",
+    "roll_number": "AIK25JN1A4275",
+    "branch": "CSM H",
+    "rating": 4,
+    "review": "It was a nice experience. \nI learn about AI tools very well",
+    "image": "student_images/AIK25JN1A4275.jpg"
+  },
+  {
+    "name": "Korubilli devi",
+    "roll_number": "AIK25JN1A4315",
+    "branch": "CAI",
+    "rating": 2,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4315.jpg"
+  },
+  {
+    "name": "Nagireddy  jahnavi Priyam Vada",
+    "roll_number": "AIK25JN1A4236",
+    "branch": "CSMD",
+    "rating": 4,
+    "review": "It was a good learning experience.",
+    "image": "student_images/AIK25JN1A4236.jpg"
+  },
+  {
+    "name": "Lakamana. Sahithi Venkata Sri Lakshmi",
+    "roll_number": "AIK25JN1A4570",
+    "branch": "AID",
+    "rating": 3,
+    "review": "My overall experience was good and helpful.",
+    "image": "student_images/AIK25JN1A4570.jpg"
+  },
+  {
+    "name": "Ch.vaishtnavi",
+    "roll_number": "AIK25JN1A4260",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "My overall experience with the bootcamp good",
+    "image": "student_images/AIK25JN1A4260.jpg"
+  },
+  {
+    "name": "Voleti chandraatej",
+    "roll_number": "AIK25JN1A42A0",
+    "branch": "CSM-H",
+    "rating": 3,
+    "review": "Good need to improve",
+    "image": "student_images/AIK25JN1A42A0.jpg"
+  },
+  {
+    "name": "K.Bindu sri",
+    "roll_number": "AIK25JN1A42A2",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A42A2.jpg"
+  },
+  {
+    "name": "Rangu Kavya Rekha",
+    "roll_number": "AIK25JN1A4278",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "GOOD",
+    "image": "student_images/AIK25JN1A4278.jpg"
+  },
+  {
+    "name": "Anagani.Aashritha",
+    "roll_number": "AIK25JN1A45A6",
+    "branch": "AID",
+    "rating": 3,
+    "review": "It's good",
+    "image": "student_images/AIK25JN1A45A6.jpg"
+  },
+  {
+    "name": "Keerthikeya",
+    "roll_number": "AIK25JN1A4287",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It experience is very nice",
+    "image": "student_images/AIK25JN1A4287.jpg"
+  },
+  {
+    "name": "Ganteda.hasini",
+    "roll_number": "AIK25JN1A4281",
+    "branch": "Csm",
+    "rating": 5,
+    "review": "Too good i learnt lot things in this session",
+    "image": "student_images/AIK25JN1A4281.jpg"
+  },
+  {
+    "name": "Sandhya",
+    "roll_number": "AIK25JN1A4274",
+    "branch": "CSM H",
+    "rating": 4,
+    "review": "The Bootcamp was very helpful and well-organized. I gained confidence in the topics and really enjoyed the learning process.",
+    "image": "student_images/AIK25JN1A4274.jpg"
+  },
+  {
+    "name": "Adari Medha Manaswini",
+    "roll_number": "AIK25JN1A42A1",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Feeling grateful for participation in it",
+    "image": "student_images/AIK25JN1A42A1.jpg"
+  },
+  {
+    "name": "Dadi Swathi reshma",
+    "roll_number": "AIK25JN1A4597",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4597.jpg"
+  },
+  {
+    "name": "Kotikalapudi Venkata durga sri valya",
+    "roll_number": "AIK25JN1A4532",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4532.jpg"
+  },
+  {
+    "name": "Vishnu Priya Yatham",
+    "roll_number": "AIK25JN1A4298",
+    "branch": "CSM-H",
+    "rating": 4,
+    "review": "Yeah it's a experience of learning something new.",
+    "image": "student_images/AIK25JN1A4298.jpg"
+  },
+  {
+    "name": "Pydikondala Rama vidya Nandini",
+    "roll_number": "AIK25JN1A4565",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Better to know the knowledge about AI",
+    "image": "student_images/AIK25JN1A4565.jpg"
+  },
+  {
+    "name": "Y Dhana lakshmi",
+    "roll_number": "AIK25JN1A4516",
+    "branch": "AID",
+    "rating": 5,
+    "review": "Excellent",
+    "image": "student_images/AIK25JN1A4516.jpg"
+  },
+  {
+    "name": "Dadala dhivya Sri",
+    "roll_number": "AIK25JN1A4244",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Better to know the knowledge about AI",
+    "image": "student_images/AIK25JN1A4244.jpg"
+  },
+  {
+    "name": "Golakoti sai pravallika",
+    "roll_number": "AIK25JN1A4541",
+    "branch": "AI3",
+    "rating": 3,
+    "review": "Ok_ok",
+    "image": "student_images/AIK25JN1A4541.jpg"
+  },
+  {
+    "name": "Kothum purna raja sri mahalakshmi",
+    "roll_number": "AIK25JN1A4202",
+    "branch": "Understand",
+    "rating": 3,
+    "review": "Good experience with overall boot camp \nThey explain my doubts",
+    "image": "student_images/AIK25JN1A4202.jpg"
+  },
+  {
+    "name": "Lalli Tanishka Nimmakayala",
+    "roll_number": "AIK25JN1A4303",
+    "branch": "Cai",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4303.jpg"
+  },
+  {
+    "name": "Penumajji yagnasri",
+    "roll_number": "AIK25JN1A45C4",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It's help us to improve our skills",
+    "image": "student_images/AIK25JN1A45C4.jpg"
+  },
+  {
+    "name": "Kagitha yamuna",
+    "roll_number": "AIK25JN1A4319",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "I learn some more coding",
+    "image": "student_images/AIK25JN1A4319.jpg"
+  },
+  {
+    "name": "Thanigadapa sindhu",
+    "roll_number": "AIK25JN1A45C0",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Best experience",
+    "image": "student_images/AIK25JN1A45C0.jpg"
+  },
+  {
+    "name": "Mallika",
+    "roll_number": "AIK25JN1A4294",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "helped me improve my practical skills and confidence.",
+    "image": "student_images/AIK25JN1A4294.jpg"
+  },
+  {
+    "name": "GANTEDA HASINI",
+    "roll_number": "AIK25JN1A4281",
+    "branch": "Csm",
+    "rating": 5,
+    "review": "Too good i learnt lot of things in this session",
+    "image": "student_images/AIK25JN1A4281.jpg"
+  },
+  {
+    "name": "M.Pavani",
+    "roll_number": "AIK25JN1A4292",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Help me pratice skills and easy to understand",
+    "image": "student_images/AIK25JN1A4292.jpg"
+  },
+  {
+    "name": "Surla pavani",
+    "roll_number": "AIK25JN1A4320",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "things. Generative AI is a work in progress",
+    "image": "student_images/AIK25JN1A4320.jpg"
+  },
+  {
+    "name": "Padaga Charishma navya",
+    "roll_number": "AIK25JN1A4538",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It's a very good experience and it is my first time participating in a bootcamp.i learned so many things because of it.i am glad that I attended my session.",
+    "image": "student_images/AIK25JN1A4538.jpg"
+  },
+  {
+    "name": "A. Bala durga",
+    "roll_number": "AIK25JN1A45D3",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Improving our skills",
+    "image": "student_images/AIK25JN1A45D3.jpg"
+  },
+  {
+    "name": "Dasari.hema",
+    "roll_number": "AIK25JN1A4571",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Its good, and its good to know how to improve our skills",
+    "image": "student_images/AIK25JN1A4571.jpg"
+  },
+  {
+    "name": "Akhila",
+    "roll_number": "AIK25JN1A4293",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It was  a nice experience for me.I learnt that how to install Linux .",
+    "image": "student_images/AIK25JN1A4293.jpg"
+  },
+  {
+    "name": "Hyma",
+    "roll_number": "AIK25JN1A4322",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "I learn some more coding",
+    "image": "student_images/AIK25JN1A4322.jpg"
+  },
+  {
+    "name": "Y.Tulasi Lakshmi",
+    "roll_number": "AIK25JN1A4246",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It was a best experience .we learn a lot about python and algorithms.",
+    "image": "student_images/AIK25JN1A4246.jpg"
+  },
+  {
+    "name": "Annadasu Tejaswini",
+    "roll_number": "AIK25JN1A45B1",
+    "branch": "AID",
+    "rating": 4,
+    "review": "intensive learning in a short time \nConfidence in technical skills",
+    "image": "student_images/AIK25JN1A45B1.jpg"
+  },
+  {
+    "name": "T.S.B.N.Maneesha",
+    "roll_number": "AIK25JN1A4201",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "It was a good learning experience",
+    "image": "student_images/AIK25JN1A4201.jpg"
+  },
+  {
+    "name": "Golakoti_pravallika",
+    "roll_number": "AIK25JN1A4541",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Ok_ok",
+    "image": "student_images/AIK25JN1A4541.jpg"
+  },
+  {
+    "name": "Agniparthi siri",
+    "roll_number": "AIK25JN1A4299",
+    "branch": "Csm",
+    "rating": 5,
+    "review": "It's a best experience",
+    "image": "student_images/AIK25JN1A4299.jpg"
+  },
+  {
+    "name": "Kavyasri.R",
+    "roll_number": "AIK25",
+    "branch": "Csd",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25.jpg"
+  },
+  {
+    "name": "UMAMAHESWARI PINNINTI",
+    "roll_number": "AIK25JN1A4324",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "Too good I learnt lot of things this session",
+    "image": "student_images/AIK25JN1A4324.jpg"
+  },
+  {
+    "name": "Lakshmi Veera bhadraveni Ganji",
+    "roll_number": "AIK25JN1A45C2",
+    "branch": "AID",
+    "rating": 1,
+    "review": "No experience",
+    "image": "student_images/AIK25JN1A45C2.jpg"
+  },
+  {
+    "name": "Palnati Shiny",
+    "roll_number": "AIK25JN1A4561",
+    "branch": "AIDS",
+    "rating": 3,
+    "review": "WELL\nGOOD",
+    "image": "student_images/AIK25JN1A4561.jpg"
+  },
+  {
+    "name": "Lakshmi hasini pedamallu",
+    "roll_number": "AIK25JN1A45C3",
+    "branch": "AID",
+    "rating": 2,
+    "review": "Very bad",
+    "image": "student_images/AIK25JN1A45C3.jpg"
+  },
+  {
+    "name": "Dangeti sireesha",
+    "roll_number": "AIK25JN1A4224",
+    "branch": "CSMD",
+    "rating": 3,
+    "review": "Good & useful",
+    "image": "student_images/AIK25JN1A4224.jpg"
+  },
+  {
+    "name": "P.Akhila",
+    "roll_number": "AIK25JN1A4295",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Gained practical skills in bootcamp",
+    "image": "student_images/AIK25JN1A4295.jpg"
+  },
+  {
+    "name": "VIPPARTHI MEGHANA SATYA PRIYA",
+    "roll_number": "AIK25JN1A4545",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4545.jpg"
+  },
+  {
+    "name": "Peddimsetti sudha lakshmi",
+    "roll_number": "AIK25JN1A4556",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Help full and learn so many things about AI",
+    "image": "student_images/AIK25JN1A4556.jpg"
+  },
+  {
+    "name": "Palivela Mounika devi",
+    "roll_number": "AIK25JN1A4528",
+    "branch": "AID DS",
+    "rating": 4,
+    "review": "Excellent",
+    "image": "student_images/AIK25JN1A4528.jpg"
+  },
+  {
+    "name": "Nadakuditi srija",
+    "roll_number": "AIK25JN1A45A2",
+    "branch": "AID",
+    "rating": 3,
+    "review": "I learn many type of commands",
+    "image": "student_images/AIK25JN1A45A2.jpg"
+  },
+  {
+    "name": "Katta.harika",
+    "roll_number": "AIK25JN1A4225",
+    "branch": "CSMD",
+    "rating": 3,
+    "review": "Good & useful",
+    "image": "student_images/AIK25JN1A4225.jpg"
+  },
+  {
+    "name": "B.Bhavyasree",
+    "roll_number": "AIK25JN1A45A5",
+    "branch": "AID",
+    "rating": 4,
+    "review": "This AI boot camp is very useful to us and gaining some knowledge from this AI boot camp",
+    "image": "student_images/AIK25JN1A45A5.jpg"
+  },
+  {
+    "name": "Kota srilakshmi",
+    "roll_number": "AIK25JN1A4288",
+    "branch": "Csm-H",
+    "rating": 3,
+    "review": "Very good I learned new skills Improved my technical knowledge",
+    "image": "student_images/AIK25JN1A4288.jpg"
+  },
+  {
+    "name": "Battala Madhavi",
+    "roll_number": "AIK25JN1A4326",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "My overall experience with the bootcamp was good and very informative. The sessions were well structured, and the trainers explained concepts clearly with practical examples which helped me gain confidence and hands-on experience.",
+    "image": "student_images/AIK25JN1A4326.jpg"
+  },
+  {
+    "name": "Tejasri",
+    "roll_number": "AIK25JN1A4543",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Nice",
+    "image": "student_images/AIK25JN1A4543.jpg"
+  },
+  {
+    "name": "RANGANADHAM SAI SIRI",
+    "roll_number": "AIK25JN1A4506",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Helpful and we learn so many things about AI",
+    "image": "student_images/AIK25JN1A4506.jpg"
+  },
+  {
+    "name": "N.Vaishnavi",
+    "roll_number": "AIK25JN1A4321",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "We will get better c language",
+    "image": "student_images/AIK25JN1A4321.jpg"
+  },
+  {
+    "name": "Pagadala Divya sri lakshmi",
+    "roll_number": "AIK25Jn1A4527",
+    "branch": "AID-D",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25Jn1A4527.jpg"
+  },
+  {
+    "name": "Guthula kanaka durga prasanna",
+    "roll_number": "AIK25JN1A4557",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Helpfull and we learn so many things about using Ai",
+    "image": "student_images/AIK25JN1A4557.jpg"
+  },
+  {
+    "name": "Pujitha Shanmukha Sai Sri",
+    "roll_number": "AIK25JN1A4316",
+    "branch": "CAI",
+    "rating": 5,
+    "review": "It is very good experience and so learn so many skills .The boot camp was intense and challenging. It boosted my skills and confidence quickly",
+    "image": "student_images/AIK25JN1A4316.jpg"
+  },
+  {
+    "name": "K.lasya kumari",
+    "roll_number": "AIK25JN1A4329",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Learned new things on AI",
+    "image": "student_images/AIK25JN1A4329.jpg"
+  },
+  {
+    "name": "Thota sravani",
+    "roll_number": "AIK25JN1A4286",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "I have some experience for this boot camp like just 2 days I have some knowledge",
+    "image": "student_images/AIK25JN1A4286.jpg"
+  },
+  {
+    "name": "mushini priya hasini",
+    "roll_number": "AIK25JN1A4554",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It's really good experience.",
+    "image": "student_images/AIK25JN1A4554.jpg"
+  },
+  {
+    "name": "Hima Bindu Punyamantula",
+    "roll_number": "AIK25JN1A4245",
+    "branch": "CSMD",
+    "rating": 4,
+    "review": "Good experience",
+    "image": "student_images/AIK25JN1A4245.jpg"
+  },
+  {
+    "name": "B AMULYA",
+    "roll_number": "AIK25JN1A42A5",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "I have enjoyed the boot camp with lot of fun and I have to learn more and mentors helped me a lot in coding and other skills",
+    "image": "student_images/AIK25JN1A42A5.jpg"
+  },
+  {
+    "name": "Harika",
+    "roll_number": "AIK25JN1A4518",
+    "branch": "Aid",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4518.jpg"
+  },
+  {
+    "name": "Yalla krishna sri",
+    "roll_number": "AIK25JN1A4313",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "Better to know the knowledge about AI",
+    "image": "student_images/AIK25JN1A4313.jpg"
+  },
+  {
+    "name": "Bandi. Chitti Sravani",
+    "roll_number": "AIK25JN1A4513",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4513.jpg"
+  },
+  {
+    "name": "Sandhya",
+    "roll_number": "AIK25JN1A4258",
+    "branch": "Csm",
+    "rating": 4,
+    "review": "The boot camp was intense and challenging. It boosted my skills and confidence quickly",
+    "image": "student_images/AIK25JN1A4258.jpg"
+  },
+  {
+    "name": "V.niharika",
+    "roll_number": "AIK25JN1A4511",
+    "branch": "Aid-D",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4511.jpg"
+  },
+  {
+    "name": "Hansika Maddirala",
+    "roll_number": "AIK25JN1A4250",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "It's very good experience to know about bootcamp we learnt more new things",
+    "image": "student_images/AIK25JN1A4250.jpg"
+  },
+  {
+    "name": "GORLA DURGA",
+    "roll_number": "AIK25JN1A4206",
+    "branch": "CSM ( D )",
+    "rating": 4,
+    "review": "It will help Avery one atleast learn the basics , and it is good experience to me",
+    "image": "student_images/AIK25JN1A4206.jpg"
+  },
+  {
+    "name": "kancharlapalli roshini",
+    "roll_number": "AIK25JN1A4285",
+    "branch": "csm",
+    "rating": 4,
+    "review": "i experience a to good in Bootcampi never see in my life this type of camp and I learn to loat in bootcamp",
+    "image": "student_images/AIK25JN1A4285.jpg"
+  },
+  {
+    "name": "G vaishnavi",
+    "roll_number": "AIK25JN1A4283",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Nice it is good \nI like this bootcamp",
+    "image": "student_images/AIK25JN1A4283.jpg"
+  },
+  {
+    "name": "Shaik.Nazeemunnisa",
+    "roll_number": "AIK25JN1A4553a",
+    "branch": "AIDS",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25JN1A4553a.jpg"
+  },
+  {
+    "name": "Vegi Devi Mani Srivalli",
+    "roll_number": "AIK25JN1A4296",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "In this boot camp I learn something new and learn about linux commands and generation of a song using suno app and a new game .",
+    "image": "student_images/AIK25JN1A4296.jpg"
+  },
+  {
+    "name": "GONTHINA SHARMILA",
+    "roll_number": "AIK25JN1A4328",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "My overall experience with the bootcamp was very positive and enriching.",
+    "image": "student_images/AIK25JN1A4328.jpg"
+  },
+  {
+    "name": "GORLI PUSHPAVATHI",
+    "roll_number": "AIK25JN1A4327",
+    "branch": "CAI",
+    "rating": 3,
+    "review": "My overall experience with the bootcamp was very positive and enriching.",
+    "image": "student_images/AIK25JN1A4327.jpg"
+  },
+  {
+    "name": "O.jahnavi siri Vidya santhoshi",
+    "roll_number": "AIK25JN1A4204",
+    "branch": "Csm-d",
+    "rating": 3,
+    "review": "It  is an average experience maybe some how failed in execution",
+    "image": "student_images/AIK25JN1A4204.jpg"
+  },
+  {
+    "name": "Kollabathula Manju",
+    "roll_number": "AIK25JN1A4267",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "I learned many new concepts and improve my skills",
+    "image": "student_images/AIK25JN1A4267.jpg"
+  },
+  {
+    "name": "B.Akhila",
+    "roll_number": "AIK25JN1A4293",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It was a nice experience for me.In this session I learnt that how to install Linux related installation.",
+    "image": "student_images/AIK25JN1A4293.jpg"
+  },
+  {
+    "name": "G.SriTulasi",
+    "roll_number": "AIK25JN1A4520",
+    "branch": "AID",
+    "rating": 4,
+    "review": "I like the session I learn some concepts",
+    "image": "student_images/AIK25JN1A4520.jpg"
+  },
+  {
+    "name": "Sunkara.Varshini",
+    "roll_number": "AIK25JN1A4259",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It's better",
+    "image": "student_images/AIK25JN1A4259.jpg"
+  },
+  {
+    "name": "DIVYA YERRA",
+    "roll_number": "AIK25JN1A45B5",
+    "branch": "AID-H",
+    "rating": 5,
+    "review": "My bootcamp experience was interactive and helped me gain practical knowledge through hands-on learning",
+    "image": "student_images/AIK25JN1A45B5.jpg"
+  },
+  {
+    "name": "KARRI PALLAVI",
+    "roll_number": "AIK25JN1A4301",
+    "branch": "CAI",
+    "rating": 4,
+    "review": "It is a good experience for me",
+    "image": "student_images/AIK25JN1A4301.jpg"
+  },
+  {
+    "name": "Alladi rajya lakshmi satya chandra devi",
+    "roll_number": "AIK25JN1A4210",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4210.jpg"
+  },
+  {
+    "name": "G.vaishnavi",
+    "roll_number": "AIK25JN1A4283",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Nice it's is good \nI like this bootcamp",
+    "image": "student_images/AIK25JN1A4283.jpg"
+  },
+  {
+    "name": "Banavath Srija",
+    "roll_number": "AIK25JN1A4273",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "It was good experience \nMentors helped very well",
+    "image": "student_images/AIK25JN1A4273.jpg"
+  },
+  {
+    "name": "Padala Phani Priya Anjani reddy",
+    "roll_number": "AIK25JN1A4223",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "I like creating own Qr code &songs etc it is useful.",
+    "image": "student_images/AIK25JN1A4223.jpg"
+  },
+  {
+    "name": "Esarapu Gayathri Anushuka",
+    "roll_number": "AIK25JN14219",
+    "branch": "CSM",
+    "rating": 3,
+    "review": "It is an average experience",
+    "image": "student_images/AIK25JN14219.jpg"
+  },
+  {
+    "name": "Ch. Hima bindu",
+    "roll_number": "AIK25Jn1A4567",
+    "branch": "AID",
+    "rating": 3,
+    "review": "I learn basics of laptop",
+    "image": "student_images/AIK25Jn1A4567.jpg"
+  },
+  {
+    "name": "Boddu vennela",
+    "roll_number": "AIK25JN1A4221",
+    "branch": "CSM",
+    "rating": 4,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4221.jpg"
+  },
+  {
+    "name": "B.PREETHI",
+    "roll_number": "AIK25JN1A42A7",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "VERY GOOD",
+    "image": "student_images/AIK25JN1A42A7.jpg"
+  },
+  {
+    "name": "Pilli Lakshmi prasanna",
+    "roll_number": "AIK25Jn1A4540",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Well\nGood",
+    "image": "student_images/AIK25Jn1A4540.jpg"
+  },
+  {
+    "name": "Rednam veera chakra sai thanusha",
+    "roll_number": "AIK25JN1A4503",
+    "branch": "AID",
+    "rating": 4,
+    "review": "It's very interesting and i leanted some thing new",
+    "image": "student_images/AIK25JN1A4503.jpg"
+  },
+  {
+    "name": "DAVULURI PADMAHASITA",
+    "roll_number": "AIK25JN1A4544",
+    "branch": "AID",
+    "rating": 4,
+    "review": "Playgame 2048- create code excellent \nSuno.com - enter lyrics listering songs \n GitHub,Html etc ..",
+    "image": "student_images/AIK25JN1A4544.jpg"
+  },
+  {
+    "name": "Chiratla Hema",
+    "roll_number": "AIK25JN1A4558",
+    "branch": "AID",
+    "rating": 3,
+    "review": "Good",
+    "image": "student_images/AIK25JN1A4558.jpg"
+  },
+  {
+    "name": "Mallela Hemasri",
+    "roll_number": "AIK25JN1A4279",
+    "branch": "CSM - H",
+    "rating": 3,
+    "review": "My overall experience with bootcamp is informative and helped me",
+    "image": "student_images/AIK25JN1A4279.jpg"
+  },
+  {
+    "name": "B.V.Satya Bhavani",
+    "roll_number": "AIK25JN1A42A6",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "Excellent Session",
+    "image": "student_images/AIK25JN1A42A6.jpg"
+  },
+  {
+    "name": "B. HARSHITHA",
+    "roll_number": "AIK25JN1A4282",
+    "branch": "CSM",
+    "rating": 5,
+    "review": "VERY GOOD",
+    "image": "student_images/AIK25JN1A4282.jpg"
+  },
+  {
+    "name": "bezawada manognya",
+    "roll_number": "AIK25JN1A4576",
+    "branch": "AID",
+    "rating": 4,
+    "review": "good",
+    "image": "student_images/AIK25JN1A4576.jpg"
+  },
+  {
+    "name": "KESANI TEJASWINI",
+    "roll_number": "AIK25JN1A45B2",
+    "branch": "AID",
+    "rating": 4,
+    "review": "I KNOW ABOUT SOME WEB DEVELOPMENT\nKNOWLEDGE ABOUT WEB DEVELOPMENT",
+    "image": "student_images/AIK25JN1A45B2.jpg"
+  },
+  {
+    "name": "vallaparapu pujasri",
+    "roll_number": "AIK25JN1A4577",
+    "branch": "AIDH",
+    "rating": 3,
+    "review": "intrest for learning with bootcamp",
+    "image": "student_images/AIK25JN1A4577.jpg"
+  },
+  {
+    "name": "vallaparapu pujasri",
+    "roll_number": "AIK25JN1A4577",
+    "branch": "AIDH",
+    "rating": 3,
+    "review": "intresting for learning with this wibset",
+    "image": "student_images/AIK25JN1A4577.jpg"
+  },
+  {
+    "name": "S gangadhar",
+    "roll_number": "AIK256Q1A4503",
+    "branch": "AIDS",
+    "rating": 4,
+    "review": "Very good",
+    "image": "student_images/AIK256Q1A4503.jpg"
+  },
+  {
+    "name": "v.ganesh",
+    "roll_number": "AIK25B21A4609",
+    "branch": "Csc d",
+    "rating": 3,
+    "review": "Very good",
+    "image": "student_images/AIK25B21A4609.jpg"
+  }
+]
