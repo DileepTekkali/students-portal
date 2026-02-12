@@ -1,765 +1,771 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Karyashala Bootcamp • KIET Students Review</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Testimonials - AI Karyashala Bootcamp</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 
   <style>
-    /* ========== Reset ========== */
-    *,*::before,*::after{ box-sizing:border-box; }
-    html,body{ height:100%; }
-    body{ margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
-    img{ max-width:100%; display:block; }
-    button{ font:inherit; }
-    a{ color:inherit; text-decoration:none; }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* ========== Calm theme ========== */
-    :root{
-      --bg0:#f6f8ff;
-      --bg1:#f3f6fb;
-      --card:#ffffff;
-      --line:#e8ecf5;
-      --text:#0f172a;
-      --muted:#5b667a;
-      --muted2:#7a8598;
-      --accent:#4f46e5;      /* indigo */
-      --accent2:#7c3aed;     /* violet */
-      --shadow: 0 18px 55px rgba(15, 23, 42, .10);
-      --shadow2: 0 10px 28px rgba(15, 23, 42, .08);
+    /* ✅ Only THEME updated to subtle & elegant (no functionality changes) */
+    :root {
+      --indigo: #3B5BDB;
+      --indigo-light: #9DB0FF;
+      --indigo-pale: #EEF3FF;
+
+      --violet: #6D28D9;
+      --rose: #E11D48;
+      --amber: #D97706;
+      --green: #059669;
+
+      --surface: #ffffff;
+      --bg: #F7F8FC;
+
+      --text-1: #0F172A;
+      --text-2: #334155;
+      --text-3: #64748B;
+
+      --border: #E6E8F2;
+
+      --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05), 0 1px 1px rgba(15, 23, 42, 0.04);
+      --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.08);
+      --shadow-md: 0 14px 40px rgba(15, 23, 42, 0.12);
+      --shadow-lg: 0 24px 70px rgba(15, 23, 42, 0.14);
+
       --radius: 18px;
-      --radius2: 22px;
-      --amber:#f59e0b;
+      --radius-sm: 10px;
     }
 
-    body{
-      color:var(--text);
-      background:
-        radial-gradient(900px 520px at 12% 10%, rgba(79,70,229,.10), transparent 60%),
-        radial-gradient(900px 520px at 88% 20%, rgba(124,58,237,.10), transparent 60%),
-        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
-      overflow-x:hidden;
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-1);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
 
-    .wrap{
-      width: min(1200px, calc(100% - 28px));
-      margin: 0 auto;
-    }
-
-    /* ========== Header ========== */
-    header.hero{
-      padding: 28px 0 14px;
-      text-align:center;
-    }
-
-    .title{
-      font-family:"Fraunces",serif;
-      font-weight:700;
-      letter-spacing:-.02em;
-      font-size: clamp(28px, 5.2vw, 52px);
-      line-height:1.12;
-      margin: 0 0 6px;
-    }
-
-    .subtitle{
-      margin:0 0 18px;
-      font-weight:800;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      font-size: 12px;
-      color: var(--muted2);
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      width: min(780px, 100%);
-      margin: 0 auto;
-    }
-
-    .stat{
-      background: rgba(255,255,255,.75);
-      border: 1px solid var(--line);
-      border-radius: var(--radius2);
-      box-shadow: var(--shadow2);
-      padding: 14px 14px;
-      display:grid;
-      gap: 6px;
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(150deg, #0B1224 0%, #121A33 45%, #141B3B 100%);
       position: relative;
-      overflow:hidden;
+      overflow: hidden;
+      padding: 3.5rem 1.25rem 3rem;
+      text-align: center;
     }
 
-    .stat::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
       background:
-        radial-gradient(520px 240px at 10% 10%, rgba(79,70,229,.08), transparent 60%),
-        radial-gradient(520px 240px at 90% 30%, rgba(124,58,237,.08), transparent 60%);
-      pointer-events:none;
-      opacity:.9;
-    }
-    .stat > *{ position:relative; z-index:2; }
-
-    .stat-top{
-      display:flex;
-      align-items:baseline;
-      justify-content:center;
-      gap: 10px;
-      flex-wrap: wrap;
+        radial-gradient(ellipse 60% 50% at 18% 22%, rgba(59,91,219,0.28) 0%, transparent 68%),
+        radial-gradient(ellipse 50% 60% at 82% 75%, rgba(109,40,217,0.18) 0%, transparent 70%);
+      pointer-events: none;
     }
 
-    .stat-num{
-      font-variant-numeric: tabular-nums;
-      font-weight:900;
-      letter-spacing:-.02em;
-      font-size: clamp(26px, 4.5vw, 40px);
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 34px 34px;
+      pointer-events: none;
     }
 
-    .stat-label{
-      font-weight:900;
-      letter-spacing:.10em;
-      text-transform:uppercase;
-      font-size: 11px;
-      color: var(--muted2);
-      margin-top: -2px;
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    .stars{
-      display:flex;
-      justify-content:center;
-      gap: 2px;
-      margin-top: 2px;
-    }
-    .star{
-      font-size: 14px;
-      color: rgba(245,158,11,.30);
-    }
-    .star.on{
-      color: var(--amber);
-      filter: drop-shadow(0 0 10px rgba(245,158,11,.18));
-    }
-
-    /* ========== Controls ========== */
-    .controls{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 18px 0 8px;
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 0.45rem 1.1rem;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
     }
 
-    .btn{
-      cursor:pointer;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.86);
-      color: var(--text);
-      padding: 10px 14px;
-      border-radius: 14px;
-      font-weight: 800;
-      font-size: 13px;
-      box-shadow: var(--shadow2);
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-      user-select:none;
-      display:inline-flex;
-      align-items:center;
-      gap: 10px;
-      white-space: nowrap;
-    }
-    .btn:hover{ transform: translateY(-1px); background: #fff; }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(79,70,229,.95), rgba(124,58,237,.95));
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
       color: #fff;
-      border-color: transparent;
-      box-shadow: 0 14px 34px rgba(79,70,229,.18);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 0.9rem;
     }
-    .btn.primary:hover{ transform: translateY(-2px); }
 
-    .meta-pill{
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.75);
-      color: var(--muted);
+    .hero-subtitle {
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+      color: rgba(255,255,255,0.75);
+      line-height: 1.65;
+      margin-bottom: 2.5rem;
+      font-weight: 400;
+    }
+
+    /* ── STATS ── */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.09);
+      border: 1px solid rgba(255,255,255,0.16);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 1.4rem 2rem;
+      min-width: 140px;
+      flex: 1;
+      max-width: 220px;
+    }
+
+    .stat-value {
+      font-size: 2.4rem;
       font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .02em;
-      box-shadow: var(--shadow2);
-      white-space: nowrap;
+      color: #fff;
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
     }
 
-    /* ========== Grid ========== */
-    main{ padding: 10px 0 34px; }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 10px;
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.62);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
-    .card{
-      background: rgba(255,255,255,.92);
-      border: 1px solid var(--line);
-      border-radius: var(--radius2);
-      box-shadow: var(--shadow2);
-      overflow:hidden;
-      display:flex;
-      flex-direction:column;
-      min-height: 150px; /* compact */
-      transition: transform .2s ease, box-shadow .2s ease;
-      animation: fadeUp .35s ease both;
+    .hero-stars {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      justify-content: center;
+      margin-top: 0.5rem;
     }
-    .card:hover{
+
+    .hstar {
+      font-size: 1.1rem;
+      color: var(--amber);
+      text-shadow: 0 0 8px rgba(217, 119, 6, 0.35);
+    }
+
+    /* ── MAIN CONTAINER ── */
+    .main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2.5rem 1rem 3rem;
+    }
+
+    /* ── SECTION HEADER ── */
+    .sec-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sec-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--text-1);
+      margin-bottom: 0.35rem;
+    }
+
+    .sec-sub {
+      font-size: 0.95rem;
+      color: var(--text-3);
+    }
+
+    /* ── SHUFFLE BUTTON ── */
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .shuffle-btn {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
+      color: #fff;
+      border: none;
+      padding: 0.85rem 2rem;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 10px 26px rgba(59,91,219,0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      letter-spacing: 0.01em;
+    }
+
+    .shuffle-btn:hover {
       transform: translateY(-3px);
-      box-shadow: var(--shadow);
+      box-shadow: 0 14px 34px rgba(59,91,219,0.28);
     }
 
-    @keyframes fadeUp{
-      from{ opacity:0; transform: translateY(10px); }
-      to{ opacity:1; transform: translateY(0); }
+    .shuffle-btn:active { transform: translateY(-1px); }
+
+    .dice {
+      font-size: 1.15rem;
+      transition: transform 0.4s ease;
+      display: inline-block;
     }
 
-    .review{
-      padding: 14px 14px 10px;
-      flex: 1 1 auto;
-      display:flex;
-      align-items:flex-start;
-      gap: 10px;
+    .shuffle-btn:hover .dice { transform: rotate(180deg); }
+
+    /* ── GRID ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
     }
 
-    .qmark{
+    /* ── CARD ── */
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      box-shadow: var(--shadow-xs);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(59,91,219,0.28);
+    }
+
+    /* Review section */
+    .card-review {
+      padding: 1.25rem 1.25rem 1rem;
+      flex: 1;
+      position: relative;
+
+      /* Subtle highlight (calm) */
+      background: linear-gradient(135deg, #F4F7FF 0%, #EEF3FF 100%);
+      border-bottom: 1px solid rgba(59,91,219,0.10);
+    }
+
+    .card:hover .card-review{
+      background: linear-gradient(135deg, #EEF3FF 0%, #E8EEFF 100%);
+    }
+
+    .q-icon {
       width: 34px;
       height: 34px;
-      border-radius: 12px;
-      flex: 0 0 auto;
-      background: linear-gradient(135deg, rgba(79,70,229,.14), rgba(124,58,237,.14));
-      border: 1px solid rgba(79,70,229,.16);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color: rgba(79,70,229,.95);
-      font-weight: 900;
-      font-size: 18px;
-      line-height: 1;
+      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.90));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.9rem;
+      flex-shrink: 0;
+      box-shadow: 0 10px 24px rgba(59,91,219,0.18);
     }
 
-    .review-text{
-      margin:0;
-      font-weight: 700;
-      color: #1f2937;
-      line-height: 1.65;
-      font-size: 15px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      overflow-y: scroll;
-      height: 60px;
-      -webkit-line-clamp: 5; /* auto-fit */
-      word-break: break-word;
+    .q-icon svg { width: 16px; height: 16px; fill: white; }
+
+    .review-text {
+      font-size: 0.93rem; /* ✅ change here if you want bigger */
+      line-height: 1.7;
+      color: var(--text-2);
+      font-weight: 500;
     }
 
-    .student{
-      border-top: 1px solid var(--line);
-      background: rgba(246,248,255,.65);
-      padding: 10px 14px;
-      display:flex;
-      align-items:center;
-      gap: 10px;
+    /* Student section */
+    .card-student {
+      padding: 0.9rem 1.25rem;
+      background: #F6F7FB; /* subtle */
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
     }
 
-    .avatar{
-      width: 34px; height: 34px;
-      border-radius: 999px;
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
       object-fit: cover;
-      border: 2px solid #fff;
-      box-shadow: 0 6px 18px rgba(15,23,42,.10);
-      flex: 0 0 auto;
-      background: rgba(15,23,42,.06);
+      border: 3px solid var(--surface);
+      box-shadow: var(--shadow-xs);
+      flex-shrink: 0;
     }
 
-    .smeta{
-      min-width:0;
-      display:flex;
-      flex-direction:column;
-      gap: 2px;
-    }
+    .student-meta { flex: 1; min-width: 0; }
 
-    .sname{
-      font-weight: 900;
-      font-size: 12px;
-      color: var(--text);
+    .s-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-1);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 100%;
+      margin-bottom: 0.15rem;
     }
 
-    .sbranch{
-      font-weight: 800;
-      font-size: 11px;
-      letter-spacing: .06em;
+    .s-roll {
+      font-size: 0.78rem;
+      color: var(--text-3);
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+    }
+
+    .s-badge {
+      display: inline-block;
+      padding: 0.22rem 0.6rem;
+      background: #EEF3FF;
+      color: #2E4AD6;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
       text-transform: uppercase;
-      color: var(--muted2);
+      letter-spacing: 0.04em;
+      border: 1px solid rgba(59,91,219,0.10);
+    }
+
+    /* ── PAGINATION ── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+    }
+
+    .pg-btn {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      color: var(--text-2);
+      padding: 0.55rem 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.85rem;
+      box-shadow: var(--shadow-xs);
+      transition: all 0.22s ease;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 100%;
     }
 
-    /* ========== Pagination ========== */
-    .pager{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 10px;
-      margin-top: 12px;
-      padding: 12px;
-      border-radius: var(--radius2);
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.78);
-      box-shadow: var(--shadow2);
-      flex-wrap: wrap;
-    }
-
-    .pg-left, .pg-right{
-      display:flex;
-      align-items:center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .pgbtn{
-      cursor:pointer;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.9);
-      color: var(--text);
-      padding: 9px 12px;
-      border-radius: 12px;
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing:.06em;
-      text-transform: uppercase;
-      transition: transform .16s ease, background .16s ease;
-      user-select:none;
-    }
-    .pgbtn:hover{ transform: translateY(-1px); background:#fff; }
-    .pgbtn:disabled{ opacity:.45; cursor:not-allowed; transform:none; }
-
-    .nums{ display:flex; gap:6px; flex-wrap: wrap; align-items:center; }
-    .numchip{
-      width: 36px; height: 36px;
-      display:flex; align-items:center; justify-content:center;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.9);
-      font-weight: 900;
-      font-size: 12px;
-      cursor:pointer;
-      user-select:none;
-      transition: transform .16s ease;
-    }
-    .numchip:hover{ transform: translateY(-1px); }
-    .numchip.active{
-      background: linear-gradient(135deg, rgba(79,70,229,.95), rgba(124,58,237,.95));
+    .pg-btn:hover:not(:disabled) {
+      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
       border-color: transparent;
-      color: #fff;
-    }
-    .dots{ color: var(--muted2); font-weight: 900; width: 22px; text-align:center; }
-
-    /* ========== States ========== */
-    .state{
-      margin-top: 12px;
-      padding: 16px;
-      border-radius: var(--radius2);
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,.78);
-      box-shadow: var(--shadow2);
-      display:grid;
-      gap: 6px;
-    }
-    .state h3{ margin:0; font-weight: 900; font-size: 14px; }
-    .state p{ margin:0; color: var(--muted); font-weight: 700; font-size: 13px; line-height:1.55; }
-    .state code{
-      display:block; margin-top: 6px;
-      padding: 10px 12px;
-      border-radius: 14px;
-      background: rgba(15,23,42,.06);
-      border: 1px solid var(--line);
-      color: #0f172a;
-      overflow:auto;
-      font-size: 12px;
+      color: white;
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
     }
 
-    /* ========== Responsive ========== */
-    @media (max-width: 980px){
-      .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .stats{ grid-template-columns: 1fr; }
-      .controls{ justify-content: center; }
-      .meta-pill{ width: 100%; text-align:center; }
-    }
-    @media (max-width: 600px){
-      .grid{ grid-template-columns: 1fr; }
-      .pager{ flex-direction: column; align-items: stretch; }
-      .pg-left, .pg-right{ justify-content: space-between; }
+    .pg-btn:disabled { opacity: 0.38; cursor: not-allowed; }
+
+    .pg-nums {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      flex-wrap: wrap;
     }
 
-    @media (prefers-reduced-motion: reduce){
-      .card{ animation:none; transition:none; }
-      .btn,.pgbtn,.numchip{ transition:none; }
+    .pg-num {
+      width: 38px;
+      height: 38px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-2);
+      box-shadow: var(--shadow-xs);
+      transition: all 0.22s ease;
+      flex-shrink: 0;
+    }
+
+    .pg-num:hover {
+      border-color: rgba(59,91,219,0.35);
+      color: #2E4AD6;
+      transform: translateY(-2px);
+    }
+
+    .pg-num.active {
+      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
+      border-color: transparent;
+      color: white;
+      box-shadow: 0 10px 26px rgba(59,91,219,0.20);
+    }
+
+    .pg-dots {
+      color: var(--text-3);
+      font-weight: 700;
+      font-size: 0.9rem;
+      width: 28px;
+      text-align: center;
+      user-select: none;
+    }
+
+    /* ── LOADING ── */
+    .loading-wrap {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    .spinner {
+      width: 46px;
+      height: 46px;
+      border: 4px solid var(--border);
+      border-top-color: var(--indigo);
+      border-radius: 50%;
+      animation: spin 0.85s linear infinite;
+      margin: 0 auto 1.25rem;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .loading-txt {
+      color: var(--text-3);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    /* ── ERROR ── */
+    .err-wrap {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--surface);
+      border-radius: var(--radius);
+      max-width: 580px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    .err-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .err-title { font-size: 1.5rem; font-weight: 800; color: var(--rose); margin-bottom: 0.75rem; }
+    .err-body { color: var(--text-3); line-height: 1.65; margin-bottom: 1.25rem; font-size: 0.95rem; }
+    .err-detail {
+      background: #F6F7FB; padding: 1rem; border-radius: 10px;
+      font-size: 0.82rem; color: var(--text-3); text-align: left;
+      border-left: 4px solid var(--rose);
+      border: 1px solid var(--border);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero { padding: 3rem 1rem 2.5rem; }
+      .stat-card { padding: 1.1rem 1.4rem; min-width: 120px; }
+      .stat-value { font-size: 1.9rem; }
+      .main { padding: 1.75rem 0.75rem 2.5rem; }
+      .grid { grid-template-columns: 1fr; gap: 1rem; }
+      .card-review { padding: 1rem 1rem 0.85rem; }
+      .card-student { padding: 0.8rem 1rem; }
+      .avatar { width: 44px; height: 44px; }
+      .s-name { font-size: 0.85rem; }
+      .pg-num { width: 34px; height: 34px; font-size: 0.8rem; }
+      .pg-btn { padding: 0.5rem 0.85rem; font-size: 0.8rem; }
+      .shuffle-btn { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+      .sec-title { font-size: 1.35rem; }
+    }
+
+    @media (max-width: 400px) {
+      .stats-row { gap: 0.75rem; }
+      .stat-card { padding: 1rem 1.1rem; }
+      .stat-value { font-size: 1.6rem; }
+    }
+
+    /* fade-in on load */
+    .card { animation: fadeUp 0.4s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 
 <body>
-  <header class="wrap hero">
-    <h1 class="title">AI Karyashala Bootcamp</h1>
-    <p class="subtitle">KIET Students Review</p>
+  <!-- ── HERO ── -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-pill">⭐ Authentic Student Reviews</div>
+      <h1 class="hero-title">What Our Students Say</h1>
+      <p class="hero-subtitle">
+        Discover how AI Karyashala Bootcamp has transformed the careers and lives of hundreds of students across India
+      </p>
 
-    <section class="stats" aria-label="Stats">
-      <div class="stat">
-        <div class="stat-top">
-          <div class="stat-num" id="statReviews">0</div>
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-value" id="totalStudents">0</span>
+          <span class="stat-label">Total Reviews</span>
         </div>
-        <div class="stat-label">Total Reviews</div>
-      </div>
-
-      <div class="stat">
-        <div class="stat-top">
-          <div class="stat-num" id="statAvg">0.0</div>
+        <div class="stat-card">
+          <span class="stat-value" id="averageRating">0.0</span>
+          <div class="hero-stars" id="heroStars">
+            <span class="hstar">★</span><span class="hstar">★</span><span class="hstar">★</span>
+            <span class="hstar">★</span><span class="hstar">★</span>
+          </div>
+          <span class="stat-label">Average Rating</span>
         </div>
-        <div class="stars" id="statStars" aria-label="Average rating stars"></div>
-        <div class="stat-label">Average Rating</div>
       </div>
-    </section>
-  </header>
+    </div>
+  </div>
 
-  <main class="wrap">
-    <div class="controls">
-      <button class="btn primary" id="btnRandom">🎲 Show 10 Random Reviews</button>
-      <div class="meta-pill" id="pillMeta">Page 1 • 0 shown</div>
+  <!-- ── MAIN ── -->
+  <div class="main">
+    <div class="sec-header">
+      <h2 class="sec-title">Student Testimonials</h2>
+      <p class="sec-sub">Real experiences from real students</p>
     </div>
 
-    <div id="state" class="state" style="display:none"></div>
+    <div class="controls">
+      <button class="shuffle-btn" onclick="showRandomProfiles()">
+        <span class="dice">🎲</span>
+        Show 10 Random Reviews
+      </button>
+    </div>
 
-    <section id="grid" class="grid" aria-label="Reviews grid"></section>
-
-    <nav id="pager" class="pager" aria-label="Pagination" style="display:none">
-      <div class="pg-left">
-        <button class="pgbtn" id="prevBtn">Prev</button>
-        <button class="pgbtn" id="nextBtn">Next</button>
+    <div id="grid" class="grid">
+      <div class="loading-wrap">
+        <div class="spinner"></div>
+        <p class="loading-txt">Loading testimonials…</p>
       </div>
-      <div class="pg-right">
-        <div class="nums" id="nums"></div>
-      </div>
-    </nav>
-  </main>
+    </div>
 
+    <div id="pagination" class="pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    // ===================== CONFIG =====================
-    // 1) students_data.json must be next to index.html (same folder)
-    const DATA_URL = "./students_data.json";
+    // ── CONFIG ──
+    const SUPABASE_URL      = 'https://pwghpxxfejmxvwhdjkda.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3Z2hweHhmZWpteHZ3aGRqa2RhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA3OTE2ODUsImV4cCI6MjA4NjM2NzY4NX0.eU-k1WuDN01cHZ4wibMwNhJkPz6JfrfqJqbed7yPKEY';
+    const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    // 2) If your JSON has image paths (like "student_images/abc.jpg") and images are in Supabase public bucket:
-    //    Fill these two values. If you don't need images, you can leave SUPABASE_URL empty.
-    const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
-    const BUCKET = "photos";
-
-    // 3) Stats targets (as you requested)
-    const TARGET_REVIEWS = 550;   // show 0 -> 550+
-    const TARGET_AVG = 3.8;       // show 0.0 -> 3.8
-
-    // ===================== State =====================
-    let all = [];
+    let students = [];
     let page = 1;
-    const PER_PAGE = 9;
-    let mode = "all"; // "all" | "random"
-    let randomList = [];
+    const PER_PAGE = 10;
+    let randomMode = false;
 
-    // ===================== Helpers =====================
-    const $ = (id) => document.getElementById(id);
-
-    function safeStr(v){ return (v === null || v === undefined) ? "" : String(v); }
-
-    function escapeHtml(s){
-      return safeStr(s)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
-    }
-
-    function clampRating(x){
-      const n = Number(x);
-      if (!Number.isFinite(n)) return 0;
-      return Math.max(0, Math.min(5, n));
-    }
-
-    function publicImageUrl(imagePath){
-      // If no SUPABASE_URL, return empty (we'll fallback avatar)
-      if (!SUPABASE_URL) return "";
-
-      let p = safeStr(imagePath).trim();
-      if (!p || p.toLowerCase() === "nan" || p.toLowerCase() === "none") return "";
-      if (p.startsWith("http://") || p.startsWith("https://")) return p;
-
-      p = p.replace(/^\/+/, "");
-      if (p.startsWith(BUCKET + "/")) p = p.slice(BUCKET.length + 1);
-
-      const encoded = p.split("/").map(seg => encodeURIComponent(seg)).join("/");
-      return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${encoded}`;
-    }
-
-    function fallbackAvatarSvg(name){
-      const letter = safeStr(name).trim().charAt(0).toUpperCase() || "S";
-      const svg = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
-          <defs>
-            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#4f46e5"/>
-              <stop offset="1" stop-color="#7c3aed"/>
-            </linearGradient>
-          </defs>
-          <rect width="120" height="120" rx="60" fill="url(#g)"/>
-          <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle"
-                font-family="Plus Jakarta Sans, Arial" font-weight="900" font-size="56" fill="white">${letter}</text>
-        </svg>
-      `.trim();
-      return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-    }
-
-    function makeStars(r){
-      const rounded = Math.round(r);
-      let html = "";
-      for (let i=1;i<=5;i++){
-        html += `<span class="star ${i<=rounded ? "on":""}">★</span>`;
-      }
-      return html;
-    }
-
-    function setState(title, body, extra){
-      const box = $("state");
-      box.style.display = "grid";
-      box.innerHTML = `
-        <h3>${escapeHtml(title)}</h3>
-        <p>${escapeHtml(body)}</p>
-        ${extra ? `<code>${escapeHtml(extra)}</code>` : ""}
-      `;
-    }
-
-    function clearState(){
-      $("state").style.display = "none";
-      $("state").innerHTML = "";
-    }
-
-    function animateNumber(el, from, to, duration, opts={}){
-      const start = performance.now();
-      const isFloat = !!opts.float;
-      const suffix = opts.suffix || "";
-      const decimals = opts.decimals ?? 1;
-
-      function tick(now){
-        const t = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - t, 3);
-        const val = from + (to - from) * eased;
-
-        if (isFloat){
-          el.textContent = val.toFixed(decimals) + (t === 1 ? suffix : "");
+    // ── COUNTER ANIMATION ──
+    function animateCounter(el, start, end, duration, isFloat, suffix) {
+      const startTime = performance.now();
+      function update(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // ease-out quad
+        const eased = 1 - (1 - progress) * (1 - progress);
+        const current = start + (end - start) * eased;
+        if (isFloat) {
+          el.textContent = current.toFixed(1) + (progress === 1 ? suffix : '');
         } else {
-          el.textContent = Math.floor(val) + (t === 1 ? suffix : "");
+          el.textContent = Math.floor(current) + (progress === 1 ? suffix : '');
         }
-        if (t < 1) requestAnimationFrame(tick);
+        if (progress < 1) requestAnimationFrame(update);
       }
-      requestAnimationFrame(tick);
+      requestAnimationFrame(update);
     }
 
-    // ===================== Data load =====================
-    async function loadData(){
-      setState("Loading reviews…", "Reading students_data.json and building the page.");
-
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
-
-      const raw = await res.json();
-
-      // Normalize: supports many column names
-      all = raw.map((s, idx) => {
-        const name = safeStr(s.name || s["Full Name"] || s.full_name).trim() || "Student";
-        const branch = safeStr(s.branch || s["Branch"]).trim() || "";
-        const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim();
-        const imgPath = s.image || s["Image Path"] || s.image_path || "";
-        return {
-          id: idx + 1,
-          name,
-          branch,
-          review,
-          image: publicImageUrl(imgPath)
-        };
-      }).filter(x => x.review); // keep only rows having a review
-
-      clearState();
-    }
-
-    // ===================== Rendering =====================
-    function currentList(){
-      return (mode === "random") ? randomList : all;
-    }
-
-    function cardHtml(s){
-      const name = escapeHtml(s.name);
-      const branch = escapeHtml(s.branch || "");
-      const img = s.image || fallbackAvatarSvg(s.name);
-
-      // Review must be inside quotes as requested
-      const review = escapeHtml(`“${s.review}”`);
-
-      return `
-        <article class="card">
-          <div class="review">
-            <div class="qmark">“</div>
-            <p class="review-text">${review}</p>
-          </div>
-          <div class="student">
-            <img class="avatar" src="${img}" alt="${name}"
-              onerror="this.onerror=null; this.src='${fallbackAvatarSvg(s.name)}';" />
-            <div class="smeta">
-              <div class="sname">${name}</div>
-              <div class="sbranch">${branch}</div>
-            </div>
-          </div>
-        </article>
-      `;
-    }
-
-    function buildPageNums(current, total){
-      const out = [];
-      const add = (x) => { if (!out.includes(x)) out.push(x); };
-
-      if (total <= 8){
-        for (let i=1;i<=total;i++) add(i);
-        return out;
+    // ── HERO STARS ──
+    function renderHeroStars(rating) {
+      const container = document.getElementById('heroStars');
+      const r = Math.round(rating);
+      container.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const s = document.createElement('span');
+        s.className = 'hstar';
+        s.style.color = i <= r ? '' : 'rgba(255,255,255,0.25)';
+        s.textContent = '★';
+        container.appendChild(s);
       }
-
-      add(1); add(2);
-
-      const left = Math.max(3, current - 1);
-      const right = Math.min(total - 2, current + 1);
-
-      if (left > 3) add("…");
-      for (let i=left;i<=right;i++) add(i);
-      if (right < total - 2) add("…");
-
-      add(total - 1); add(total);
-      return out;
     }
 
-    function render(){
-      const list = currentList();
-      const total = list.length;
+    // ── LOAD ──
+    async function loadStudents() {
+      try {
+        const { data: urlData } = sb.storage.from('data').getPublicUrl('students_data.json');
+        const res = await fetch(urlData.publicUrl);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        students = await res.json();
 
-      const pages = Math.max(1, Math.ceil(total / PER_PAGE));
-      page = Math.max(1, Math.min(page, pages));
+        // Resolve image URLs
+        students = students.map(s => {
+          const imgPath = (s.image || '').replace('student_images/', '');
+          const { data: imgUrl } = sb.storage.from('student-images').getPublicUrl(imgPath);
+          return { ...s, image: imgUrl.publicUrl };
+        });
 
-      const start = (page - 1) * PER_PAGE;
-      const items = list.slice(start, start + PER_PAGE);
+        const total = students.length;
+        const avgRaw = students.reduce((a, s) => a + (Number(s.rating) || 0), 0) / (total || 1);
 
-      $("pillMeta").textContent = `Page ${page} • ${items.length} shown`;
+        // Animate counters
+        animateCounter(document.getElementById('totalStudents'), 0, total, 1600, false, '+');
+        animateCounter(document.getElementById('averageRating'),  0, avgRaw, 1600, true,  '');
+        renderHeroStars(avgRaw);
 
-      if (!total){
-        $("grid").innerHTML = "";
-        $("pager").style.display = "none";
-        setState("No reviews found", "students_data.json has no review/comment fields.");
+        displayStudents();
+      } catch (err) {
+        document.getElementById('grid').innerHTML = `
+          <div class="err-wrap">
+            <div class="err-icon">⚠️</div>
+            <h2 class="err-title">Unable to Load Testimonials</h2>
+            <p class="err-body">We're experiencing technical difficulties. Please refresh the page or try again later.</p>
+            <div class="err-detail"><strong>Error:</strong> ${err.message}</div>
+          </div>`;
+      }
+    }
+
+    // ── HELPERS ──
+    function cleanRoll(r) { return String(r || '').replace(/^AIK/, ''); }
+
+    function fallbackAvatar(name) {
+      const letter = String(name || 'S').charAt(0).toUpperCase();
+      return `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'>
+        <rect fill='%233B5BDB' width='100' height='100' rx='50'/>
+        <text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle'
+              fill='white' font-size='42' font-weight='800' font-family='sans-serif'>${letter}</text>
+      </svg>`;
+    }
+
+    // ── RENDER CARDS ──
+    function renderCards(list) {
+      const grid = document.getElementById('grid');
+      if (!list || !list.length) {
+        grid.innerHTML = '<div class="loading-wrap"><p class="loading-txt">No testimonials found.</p></div>';
         return;
       }
-
-      $("grid").innerHTML = items.map(cardHtml).join("");
-
-      // Pagination
-      $("pager").style.display = pages > 1 ? "flex" : "none";
-      $("prevBtn").disabled = page <= 1;
-      $("nextBtn").disabled = page >= pages;
-
-      $("nums").innerHTML = buildPageNums(page, pages).map(p => {
-        if (p === "…") return `<div class="dots">…</div>`;
-        const cls = (p === page) ? "numchip active" : "numchip";
-        return `<div class="${cls}" data-page="${p}">${p}</div>`;
-      }).join("");
+      grid.innerHTML = list.map((s, i) => `
+        <div class="card" style="animation-delay:${i * 40}ms">
+          <div class="card-review">
+            <div class="q-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+            </div>
+            <p class="review-text">${s.review || ''}</p>
+          </div>
+          <div class="card-student">
+            <img class="avatar"
+                 src="${s.image}"
+                 alt="${s.name || ''}"
+                 onerror="this.src='${fallbackAvatar(s.name)}'">
+            <div class="student-meta">
+              <div class="s-name">${s.name || ''}</div>
+              <div class="s-roll">${cleanRoll(s.roll_number)}</div>
+              <span class="s-badge">${s.branch || ''}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
     }
 
-    // ===================== Random =====================
-    function showRandom10(){
-      mode = "random";
-      // shuffle and pick 10
-      randomList = all.slice().sort(()=>Math.random()-0.5).slice(0, 10);
-      page = 1;
-      render();
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    // ── RANDOM ──
+    function showRandomProfiles() {
+      if (!students.length) { alert('Please wait for data to load.'); return; }
+      randomMode = true;
+      const shuffled = [...students].sort(() => Math.random() - 0.5).slice(0, 10);
+      renderCards(shuffled);
+      document.getElementById('pagination').innerHTML = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // ===================== Events =====================
-    function wireEvents(){
-      $("btnRandom").addEventListener("click", showRandom10);
-
-      $("prevBtn").addEventListener("click", () => {
-        page = Math.max(1, page - 1);
-        render();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      $("nextBtn").addEventListener("click", () => {
-        const pages = Math.max(1, Math.ceil(currentList().length / PER_PAGE));
-        page = Math.min(pages, page + 1);
-        render();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      $("nums").addEventListener("click", (e) => {
-        const t = e.target.closest("[data-page]");
-        if (!t) return;
-        const p = parseInt(t.getAttribute("data-page"), 10);
-        if (!p) return;
-        page = p;
-        render();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
+    // ── PAGINATED DISPLAY ──
+    function displayStudents() {
+      randomMode = false;
+      const start = (page - 1) * PER_PAGE;
+      renderCards(students.slice(start, start + PER_PAGE));
+      buildPagination();
+      document.getElementById('pagination').style.display = 'flex';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // ===================== Init =====================
-    async function init(){
-      try{
-        wireEvents();
-        await loadData();
+    // ── PAGINATION ──
+    // Always shows: Prev | 1 2 3 ... lastPage | Next
+    function buildPagination() {
+      const total = Math.ceil(students.length / PER_PAGE);
+      const pg = document.getElementById('pagination');
+      if (total <= 1) { pg.innerHTML = ''; return; }
 
-        // Default: show latest order as in file (no sort requested)
-        mode = "all";
-        page = 1;
+      // Always show pages 1, 2, 3, then "…", then last
+      const showPages = [];
+      const FIXED = 3; // always show first 3
 
-        // Animate stats exactly as you asked: 0->550+ and 0->3.8
-        animateNumber($("statReviews"), 0, TARGET_REVIEWS, 1400, { float:false, suffix:"+", decimals:0 });
-        animateNumber($("statAvg"), 0, TARGET_AVG, 1400, { float:true, suffix:"", decimals:1 });
-        $("statStars").innerHTML = makeStars(TARGET_AVG);
+      for (let i = 1; i <= Math.min(FIXED, total); i++) showPages.push(i);
 
-        render();
-      } catch (err){
-        $("grid").innerHTML = "";
-        $("pager").style.display = "none";
-        setState(
-          "Unable to load data",
-          "Fix: keep students_data.json in the same folder as index.html and make sure it is deployed.",
-          (err && err.message) ? err.message : String(err)
-        );
+      // If current page is beyond FIXED and not the last, include it + neighbors
+      if (page > FIXED && page < total) {
+        if (page - 1 > FIXED) showPages.push('…1');
+        if (page - 1 > FIXED) showPages.push(page - 1);
+        showPages.push(page);
+        if (page + 1 < total) showPages.push(page + 1);
+        if (page + 1 < total - 1) showPages.push('…2');
+      } else if (page > FIXED) {
+        if (page - 1 > FIXED) showPages.push('…1');
       }
+
+      // Always show last
+      if (!showPages.includes(total)) {
+        if (showPages[showPages.length - 1] !== total - 1 &&
+            !String(showPages[showPages.length - 1]).startsWith('…')) {
+          showPages.push('…last');
+        }
+        showPages.push(total);
+      }
+
+      let html = `
+        <button class="pg-btn" onclick="goPage(${page - 1})" ${page === 1 ? 'disabled' : ''}>← Prev</button>
+        <div class="pg-nums">
+      `;
+
+      showPages.forEach(p => {
+        if (String(p).startsWith('…')) {
+          html += `<span class="pg-dots">…</span>`;
+        } else {
+          html += `<div class="pg-num ${p === page ? 'active' : ''}" onclick="goPage(${p})">${p}</div>`;
+        }
+      });
+
+      html += `</div>
+        <button class="pg-btn" onclick="goPage(${page + 1})" ${page === total ? 'disabled' : ''}>Next →</button>`;
+
+      pg.innerHTML = html;
     }
 
-    init();
+    function goPage(p) {
+      const total = Math.ceil(students.length / PER_PAGE);
+      if (p < 1 || p > total) return;
+      page = p;
+      displayStudents();
+    }
+
+    // ── INIT ──
+    loadStudents();
   </script>
 </body>
 </html>
