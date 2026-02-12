@@ -1,4 +1,98 @@
-<!DOCTYPE html>
+201~200~<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+
+// ── CONFIG ──
+const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
+const SUPABASE_ANON_KEY = "YOUR_ANON_KEY_HERE";  // <-- paste your anon key here
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+let students = [];
+let page = 1;
+const PER_PAGE = 9;
+let randomMode = false;
+
+
+// ── LOAD STUDENTS DATA ──
+async function loadStudents() {
+	    try {
+	    	        // ✅ Fetch JSON from photos bucket
+	    	                const { data } = sb.storage
+	    	                            .from("photos")
+	    	                                        .getPublicUrl("students_data.json");
+
+	    	                                                const response = await fetch(data.publicUrl);
+	    	                                                        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+	    	                                                                students = await response.json();
+
+	    	                                                                        // ✅ Attach image URLs correctly
+	    	                                                                                students = students.map(s => {
+	    	                                                                                	            const imagePath = `student_images/${s.image}`;
+	    	                                                                                	                        const { data: imgData } = sb.storage
+	    	                                                                                	                                        .from("photos")
+	    	                                                                                	                                                        .getPublicUrl(imagePath);
+
+	    	                                                                                	                                                                    return {
+	    	                                                                                	                                                                    	                ...s,
+	    	                                                                                	                                                                    	                                image: imgData.publicUrl
+	    	                                                                                	                                                                    	                                            };
+	    	                                                                                	                                                                    	                                                    });
+
+	    	                                                                                	                                                                    	                                                            displayStudents();
+
+	    	                                                                                	                                                                    	                                                                } catch (error) {
+	    	                                                                                	                                                                    	                                                                	        document.getElementById("grid").innerHTML = `
+	    	                                                                                	                                                                    	                                                                	                    <div style="text-align:center;padding:40px;">
+	    	                                                                                	                                                                    	                                                                	                                    <h2 style="color:red;">Unable to Load Testimonials</h2>
+	    	                                                                                	                                                                    	                                                                	                                                    <p>${error.message}</p>
+	    	                                                                                	                                                                    	                                                                	                                                                </div>
+	    	                                                                                	                                                                    	                                                                	                                                                        `;
+	    	                                                                                	                                                                    	                                                                	                                                                            }
+	    	                                                                                	                                                                    	                                                                	                                                                            }
+
+
+	    	                                                                                	                                                                    	                                                                	                                                                            // ── RENDER CARDS ──
+	    	                                                                                	                                                                    	                                                                	                                                                            function renderCards(list) {
+	    	                                                                                	                                                                    	                                                                	                                                                            	    const grid = document.getElementById("grid");
+
+	    	                                                                                	                                                                    	                                                                	                                                                            	        grid.innerHTML = list.map(student => `
+	    	                                                                                	                                                                    	                                                                	                                                                            	                <div class="card">
+	    	                                                                                	                                                                    	                                                                	                                                                            	                            <div class="card-review">
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                            <p class="review-text">"${student.review || ''}"</p>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                        </div>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                    <div class="card-student">
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                    <img class="avatar"
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                         src="${student.image}"
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                              onerror="this.src='fallback.png'">
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                              <div class="student-meta">
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                  <div class="s-name">${student.name || ''}</div>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                      <span class="s-badge">${student.branch || ''}</span>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                      </div>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                  </div>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                          </div>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              `).join("");
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              }
+
+
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              // ── PAGINATION DISPLAY ──
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              function displayStudents() {
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	    const start = (page - 1) * PER_PAGE;
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	        const end = start + PER_PAGE;
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	            renderCards(students.slice(start, end));
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	            }
+
+
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	            // ── INIT ──
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	            loadStudents();
+
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              	            </script>
+	    	                                                                                	                                                                    	                                                                	                                                                            	                                                                                                                                                                                                                              }
+	    	                                                                                	                                                                    	                                                                	                                                                            }
+	    	                                                                                	                                                                    	                                                                }
+	    	                                                                                	                                                                    }
+	    	                                                                                })
+	    }
+}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -538,7 +632,7 @@
 <!-- ── HERO ── -->
 <div class="hero">
     <div class="hero-inner">
-        <div class="hero-pill">⭐ Authentic Student Reviews</div>
+        <div class="hero-pill">⭐ KIET Student Reviews</div>
         <h1 class="hero-title">What Our Students Say</h1>
         <p class="hero-subtitle">
             Discover how AI Karyashala Bootcamp has transformed the careers and lives of hundreds of students across India
