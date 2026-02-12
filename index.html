@@ -3,47 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Karyashala Bootcamp • Student Reviews</title>
+  <title>AI Karyashala Bootcamp • KIET Students Review</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== Reset ===== */
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-    img { max-width: 100%; display: block; }
-    button { font: inherit; }
+    /* ========== Reset ========== */
+    *,*::before,*::after{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{ margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+    img{ max-width:100%; display:block; }
+    button{ font:inherit; }
+    a{ color:inherit; text-decoration:none; }
+
+    /* ========== Calm theme ========== */
     :root{
-      --bg0: #070A12;
-      --bg1: #0B1024;
-
-      --text1: rgba(255,255,255,.92);
-      --text2: rgba(255,255,255,.72);
-      --text3: rgba(255,255,255,.55);
-
-      --card: rgba(255,255,255,.06);
-      --border: rgba(255,255,255,.10);
-
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --shadow2: 0 10px 32px rgba(0,0,0,.35);
-
-      --radius: 22px;
-
-      --indigo: #6366F1;
-      --violet: #8B5CF6;
-      --amber: #FBBF24;
+      --bg0:#f6f8ff;
+      --bg1:#f3f6fb;
+      --card:#ffffff;
+      --line:#e8ecf5;
+      --text:#0f172a;
+      --muted:#5b667a;
+      --muted2:#7a8598;
+      --accent:#4f46e5;      /* indigo */
+      --accent2:#7c3aed;     /* violet */
+      --shadow: 0 18px 55px rgba(15, 23, 42, .10);
+      --shadow2: 0 10px 28px rgba(15, 23, 42, .08);
+      --radius: 18px;
+      --radius2: 22px;
+      --amber:#f59e0b;
     }
 
     body{
-      color: var(--text1);
+      color:var(--text);
       background:
-        radial-gradient(1000px 600px at 10% 10%, rgba(99,102,241,.24), transparent 60%),
-        radial-gradient(900px 650px at 85% 25%, rgba(139,92,246,.18), transparent 60%),
+        radial-gradient(900px 520px at 12% 10%, rgba(79,70,229,.10), transparent 60%),
+        radial-gradient(900px 520px at 88% 20%, rgba(124,58,237,.10), transparent 60%),
         linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
-      overflow-x: hidden;
+      overflow-x:hidden;
     }
 
     .wrap{
@@ -51,321 +51,460 @@
       margin: 0 auto;
     }
 
-    /* ===== Header ===== */
-    header{
-      padding: 28px 0 12px;
-      text-align: center;
+    /* ========== Header ========== */
+    header.hero{
+      padding: 28px 0 14px;
+      text-align:center;
     }
 
-    .brand{
-      font-family: "Fraunces", serif;
-      font-weight: 700;
-      letter-spacing: -.02em;
-      font-size: clamp(30px, 4.2vw, 52px);
-      line-height: 1.05;
-      margin: 0;
+    .title{
+      font-family:"Fraunces",serif;
+      font-weight:700;
+      letter-spacing:-.02em;
+      font-size: clamp(28px, 5.2vw, 52px);
+      line-height:1.12;
+      margin: 0 0 6px;
     }
 
-    .subbrand{
-      margin-top: 8px;
-      color: var(--text2);
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
+    .subtitle{
+      margin:0 0 18px;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
       font-size: 12px;
+      color: var(--muted2);
     }
 
-    /* ===== Stats ===== */
     .stats{
-      margin-top: 18px;
-      display: grid;
+      display:grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      align-items: stretch;
+      width: min(780px, 100%);
+      margin: 0 auto;
     }
 
     .stat{
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.045));
-      border-radius: var(--radius);
+      background: rgba(255,255,255,.75);
+      border: 1px solid var(--line);
+      border-radius: var(--radius2);
       box-shadow: var(--shadow2);
       padding: 14px 14px;
-      display: grid;
-      gap: 8px;
+      display:grid;
+      gap: 6px;
+      position: relative;
+      overflow:hidden;
     }
 
-    .stat .label{
-      color: var(--text3);
-      font-weight: 900;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      font-size: 11px;
+    .stat::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(520px 240px at 10% 10%, rgba(79,70,229,.08), transparent 60%),
+        radial-gradient(520px 240px at 90% 30%, rgba(124,58,237,.08), transparent 60%);
+      pointer-events:none;
+      opacity:.9;
     }
+    .stat > *{ position:relative; z-index:2; }
 
-    .stat .value{
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
+    .stat-top{
+      display:flex;
+      align-items:baseline;
+      justify-content:center;
       gap: 10px;
+      flex-wrap: wrap;
     }
 
-    .big-num{
-      font-weight: 900;
-      letter-spacing: -.02em;
+    .stat-num{
       font-variant-numeric: tabular-nums;
-      font-size: clamp(34px, 4.4vw, 56px);
-      line-height: 1;
+      font-weight:900;
+      letter-spacing:-.02em;
+      font-size: clamp(26px, 4.5vw, 40px);
+    }
+
+    .stat-label{
+      font-weight:900;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+      font-size: 11px;
+      color: var(--muted2);
+      margin-top: -2px;
     }
 
     .stars{
-      display: inline-flex;
+      display:flex;
+      justify-content:center;
       gap: 2px;
-      transform: translateY(3px);
+      margin-top: 2px;
     }
-
     .star{
       font-size: 14px;
-      color: rgba(255,255,255,.18);
+      color: rgba(245,158,11,.30);
     }
     .star.on{
       color: var(--amber);
-      filter: drop-shadow(0 0 10px rgba(251,191,36,.22));
+      filter: drop-shadow(0 0 10px rgba(245,158,11,.18));
     }
 
-    /* ===== Grid ===== */
-    main{ padding: 16px 0 28px; }
+    /* ========== Controls ========== */
+    .controls{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 18px 0 8px;
+    }
+
+    .btn{
+      cursor:pointer;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.86);
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-weight: 800;
+      font-size: 13px;
+      box-shadow: var(--shadow2);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      user-select:none;
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); background: #fff; }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(79,70,229,.95), rgba(124,58,237,.95));
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 14px 34px rgba(79,70,229,.18);
+    }
+    .btn.primary:hover{ transform: translateY(-2px); }
+
+    .meta-pill{
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.75);
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .02em;
+      box-shadow: var(--shadow2);
+      white-space: nowrap;
+    }
+
+    /* ========== Grid ========== */
+    main{ padding: 10px 0 34px; }
 
     .grid{
-      margin-top: 14px;
-      display: grid;
+      display:grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
+      margin-top: 10px;
     }
 
-    /* Compact card (about 25% less height) */
     .card{
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.040));
-      border-radius: var(--radius);
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      border-radius: var(--radius2);
       box-shadow: var(--shadow2);
-      overflow: hidden;
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-      min-height: 190px; /* compact */
-      position: relative;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height: 200px; /* compact */
+      transition: transform .2s ease, box-shadow .2s ease;
+      animation: fadeUp .35s ease both;
     }
     .card:hover{
       transform: translateY(-3px);
-      border-color: rgba(99,102,241,.30);
       box-shadow: var(--shadow);
     }
 
-    .card-body{
-      padding: 14px 14px 10px;
+    @keyframes fadeUp{
+      from{ opacity:0; transform: translateY(10px); }
+      to{ opacity:1; transform: translateY(0); }
     }
 
-    /* Big quote highlight */
-    .quote{
-      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-      font-weight: 800;
-      color: rgba(255,255,255,.90);
-      font-size: 15px;     /* highlight */
-      line-height: 1.6;
-      letter-spacing: -.01em;
-      white-space: pre-wrap;
-      word-break: break-word;
+    .review{
+      padding: 14px 14px 10px;
+      flex: 1 1 auto;
+      display:flex;
+      align-items:flex-start;
+      gap: 10px;
+    }
 
-      /* auto-compact inside card */
+    .qmark{
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, rgba(79,70,229,.14), rgba(124,58,237,.14));
+      border: 1px solid rgba(79,70,229,.16);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: rgba(79,70,229,.95);
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .review-text{
+      margin:0;
+      font-weight: 700;
+      color: #1f2937;
+      line-height: 1.65;
+      font-size: 14px;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 4;   /* keeps height compact */
       overflow: hidden;
+      -webkit-line-clamp: 5; /* auto-fit */
+      word-break: break-word;
     }
 
     .student{
-      margin-top: 10px;
-      padding: 10px 14px 12px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      display: flex;
-      align-items: center;
+      border-top: 1px solid var(--line);
+      background: rgba(246,248,255,.65);
+      padding: 10px 14px;
+      display:flex;
+      align-items:center;
       gap: 10px;
-      background: rgba(255,255,255,.03);
     }
 
     .avatar{
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
+      width: 34px; height: 34px;
+      border-radius: 999px;
       object-fit: cover;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.08);
+      border: 2px solid #fff;
+      box-shadow: 0 6px 18px rgba(15,23,42,.10);
       flex: 0 0 auto;
+      background: rgba(15,23,42,.06);
     }
 
-    .meta{
-      min-width: 0;
-      display: grid;
+    .smeta{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
       gap: 2px;
     }
-    .name{
+
+    .sname{
       font-weight: 900;
-      letter-spacing: -.02em;
-      font-size: 13px;
+      font-size: 12px;
+      color: var(--text);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      color: rgba(255,255,255,.88);
-    }
-    .branch{
-      font-weight: 800;
-      font-size: 11px;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      color: var(--text3);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      max-width: 100%;
     }
 
-    /* ===== Pagination ===== */
+    .sbranch{
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted2);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    /* ========== Pagination ========== */
     .pager{
-      margin-top: 14px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      box-shadow: var(--shadow2);
-      padding: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
       gap: 10px;
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: var(--radius2);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.78);
+      box-shadow: var(--shadow2);
+      flex-wrap: wrap;
+    }
+
+    .pg-left, .pg-right{
+      display:flex;
+      align-items:center;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .pgbtn{
-      cursor: pointer;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.88);
-      padding: 10px 12px;
-      border-radius: 14px;
+      cursor:pointer;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.9);
+      color: var(--text);
+      padding: 9px 12px;
+      border-radius: 12px;
       font-weight: 900;
       font-size: 12px;
-      letter-spacing: .10em;
+      letter-spacing:.06em;
       text-transform: uppercase;
-      transition: transform .16s ease, background .16s ease, border-color .16s ease, opacity .16s ease;
-      user-select: none;
-      min-width: 120px;
+      transition: transform .16s ease, background .16s ease;
+      user-select:none;
     }
-    .pgbtn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.075); border-color: rgba(255,255,255,.18); }
-    .pgbtn:disabled{ opacity: .42; cursor: not-allowed; transform: none; }
+    .pgbtn:hover{ transform: translateY(-1px); background:#fff; }
+    .pgbtn:disabled{ opacity:.45; cursor:not-allowed; transform:none; }
 
-    .pageinfo{
-      color: var(--text2);
-      font-weight: 800;
+    .nums{ display:flex; gap:6px; flex-wrap: wrap; align-items:center; }
+    .numchip{
+      width: 36px; height: 36px;
+      display:flex; align-items:center; justify-content:center;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.9);
+      font-weight: 900;
       font-size: 12px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      text-align: center;
-      flex: 1;
+      cursor:pointer;
+      user-select:none;
+      transition: transform .16s ease;
     }
+    .numchip:hover{ transform: translateY(-1px); }
+    .numchip.active{
+      background: linear-gradient(135deg, rgba(79,70,229,.95), rgba(124,58,237,.95));
+      border-color: transparent;
+      color: #fff;
+    }
+    .dots{ color: var(--muted2); font-weight: 900; width: 22px; text-align:center; }
 
-    /* ===== States ===== */
+    /* ========== States ========== */
     .state{
-      margin-top: 14px;
+      margin-top: 12px;
       padding: 16px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
+      border-radius: var(--radius2);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.78);
       box-shadow: var(--shadow2);
-      color: var(--text2);
-      line-height: 1.6;
-      font-weight: 700;
-      font-size: 13px;
+      display:grid;
+      gap: 6px;
     }
+    .state h3{ margin:0; font-weight: 900; font-size: 14px; }
+    .state p{ margin:0; color: var(--muted); font-weight: 700; font-size: 13px; line-height:1.55; }
     .state code{
-      display:block;
-      margin-top: 8px;
+      display:block; margin-top: 6px;
       padding: 10px 12px;
       border-radius: 14px;
-      background: rgba(0,0,0,.35);
-      border: 1px solid rgba(255,255,255,.08);
-      color: rgba(255,255,255,.86);
+      background: rgba(15,23,42,.06);
+      border: 1px solid var(--line);
+      color: #0f172a;
       overflow:auto;
       font-size: 12px;
-      font-weight: 700;
     }
 
-    /* ===== Responsive ===== */
+    /* ========== Responsive ========== */
     @media (max-width: 980px){
       .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 640px){
       .stats{ grid-template-columns: 1fr; }
+      .controls{ justify-content: center; }
+      .meta-pill{ width: 100%; text-align:center; }
+    }
+    @media (max-width: 600px){
       .grid{ grid-template-columns: 1fr; }
-      .pgbtn{ min-width: 110px; }
+      .pager{ flex-direction: column; align-items: stretch; }
+      .pg-left, .pg-right{ justify-content: space-between; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .card{ animation:none; transition:none; }
+      .btn,.pgbtn,.numchip{ transition:none; }
     }
   </style>
 </head>
 
 <body>
-  <header class="wrap">
-    <h1 class="brand">AI Karyashala Bootcamp</h1>
-    <div class="subbrand">KIET Students Reviews</div>
+  <header class="wrap hero">
+    <h1 class="title">AI Karyashala Bootcamp</h1>
+    <p class="subtitle">KIET Students Review</p>
 
     <section class="stats" aria-label="Stats">
       <div class="stat">
-        <div class="label">Total Reviews</div>
-        <div class="value">
-          <div class="big-num" id="totalReviews">0</div>
+        <div class="stat-top">
+          <div class="stat-num" id="statReviews">0</div>
         </div>
+        <div class="stat-label">Total Reviews</div>
       </div>
 
       <div class="stat">
-        <div class="label">Overall Rating</div>
-        <div class="value">
-          <div class="big-num" id="overallRating">0.0</div>
-          <div class="stars" id="ratingStars" aria-label="Rating stars"></div>
+        <div class="stat-top">
+          <div class="stat-num" id="statAvg">0.0</div>
         </div>
+        <div class="stars" id="statStars" aria-label="Average rating stars"></div>
+        <div class="stat-label">Average Rating</div>
       </div>
     </section>
   </header>
 
   <main class="wrap">
+    <div class="controls">
+      <button class="btn primary" id="btnRandom">🎲 Show 10 Random Reviews</button>
+      <div class="meta-pill" id="pillMeta">Page 1 • 0 shown</div>
+    </div>
+
     <div id="state" class="state" style="display:none"></div>
-    <section id="grid" class="grid" aria-label="Reviews"></section>
+
+    <section id="grid" class="grid" aria-label="Reviews grid"></section>
 
     <nav id="pager" class="pager" aria-label="Pagination" style="display:none">
-      <button class="pgbtn" id="prevBtn">Prev</button>
-      <div class="pageinfo" id="pageInfo">Page 1</div>
-      <button class="pgbtn" id="nextBtn">Next</button>
+      <div class="pg-left">
+        <button class="pgbtn" id="prevBtn">Prev</button>
+        <button class="pgbtn" id="nextBtn">Next</button>
+      </div>
+      <div class="pg-right">
+        <div class="nums" id="nums"></div>
+      </div>
     </nav>
   </main>
 
   <script>
-    // ===== CONFIG (YOUR SUPABASE) =====
-    const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
-    const BUCKET = "photos";
+    // ===================== CONFIG =====================
+    // 1) students_data.json must be next to index.html (same folder)
     const DATA_URL = "./students_data.json";
 
-    // ===== UI targets you wanted (fixed display) =====
-    const DISPLAY_TOTAL_TARGET = 550;    // show 0 → 550+
-    const DISPLAY_RATING_TARGET = 3.8;   // show 0 → 3.8
+    // 2) If your JSON has image paths (like "student_images/abc.jpg") and images are in Supabase public bucket:
+    //    Fill these two values. If you don't need images, you can leave SUPABASE_URL empty.
+    const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
+    const BUCKET = "photos";
 
-    // ===== State =====
+    // 3) Stats targets (as you requested)
+    const TARGET_REVIEWS = 550;   // show 0 -> 550+
+    const TARGET_AVG = 3.8;       // show 0.0 -> 3.8
+
+    // ===================== State =====================
     let all = [];
     let page = 1;
     const PER_PAGE = 9;
+    let mode = "all"; // "all" | "random"
+    let randomList = [];
 
+    // ===================== Helpers =====================
     const $ = (id) => document.getElementById(id);
+
     function safeStr(v){ return (v === null || v === undefined) ? "" : String(v); }
+
+    function escapeHtml(s){
+      return safeStr(s)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
 
     function clampRating(x){
       const n = Number(x);
       if (!Number.isFinite(n)) return 0;
-      return Math.max(1, Math.min(5, n));
+      return Math.max(0, Math.min(5, n));
     }
 
-    // Build public URL from: "student_images/FILE.jpg" (or already full URL)
     function publicImageUrl(imagePath){
+      // If no SUPABASE_URL, return empty (we'll fallback avatar)
+      if (!SUPABASE_URL) return "";
+
       let p = safeStr(imagePath).trim();
       if (!p || p.toLowerCase() === "nan" || p.toLowerCase() === "none") return "";
       if (p.startsWith("http://") || p.startsWith("https://")) return p;
@@ -383,11 +522,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">
           <defs>
             <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#6366F1"/>
-              <stop offset="1" stop-color="#8B5CF6"/>
+              <stop offset="0" stop-color="#4f46e5"/>
+              <stop offset="1" stop-color="#7c3aed"/>
             </linearGradient>
           </defs>
-          <rect width="120" height="120" rx="28" fill="url(#g)"/>
+          <rect width="120" height="120" rx="60" fill="url(#g)"/>
           <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle"
                 font-family="Plus Jakarta Sans, Arial" font-weight="900" font-size="56" fill="white">${letter}</text>
         </svg>
@@ -395,156 +534,230 @@
       return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     }
 
-    function escapeHtml(s){
-      return safeStr(s)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
-    }
-
-    function setState(title, body, extra){
-      const box = $("state");
-      box.style.display = "block";
-      box.innerHTML = `
-        <div style="font-weight:900;color:rgba(255,255,255,.92)">${escapeHtml(title)}</div>
-        <div style="margin-top:6px">${escapeHtml(body)}</div>
-        ${extra ? `<code>${escapeHtml(extra)}</code>` : ""}
-      `;
-    }
-    function clearState(){
-      $("state").style.display = "none";
-      $("state").innerHTML = "";
-    }
-
-    // 0 → target animation
-    function animateCount(el, to, opts={}){
-      const dur = opts.duration || 900;
-      const isFloat = !!opts.float;
-      const suffix = opts.suffix || "";
-      const start = performance.now();
-      const from = 0;
-
-      function tick(now){
-        const t = Math.min((now - start)/dur, 1);
-        const eased = 1 - Math.pow(1 - t, 3);
-        const val = from + (to - from) * eased;
-        el.textContent = isFloat ? val.toFixed(1) + suffix : Math.round(val) + suffix;
-        if (t < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }
-
-    function renderStars(r){
+    function makeStars(r){
       const rounded = Math.round(r);
       let html = "";
       for (let i=1;i<=5;i++){
         html += `<span class="star ${i<=rounded ? "on":""}">★</span>`;
       }
-      $("ratingStars").innerHTML = html;
+      return html;
     }
 
+    function setState(title, body, extra){
+      const box = $("state");
+      box.style.display = "grid";
+      box.innerHTML = `
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(body)}</p>
+        ${extra ? `<code>${escapeHtml(extra)}</code>` : ""}
+      `;
+    }
+
+    function clearState(){
+      $("state").style.display = "none";
+      $("state").innerHTML = "";
+    }
+
+    function animateNumber(el, from, to, duration, opts={}){
+      const start = performance.now();
+      const isFloat = !!opts.float;
+      const suffix = opts.suffix || "";
+      const decimals = opts.decimals ?? 1;
+
+      function tick(now){
+        const t = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const val = from + (to - from) * eased;
+
+        if (isFloat){
+          el.textContent = val.toFixed(decimals) + (t === 1 ? suffix : "");
+        } else {
+          el.textContent = Math.floor(val) + (t === 1 ? suffix : "");
+        }
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // ===================== Data load =====================
     async function loadData(){
-      setState("Loading…", "Reading students_data.json");
+      setState("Loading reviews…", "Reading students_data.json and building the page.");
 
       const res = await fetch(DATA_URL, { cache: "no-store" });
       if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
+
       const raw = await res.json();
 
+      // Normalize: supports many column names
       all = raw.map((s, idx) => {
         const name = safeStr(s.name || s["Full Name"] || s.full_name).trim() || "Student";
-        const branch = safeStr(s.branch || s["Branch"]).trim() || "—";
-        const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim() || "No comment provided.";
-        const rating = clampRating(s.rating || s["Rating (1-5)"] || s["Rating"]);
-        const img = publicImageUrl(s.image || s["Image Path"] || s.image_path || "");
-
-        return { idx: idx+1, name, branch, review, rating, img };
-      });
+        const branch = safeStr(s.branch || s["Branch"]).trim() || "";
+        const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim();
+        const imgPath = s.image || s["Image Path"] || s.image_path || "";
+        return {
+          id: idx + 1,
+          name,
+          branch,
+          review,
+          image: publicImageUrl(imgPath)
+        };
+      }).filter(x => x.review); // keep only rows having a review
 
       clearState();
+    }
 
-      // You asked: show fixed running numbers
-      animateCount($("totalReviews"), DISPLAY_TOTAL_TARGET, { duration: 1100, float: false, suffix: "+" });
-      animateCount($("overallRating"), DISPLAY_RATING_TARGET, { duration: 1100, float: true, suffix: "" });
-      renderStars(DISPLAY_RATING_TARGET);
-
-      page = 1;
-      renderPage();
-      wirePager();
+    // ===================== Rendering =====================
+    function currentList(){
+      return (mode === "random") ? randomList : all;
     }
 
     function cardHtml(s){
       const name = escapeHtml(s.name);
-      const branch = escapeHtml(s.branch);
-      const review = escapeHtml(s.review);
-      const img = s.img || fallbackAvatarSvg(s.name);
+      const branch = escapeHtml(s.branch || "");
+      const img = s.image || fallbackAvatarSvg(s.name);
+
+      // Review must be inside quotes as requested
+      const review = escapeHtml(`“${s.review}”`);
 
       return `
         <article class="card">
-          <div class="card-body">
-            <div class="quote">“${review}”</div>
+          <div class="review">
+            <div class="qmark">“</div>
+            <p class="review-text">${review}</p>
           </div>
           <div class="student">
             <img class="avatar" src="${img}" alt="${name}"
               onerror="this.onerror=null; this.src='${fallbackAvatarSvg(s.name)}';" />
-            <div class="meta">
-              <div class="name">${name}</div>
-              <div class="branch">${branch}</div>
+            <div class="smeta">
+              <div class="sname">${name}</div>
+              <div class="sbranch">${branch}</div>
             </div>
           </div>
         </article>
       `;
     }
 
-    function renderPage(){
-      const total = all.length;
+    function buildPageNums(current, total){
+      const out = [];
+      const add = (x) => { if (!out.includes(x)) out.push(x); };
+
+      if (total <= 8){
+        for (let i=1;i<=total;i++) add(i);
+        return out;
+      }
+
+      add(1); add(2);
+
+      const left = Math.max(3, current - 1);
+      const right = Math.min(total - 2, current + 1);
+
+      if (left > 3) add("…");
+      for (let i=left;i<=right;i++) add(i);
+      if (right < total - 2) add("…");
+
+      add(total - 1); add(total);
+      return out;
+    }
+
+    function render(){
+      const list = currentList();
+      const total = list.length;
+
+      const pages = Math.max(1, Math.ceil(total / PER_PAGE));
+      page = Math.max(1, Math.min(page, pages));
+
+      const start = (page - 1) * PER_PAGE;
+      const items = list.slice(start, start + PER_PAGE);
+
+      $("pillMeta").textContent = `Page ${page} • ${items.length} shown`;
+
       if (!total){
         $("grid").innerHTML = "";
         $("pager").style.display = "none";
-        setState("No reviews found", "students_data.json empty ga undi.");
+        setState("No reviews found", "students_data.json has no review/comment fields.");
         return;
       }
 
-      const pages = Math.max(1, Math.ceil(total / PER_PAGE));
-      if (page > pages) page = pages;
-
-      const start = (page - 1) * PER_PAGE;
-      const items = all.slice(start, start + PER_PAGE);
-
       $("grid").innerHTML = items.map(cardHtml).join("");
 
-      $("pager").style.display = "flex";
+      // Pagination
+      $("pager").style.display = pages > 1 ? "flex" : "none";
       $("prevBtn").disabled = page <= 1;
       $("nextBtn").disabled = page >= pages;
 
-      $("pageInfo").textContent = `Page ${page} • ${start+1}-${Math.min(start+PER_PAGE, total)} of ${total}`;
+      $("nums").innerHTML = buildPageNums(page, pages).map(p => {
+        if (p === "…") return `<div class="dots">…</div>`;
+        const cls = (p === page) ? "numchip active" : "numchip";
+        return `<div class="${cls}" data-page="${p}">${p}</div>`;
+      }).join("");
+    }
+
+    // ===================== Random =====================
+    function showRandom10(){
+      mode = "random";
+      // shuffle and pick 10
+      randomList = all.slice().sort(()=>Math.random()-0.5).slice(0, 10);
+      page = 1;
+      render();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    function wirePager(){
+    // ===================== Events =====================
+    function wireEvents(){
+      $("btnRandom").addEventListener("click", showRandom10);
+
       $("prevBtn").addEventListener("click", () => {
         page = Math.max(1, page - 1);
-        renderPage();
+        render();
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
       $("nextBtn").addEventListener("click", () => {
-        const pages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+        const pages = Math.max(1, Math.ceil(currentList().length / PER_PAGE));
         page = Math.min(pages, page + 1);
-        renderPage();
+        render();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      $("nums").addEventListener("click", (e) => {
+        const t = e.target.closest("[data-page]");
+        if (!t) return;
+        const p = parseInt(t.getAttribute("data-page"), 10);
+        if (!p) return;
+        page = p;
+        render();
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     }
 
-    loadData().catch(err => {
-      $("grid").innerHTML = "";
-      $("pager").style.display = "none";
-      setState(
-        "Unable to load",
-        "Fix: index.html and students_data.json same folder lo deploy avvali. Supabase bucket public undali.",
-        (err && err.message) ? err.message : String(err)
-      );
-      console.error(err);
-    });
+    // ===================== Init =====================
+    async function init(){
+      try{
+        wireEvents();
+        await loadData();
+
+        // Default: show latest order as in file (no sort requested)
+        mode = "all";
+        page = 1;
+
+        // Animate stats exactly as you asked: 0->550+ and 0->3.8
+        animateNumber($("statReviews"), 0, TARGET_REVIEWS, 1400, { float:false, suffix:"+", decimals:0 });
+        animateNumber($("statAvg"), 0, TARGET_AVG, 1400, { float:true, suffix:"", decimals:1 });
+        $("statStars").innerHTML = makeStars(TARGET_AVG);
+
+        render();
+      } catch (err){
+        $("grid").innerHTML = "";
+        $("pager").style.display = "none";
+        setState(
+          "Unable to load data",
+          "Fix: keep students_data.json in the same folder as index.html and make sure it is deployed.",
+          (err && err.message) ? err.message : String(err)
+        );
+      }
+    }
+
+    init();
   </script>
 </body>
 </html>
