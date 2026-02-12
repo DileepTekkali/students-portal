@@ -3,277 +3,287 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Karyashala Bootcamp • KIET Student Reviews</title>
+  <title>AI Karyashala Bootcamp • Student Reviews</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
 
   <style>
-    /* ========= Reset ========= */
+    /* ===== Reset ===== */
     *, *::before, *::after { box-sizing: border-box; }
     html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      overflow-x: hidden;
-      color: rgba(255,255,255,.92);
-      background:
-        radial-gradient(900px 540px at 12% 10%, rgba(99,102,241,.30), transparent 60%),
-        radial-gradient(840px 620px at 86% 20%, rgba(139,92,246,.22), transparent 60%),
-        radial-gradient(940px 700px at 52% 95%, rgba(34,211,238,.14), transparent 60%),
-        linear-gradient(180deg, #070A12 0%, #0B1024 100%);
-    }
+    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
     img { max-width: 100%; display: block; }
-    button, input, select { font: inherit; }
-    a { color: inherit; text-decoration: none; }
-
+    button { font: inherit; }
     :root{
+      --bg0: #070A12;
+      --bg1: #0B1024;
+
+      --text1: rgba(255,255,255,.92);
+      --text2: rgba(255,255,255,.72);
+      --text3: rgba(255,255,255,.55);
+
       --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.10);
       --border: rgba(255,255,255,.10);
-      --border2: rgba(255,255,255,.16);
-      --text2: rgba(255,255,255,.70);
-      --text3: rgba(255,255,255,.52);
-      --shadow: 0 24px 80px rgba(0,0,0,.45);
-      --shadow2: 0 12px 40px rgba(0,0,0,.35);
-      --radius: 18px;
-      --radius2: 26px;
+
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --shadow2: 0 10px 32px rgba(0,0,0,.35);
+
+      --radius: 22px;
 
       --indigo: #6366F1;
       --violet: #8B5CF6;
-      --cyan: #22D3EE;
       --amber: #FBBF24;
     }
 
+    body{
+      color: var(--text1);
+      background:
+        radial-gradient(1000px 600px at 10% 10%, rgba(99,102,241,.24), transparent 60%),
+        radial-gradient(900px 650px at 85% 25%, rgba(139,92,246,.18), transparent 60%),
+        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
+      overflow-x: hidden;
+    }
+
     .wrap{
-      width: min(1240px, calc(100% - 40px));
+      width: min(1200px, calc(100% - 28px));
       margin: 0 auto;
     }
 
-    /* ========= Topbar ========= */
-    .topbar{
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      background: linear-gradient(180deg, rgba(7,10,18,.78) 0%, rgba(7,10,18,.55) 100%);
-      border-bottom: 1px solid rgba(255,255,255,.08);
+    /* ===== Header ===== */
+    header{
+      padding: 28px 0 12px;
+      text-align: center;
     }
-    .topbar-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 14px;
-      padding: 14px 0;
-    }
+
     .brand{
-      display:flex;
-      align-items:center;
-      gap: 12px;
-      min-width: 0;
-    }
-    .logo{
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      background:
-        radial-gradient(10px 10px at 30% 30%, rgba(255,255,255,.65), transparent 70%),
-        linear-gradient(135deg, rgba(99,102,241,.95), rgba(139,92,246,.95));
-      box-shadow: 0 10px 30px rgba(99,102,241,.22);
-      position: relative;
-      overflow: hidden;
-      flex: 0 0 auto;
-    }
-    .logo::after{
-      content:"";
-      position:absolute;
-      inset:-40%;
-      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,.22) 50%, transparent 100%);
-      transform: rotate(18deg);
-      animation: shine 6s ease-in-out infinite;
-    }
-    @keyframes shine{
-      0%{ transform: translateX(-40%) rotate(18deg); opacity:.0;}
-      15%{opacity:.35;}
-      40%{ transform: translateX(55%) rotate(18deg); opacity:.0;}
-      100%{ opacity:0; transform: translateX(55%) rotate(18deg);}
-    }
-    .brand-title{
-      display:grid;
-      gap: 2px;
-      min-width: 0;
-    }
-    .brand-title strong{
-      font-weight: 800;
-      letter-spacing: -.02em;
-      line-height: 1.1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .brand-title span{
-      color: var(--text3);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-    }
-
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap: 10px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.78);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .04em;
-      white-space: nowrap;
-    }
-    .pill i{
-      width: 9px; height: 9px;
-      border-radius: 99px;
-      background: linear-gradient(135deg, var(--cyan), var(--indigo));
-      box-shadow: 0 0 0 4px rgba(34,211,238,.10);
-    }
-
-    /* ========= Hero ========= */
-    header.hero{ padding: 22px 0 10px; }
-    .hero-card{
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.045) 100%);
-      box-shadow: var(--shadow2);
-      overflow:hidden;
-      position: relative;
-      padding: 18px 18px 16px;
-    }
-    .hero-card::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(820px 340px at 12% 10%, rgba(99,102,241,.18), transparent 60%),
-        radial-gradient(720px 360px at 88% 65%, rgba(139,92,246,.14), transparent 60%);
-      pointer-events:none;
-      opacity:.9;
-    }
-    .hero-card > *{ position:relative; z-index:2; }
-
-    .hero-head{
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-between;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-    .hero-title{
-      margin: 0;
       font-family: "Fraunces", serif;
       font-weight: 700;
       letter-spacing: -.02em;
-      font-size: clamp(22px, 3vw, 36px);
-      line-height: 1.12;
-    }
-    .hero-sub{
-      margin: 6px 0 0;
-      color: var(--text2);
-      font-weight: 600;
-      line-height: 1.6;
-      font-size: 14px;
-      max-width: 64ch;
+      font-size: clamp(30px, 4.2vw, 52px);
+      line-height: 1.05;
+      margin: 0;
     }
 
-    .metrics{
-      display:grid;
+    .subbrand{
+      margin-top: 8px;
+      color: var(--text2);
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    /* ===== Stats ===== */
+    .stats{
+      margin-top: 18px;
+      display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-top: 14px;
+      gap: 12px;
+      align-items: stretch;
     }
-    .metric{
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      padding: 12px 12px;
-      display:grid;
-      gap: 6px;
+
+    .stat{
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.045));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+      padding: 14px 14px;
+      display: grid;
+      gap: 8px;
     }
-    .metric .label{
+
+    .stat .label{
       color: var(--text3);
       font-weight: 900;
-      letter-spacing: .10em;
+      letter-spacing: .12em;
       text-transform: uppercase;
       font-size: 11px;
     }
-    .metric .value{
-      display:flex;
-      align-items:baseline;
+
+    .stat .value{
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
       gap: 10px;
-      font-variant-numeric: tabular-nums;
     }
-    .metric .num{
+
+    .big-num{
       font-weight: 900;
       letter-spacing: -.02em;
-      font-size: 26px;
+      font-variant-numeric: tabular-nums;
+      font-size: clamp(34px, 4.4vw, 56px);
       line-height: 1;
     }
-    .metric .mini{
-      color: rgba(255,255,255,.62);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
+
     .stars{
-      display:inline-flex;
+      display: inline-flex;
       gap: 2px;
-      transform: translateY(1px);
+      transform: translateY(3px);
     }
+
     .star{
       font-size: 14px;
-      color: rgba(255,255,255,.20);
+      color: rgba(255,255,255,.18);
     }
     .star.on{
       color: var(--amber);
       filter: drop-shadow(0 0 10px rgba(251,191,36,.22));
     }
 
-    /* ========= Grid ========= */
-    main{ padding: 12px 0 44px; }
+    /* ===== Grid ===== */
+    main{ padding: 16px 0 28px; }
+
+    .grid{
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    /* Compact card (about 25% less height) */
+    .card{
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.065), rgba(255,255,255,.040));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+      overflow: hidden;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      min-height: 190px; /* compact */
+      position: relative;
+    }
+    .card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(99,102,241,.30);
+      box-shadow: var(--shadow);
+    }
+
+    .card-body{
+      padding: 14px 14px 10px;
+    }
+
+    /* Big quote highlight */
+    .quote{
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      font-weight: 800;
+      color: rgba(255,255,255,.90);
+      font-size: 15px;     /* highlight */
+      line-height: 1.6;
+      letter-spacing: -.01em;
+      white-space: pre-wrap;
+      word-break: break-word;
+
+      /* auto-compact inside card */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;   /* keeps height compact */
+      overflow: hidden;
+    }
+
+    .student{
+      margin-top: 10px;
+      padding: 10px 14px 12px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .avatar{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.08);
+      flex: 0 0 auto;
+    }
+
+    .meta{
+      min-width: 0;
+      display: grid;
+      gap: 2px;
+    }
+    .name{
+      font-weight: 900;
+      letter-spacing: -.02em;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: rgba(255,255,255,.88);
+    }
+    .branch{
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      color: var(--text3);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* ===== Pagination ===== */
+    .pager{
+      margin-top: 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      box-shadow: var(--shadow2);
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .pgbtn{
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.88);
+      padding: 10px 12px;
+      border-radius: 14px;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      transition: transform .16s ease, background .16s ease, border-color .16s ease, opacity .16s ease;
+      user-select: none;
+      min-width: 120px;
+    }
+    .pgbtn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.075); border-color: rgba(255,255,255,.18); }
+    .pgbtn:disabled{ opacity: .42; cursor: not-allowed; transform: none; }
+
+    .pageinfo{
+      color: var(--text2);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      text-align: center;
+      flex: 1;
+    }
+
+    /* ===== States ===== */
     .state{
       margin-top: 14px;
       padding: 16px;
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
       background: rgba(255,255,255,.05);
       box-shadow: var(--shadow2);
-      display:grid;
-      gap: 8px;
-    }
-    .state h3{
-      margin:0;
-      font-weight: 900;
-      letter-spacing: -.02em;
-      font-size: 16px;
-    }
-    .state p{
-      margin:0;
       color: var(--text2);
       line-height: 1.6;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
     }
     .state code{
       display:block;
-      margin-top: 6px;
+      margin-top: 8px;
       padding: 10px 12px;
       border-radius: 14px;
       background: rgba(0,0,0,.35);
@@ -281,297 +291,88 @@
       color: rgba(255,255,255,.86);
       overflow:auto;
       font-size: 12px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 14px;
-    }
-
-    .card{
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.045) 100%);
-      box-shadow: 0 14px 40px rgba(0,0,0,.30);
-      overflow:hidden;
-      position: relative;
-      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
-      min-height: 220px;
-      display:flex;
-      flex-direction: column;
-    }
-    .card:hover{
-      transform: translateY(-4px);
-      border-color: rgba(99,102,241,.30);
-      box-shadow: 0 24px 70px rgba(0,0,0,.42);
-    }
-    .card::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(520px 220px at 15% 10%, rgba(99,102,241,.14), transparent 60%),
-        radial-gradient(420px 240px at 90% 55%, rgba(139,92,246,.10), transparent 60%);
-      pointer-events:none;
-      opacity:.9;
-    }
-    .card > *{ position: relative; z-index: 2; }
-
-    /* Big review (main hero inside card) */
-    .review{
-      padding: 16px 16px 12px;
-      flex: 1;
-      display:grid;
-      gap: 10px;
-    }
-    .quote{
-      font-family: "Fraunces", serif;
       font-weight: 700;
-      letter-spacing: -.01em;
-      color: rgba(255,255,255,.92);
-      line-height: 1.55;
-      font-size: 18px; /* BIG focus */
-      white-space: pre-wrap;
-      word-break: break-word;
-
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      -webkit-line-clamp: 4;
-    }
-    .quote.expanded{ -webkit-line-clamp: unset; }
-
-    .actions{
-      display:flex;
-      align-items:center;
-      justify-content: flex-start;
-      gap: 10px;
-      margin-top: 2px;
-    }
-    .ghost{
-      cursor:pointer;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      color: rgba(255,255,255,.82);
-      padding: 10px 12px;
-      border-radius: 14px;
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-      display:none; /* shown only when text is clamped */
-      user-select:none;
-    }
-    .ghost:hover{
-      transform: translateY(-1px);
-      border-color: rgba(255,255,255,.20);
-      background: rgba(255,255,255,.07);
     }
 
-    /* Footer (small student info) */
-    .student{
-      padding: 12px 16px 14px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.03);
-      display:flex;
-      align-items:center;
-      gap: 10px;
-    }
-    .avatar{
-      width: 38px; height: 38px;
-      border-radius: 14px;
-      object-fit: cover;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 10px 26px rgba(0,0,0,.22);
-      flex: 0 0 auto;
-    }
-    .meta{
-      min-width: 0;
-      flex: 1;
-      display:grid;
-      gap: 2px;
-    }
-    .name{
-      font-weight: 900;
-      letter-spacing: -.02em;
-      line-height: 1.2;
-      font-size: 13px; /* smaller than review */
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-    }
-    .branch{
-      color: rgba(255,255,255,.60);
-      font-weight: 800;
-      font-size: 11px;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-    }
-
-    /* Load more */
-    .loadmore-wrap{
-      margin-top: 14px;
-      display:flex;
-      justify-content:center;
-    }
-    .loadmore{
-      cursor:pointer;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.90);
-      padding: 12px 14px;
-      border-radius: 16px;
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-      user-select:none;
-      display:inline-flex;
-      align-items:center;
-      gap: 10px;
-      box-shadow: 0 16px 40px rgba(0,0,0,.25);
-    }
-    .loadmore:hover{
-      transform: translateY(-2px);
-      background: rgba(255,255,255,.075);
-      border-color: rgba(255,255,255,.22);
-    }
-    .loadmore:disabled{
-      opacity: .45;
-      cursor: not-allowed;
-      transform: none;
-    }
-
-    /* Responsive */
-    @media (max-width: 1020px){
+    /* ===== Responsive ===== */
+    @media (max-width: 980px){
       .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .metrics{ grid-template-columns: 1fr; }
     }
     @media (max-width: 640px){
-      .wrap{ width: min(1240px, calc(100% - 26px)); }
+      .stats{ grid-template-columns: 1fr; }
       .grid{ grid-template-columns: 1fr; }
-      .quote{ font-size: 17px; }
-    }
-    @media (prefers-reduced-motion: reduce){
-      .logo::after{ animation:none; }
-      .card, .loadmore, .ghost{ transition:none; }
+      .pgbtn{ min-width: 110px; }
     }
   </style>
 </head>
 
 <body>
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="wrap topbar-inner">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div class="brand-title">
-          <strong>AI Karyashala Bootcamp</strong>
-          <span>KIET Student Reviews</span>
-        </div>
-      </div>
-      <div class="pill" title="Static site • Data from students_data.json">
-        <i></i> Live • Reviews
-      </div>
-    </div>
-  </div>
+  <header class="wrap">
+    <h1 class="brand">AI Karyashala Bootcamp</h1>
+    <div class="subbrand">KIET Students Reviews</div>
 
-  <!-- Hero (only metrics + headings) -->
-  <header class="wrap hero" aria-label="Header">
-    <section class="hero-card">
-      <div class="hero-head">
-        <div>
-          <h1 class="hero-title">KIET Student Reviews</h1>
-          <p class="hero-sub">Only student feedback is highlighted. Names & branch are kept minimal below each review.</p>
+    <section class="stats" aria-label="Stats">
+      <div class="stat">
+        <div class="label">Total Reviews</div>
+        <div class="value">
+          <div class="big-num" id="totalReviews">0</div>
         </div>
       </div>
 
-      <div class="metrics" aria-label="Summary metrics">
-        <div class="metric">
-          <div class="label">Total Reviews</div>
-          <div class="value">
-            <span class="num" id="mTotal">0</span>
-            <span class="mini" id="mTotalSuffix">+</span>
-          </div>
-        </div>
-
-        <div class="metric">
-          <div class="label">Overall Rating</div>
-          <div class="value">
-            <span class="num" id="mAvg">0.0</span>
-            <span class="stars" id="mStars" aria-label="Overall rating stars"></span>
-          </div>
+      <div class="stat">
+        <div class="label">Overall Rating</div>
+        <div class="value">
+          <div class="big-num" id="overallRating">0.0</div>
+          <div class="stars" id="ratingStars" aria-label="Rating stars"></div>
         </div>
       </div>
     </section>
   </header>
 
-  <!-- Main -->
   <main class="wrap">
     <div id="state" class="state" style="display:none"></div>
-    <section id="grid" class="grid" aria-label="Reviews grid"></section>
+    <section id="grid" class="grid" aria-label="Reviews"></section>
 
-    <div class="loadmore-wrap">
-      <button id="btnMore" class="loadmore" type="button">Load more</button>
-    </div>
+    <nav id="pager" class="pager" aria-label="Pagination" style="display:none">
+      <button class="pgbtn" id="prevBtn">Prev</button>
+      <div class="pageinfo" id="pageInfo">Page 1</div>
+      <button class="pgbtn" id="nextBtn">Next</button>
+    </nav>
   </main>
 
   <script>
-    // ========= CONFIG (yours) =========
+    // ===== CONFIG (YOUR SUPABASE) =====
     const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
     const BUCKET = "photos";
-    const DATA_URL = "./students_data.json"; // keep in same folder as index.html
+    const DATA_URL = "./students_data.json";
 
-    // ========= UI settings =========
-    const BATCH = 12; // cards per load
-    const TARGET_TOTAL_REVIEWS = 550;  // animate 0 -> 550+
-    const TARGET_OVERALL_RATING = 3.8; // animate 0.0 -> 3.8
+    // ===== UI targets you wanted (fixed display) =====
+    const DISPLAY_TOTAL_TARGET = 550;    // show 0 → 550+
+    const DISPLAY_RATING_TARGET = 3.8;   // show 0 → 3.8
 
-    // ========= State =========
+    // ===== State =====
     let all = [];
-    let shown = 0;
+    let page = 1;
+    const PER_PAGE = 9;
 
-    // ========= Utils =========
     const $ = (id) => document.getElementById(id);
-    const safeStr = (v) => (v === null || v === undefined) ? "" : String(v);
-
-    function escapeHtml(s){
-      return safeStr(s)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
-    }
+    function safeStr(v){ return (v === null || v === undefined) ? "" : String(v); }
 
     function clampRating(x){
       const n = Number(x);
-      if (!Number.isFinite(n)) return null;
+      if (!Number.isFinite(n)) return 0;
       return Math.max(1, Math.min(5, n));
     }
 
-    // Build a public supabase URL from Excel-like paths.
-    // Works with:
-    // - "student_images/XYZ.jpg"
-    // - "photos/student_images/XYZ.jpg"
-    // - "/student_images/XYZ.jpg"
-    // - full https URL (returns as-is)
+    // Build public URL from: "student_images/FILE.jpg" (or already full URL)
     function publicImageUrl(imagePath){
       let p = safeStr(imagePath).trim();
       if (!p || p.toLowerCase() === "nan" || p.toLowerCase() === "none") return "";
       if (p.startsWith("http://") || p.startsWith("https://")) return p;
 
-      p = p.replace(/^\/+/, ""); // remove leading slashes
-      if (p.startsWith(BUCKET + "/")) p = p.slice(BUCKET.length + 1); // remove "photos/"
-      // encode each path segment safely
+      p = p.replace(/^\/+/, "");
+      if (p.startsWith(BUCKET + "/")) p = p.slice(BUCKET.length + 1);
+
       const encoded = p.split("/").map(seg => encodeURIComponent(seg)).join("/");
       return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${encoded}`;
     }
@@ -594,21 +395,21 @@
       return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
     }
 
-    function makeStars(r){
-      const rounded = Math.round(r);
-      let html = "";
-      for (let i=1;i<=5;i++){
-        html += `<span class="star ${i<=rounded ? "on":""}">★</span>`;
-      }
-      return html;
+    function escapeHtml(s){
+      return safeStr(s)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
     }
 
     function setState(title, body, extra){
       const box = $("state");
-      box.style.display = "grid";
+      box.style.display = "block";
       box.innerHTML = `
-        <h3>${escapeHtml(title)}</h3>
-        <p>${escapeHtml(body)}</p>
+        <div style="font-weight:900;color:rgba(255,255,255,.92)">${escapeHtml(title)}</div>
+        <div style="margin-top:6px">${escapeHtml(body)}</div>
         ${extra ? `<code>${escapeHtml(extra)}</code>` : ""}
       `;
     }
@@ -617,51 +418,76 @@
       $("state").innerHTML = "";
     }
 
-    function animateNumber(el, to, opts={}){
-      const from = Number(String(el.textContent).replace(/[^\d.]/g,"")) || 0;
-      const dur = opts.duration ?? 900;
+    // 0 → target animation
+    function animateCount(el, to, opts={}){
+      const dur = opts.duration || 900;
       const isFloat = !!opts.float;
+      const suffix = opts.suffix || "";
       const start = performance.now();
+      const from = 0;
 
       function tick(now){
         const t = Math.min((now - start)/dur, 1);
         const eased = 1 - Math.pow(1 - t, 3);
         const val = from + (to - from) * eased;
-        el.textContent = isFloat ? val.toFixed(1) : Math.round(val);
+        el.textContent = isFloat ? val.toFixed(1) + suffix : Math.round(val) + suffix;
         if (t < 1) requestAnimationFrame(tick);
       }
       requestAnimationFrame(tick);
     }
 
-    function normalizeRow(s, idx){
-      const name = safeStr(s.name || s["Full Name"] || s.full_name).trim() || "Student";
-      const branch = safeStr(s.branch || s["Branch"]).trim() || "—";
-      const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim() || "No comment provided.";
-      const rating = clampRating(s.rating || s["Rating (1-5)"] || s["Rating"]); // optional
-      const imgPath = s.image || s["Image Path"] || s.image_path || "";
-      const image = publicImageUrl(imgPath);
-
-      return { idx, name, branch, review, rating, image };
+    function renderStars(r){
+      const rounded = Math.round(r);
+      let html = "";
+      for (let i=1;i<=5;i++){
+        html += `<span class="star ${i<=rounded ? "on":""}">★</span>`;
+      }
+      $("ratingStars").innerHTML = html;
     }
 
-    function cardHtml(x){
-      const name = escapeHtml(x.name);
-      const branch = escapeHtml(x.branch);
-      const review = escapeHtml(x.review);
-      const img = x.image || fallbackAvatarSvg(x.name);
+    async function loadData(){
+      setState("Loading…", "Reading students_data.json");
+
+      const res = await fetch(DATA_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
+      const raw = await res.json();
+
+      all = raw.map((s, idx) => {
+        const name = safeStr(s.name || s["Full Name"] || s.full_name).trim() || "Student";
+        const branch = safeStr(s.branch || s["Branch"]).trim() || "—";
+        const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim() || "No comment provided.";
+        const rating = clampRating(s.rating || s["Rating (1-5)"] || s["Rating"]);
+        const img = publicImageUrl(s.image || s["Image Path"] || s.image_path || "");
+
+        return { idx: idx+1, name, branch, review, rating, img };
+      });
+
+      clearState();
+
+      // You asked: show fixed running numbers
+      animateCount($("totalReviews"), DISPLAY_TOTAL_TARGET, { duration: 1100, float: false, suffix: "+" });
+      animateCount($("overallRating"), DISPLAY_RATING_TARGET, { duration: 1100, float: true, suffix: "" });
+      renderStars(DISPLAY_RATING_TARGET);
+
+      page = 1;
+      renderPage();
+      wirePager();
+    }
+
+    function cardHtml(s){
+      const name = escapeHtml(s.name);
+      const branch = escapeHtml(s.branch);
+      const review = escapeHtml(s.review);
+      const img = s.img || fallbackAvatarSvg(s.name);
 
       return `
         <article class="card">
-          <div class="review">
-            <div class="quote">${review}</div>
-            <div class="actions">
-              <button class="ghost" type="button" data-toggle>Read more</button>
-            </div>
+          <div class="card-body">
+            <div class="quote">“${review}”</div>
           </div>
-
           <div class="student">
             <img class="avatar" src="${img}" alt="${name}"
-                 onerror="this.onerror=null; this.src='${fallbackAvatarSvg(x.name)}';" />
+              onerror="this.onerror=null; this.src='${fallbackAvatarSvg(s.name)}';" />
             <div class="meta">
               <div class="name">${name}</div>
               <div class="branch">${branch}</div>
@@ -671,94 +497,54 @@
       `;
     }
 
-    function renderNext(){
-      const grid = $("grid");
-      const next = all.slice(shown, shown + BATCH);
-      shown += next.length;
-
-      if (!shown){
-        setState("No reviews found", "students_data.json is empty or not readable.");
-        $("btnMore").disabled = true;
+    function renderPage(){
+      const total = all.length;
+      if (!total){
+        $("grid").innerHTML = "";
+        $("pager").style.display = "none";
+        setState("No reviews found", "students_data.json empty ga undi.");
         return;
       }
 
-      grid.insertAdjacentHTML("beforeend", next.map(cardHtml).join(""));
+      const pages = Math.max(1, Math.ceil(total / PER_PAGE));
+      if (page > pages) page = pages;
 
-      // show/hide "Read more" only when needed
-      requestAnimationFrame(() => {
-        grid.querySelectorAll(".card").forEach((card) => {
-          const q = card.querySelector(".quote");
-          const btn = card.querySelector("[data-toggle]");
-          if (!q || !btn) return;
-          const clamped = q.scrollHeight > q.clientHeight + 4;
-          btn.style.display = clamped ? "inline-flex" : "none";
-        });
-      });
+      const start = (page - 1) * PER_PAGE;
+      const items = all.slice(start, start + PER_PAGE);
 
-      // disable load more when finished
-      if (shown >= all.length){
-        $("btnMore").disabled = true;
-        $("btnMore").textContent = "All reviews loaded";
-      }
+      $("grid").innerHTML = items.map(cardHtml).join("");
+
+      $("pager").style.display = "flex";
+      $("prevBtn").disabled = page <= 1;
+      $("nextBtn").disabled = page >= pages;
+
+      $("pageInfo").textContent = `Page ${page} • ${start+1}-${Math.min(start+PER_PAGE, total)} of ${total}`;
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    function wireEvents(){
-      $("btnMore").addEventListener("click", renderNext);
+    function wirePager(){
+      $("prevBtn").addEventListener("click", () => {
+        page = Math.max(1, page - 1);
+        renderPage();
+      });
 
-      // Toggle read more
-      document.addEventListener("click", (e) => {
-        const btn = e.target.closest("[data-toggle]");
-        if (!btn) return;
-        const card = btn.closest(".card");
-        const q = card.querySelector(".quote");
-        q.classList.toggle("expanded");
-        btn.textContent = q.classList.contains("expanded") ? "Show less" : "Read more";
+      $("nextBtn").addEventListener("click", () => {
+        const pages = Math.max(1, Math.ceil(all.length / PER_PAGE));
+        page = Math.min(pages, page + 1);
+        renderPage();
       });
     }
 
-    async function loadData(){
-      setState("Loading reviews…", "Fetching students_data.json and preparing the premium view.");
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
-
-      const raw = await res.json();
-      all = raw.map(normalizeRow);
-
-      clearState();
-
-      // ---- Metrics (as you requested) ----
-      // Total Reviews: always animate 0 -> 550+ (stop at 550+)
-      animateNumber($("mTotal"), TARGET_TOTAL_REVIEWS, { duration: 1100, float: false });
-      $("mTotalSuffix").textContent = "+";
-
-      // Overall rating: animate 0.0 -> 3.8 (stop at 3.8)
-      animateNumber($("mAvg"), TARGET_OVERALL_RATING, { duration: 1100, float: true });
-      $("mStars").innerHTML = makeStars(TARGET_OVERALL_RATING);
-
-      // ---- Render first batch ----
-      shown = 0;
+    loadData().catch(err => {
       $("grid").innerHTML = "";
-      $("btnMore").disabled = false;
-      $("btnMore").textContent = "Load more";
-      renderNext();
-    }
-
-    async function init(){
-      try{
-        wireEvents();
-        await loadData();
-      }catch(err){
-        $("grid").innerHTML = "";
-        $("btnMore").disabled = true;
-        setState(
-          "Unable to load data",
-          "Fix: make sure students_data.json is deployed next to index.html on Vercel, and Supabase bucket 'photos' is PUBLIC with images in student_images/.",
-          `${err && err.message ? err.message : err}\n\nDATA_URL: ${DATA_URL}`
-        );
-      }
-    }
-
-    init();
+      $("pager").style.display = "none";
+      setState(
+        "Unable to load",
+        "Fix: index.html and students_data.json same folder lo deploy avvali. Supabase bucket public undali.",
+        (err && err.message) ? err.message : String(err)
+      );
+      console.error(err);
+    });
   </script>
 </body>
 </html>
