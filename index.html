@@ -1,614 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Testimonials - AI Karyashala Bootcamp</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    /* ✅ Only THEME updated to subtle & elegant (no functionality changes) */
-    :root {
-      --indigo: #3B5BDB;
-      --indigo-light: #9DB0FF;
-      --indigo-pale: #EEF3FF;
-
-      --violet: #6D28D9;
-      --rose: #E11D48;
-      --amber: #D97706;
-      --green: #059669;
-
-      --surface: #ffffff;
-      --bg: #F7F8FC;
-
-      --text-1: #0F172A;
-      --text-2: #334155;
-      --text-3: #64748B;
-
-      --border: #E6E8F2;
-
-      --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05), 0 1px 1px rgba(15, 23, 42, 0.04);
-      --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.08);
-      --shadow-md: 0 14px 40px rgba(15, 23, 42, 0.12);
-      --shadow-lg: 0 24px 70px rgba(15, 23, 42, 0.14);
-
-      --radius: 18px;
-      --radius-sm: 10px;
-    }
-
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text-1);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(150deg, #0B1224 0%, #121A33 45%, #141B3B 100%);
-      position: relative;
-      overflow: hidden;
-      padding: 3.5rem 1.25rem 3rem;
-      text-align: center;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 50% at 18% 22%, rgba(59,91,219,0.28) 0%, transparent 68%),
-        radial-gradient(ellipse 50% 60% at 82% 75%, rgba(109,40,217,0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
-      background-size: 34px 34px;
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255,255,255,0.10);
-      border: 1px solid rgba(255,255,255,0.18);
-      padding: 0.45rem 1.1rem;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.9);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 1.4rem;
-    }
-
-    .hero-title {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(2rem, 6vw, 3.5rem);
-      color: #fff;
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 0.9rem;
-    }
-
-    .hero-subtitle {
-      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-      color: rgba(255,255,255,0.75);
-      line-height: 1.65;
-      margin-bottom: 2.5rem;
-      font-weight: 400;
-    }
-
-    /* ── STATS ── */
-    .stats-row {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .stat-card {
-      background: rgba(255,255,255,0.09);
-      border: 1px solid rgba(255,255,255,0.16);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 16px;
-      padding: 1.4rem 2rem;
-      min-width: 140px;
-      flex: 1;
-      max-width: 220px;
-    }
-
-    .stat-value {
-      font-size: 2.4rem;
-      font-weight: 800;
-      color: #fff;
-      display: block;
-      line-height: 1;
-      margin-bottom: 0.3rem;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -0.02em;
-    }
-
-    .stat-label {
-      font-size: 0.75rem;
-      font-weight: 700;
-      color: rgba(255,255,255,0.62);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .hero-stars {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      justify-content: center;
-      margin-top: 0.5rem;
-    }
-
-    .hstar {
-      font-size: 1.1rem;
-      color: var(--amber);
-      text-shadow: 0 0 8px rgba(217, 119, 6, 0.35);
-    }
-
-    /* ── MAIN CONTAINER ── */
-    .main {
-      max-width: 1240px;
-      margin: 0 auto;
-      padding: 2.5rem 1rem 3rem;
-    }
-
-    /* ── SECTION HEADER ── */
-    .sec-header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .sec-title {
-      font-size: 1.55rem;
-      font-weight: 800;
-      color: var(--text-1);
-      margin-bottom: 0.35rem;
-    }
-
-    .sec-sub {
-      font-size: 0.95rem;
-      color: var(--text-3);
-    }
-
-    /* ── SHUFFLE BUTTON ── */
-    .controls {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .shuffle-btn {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
-      color: #fff;
-      border: none;
-      padding: 0.85rem 2rem;
-      border-radius: 12px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 10px 26px rgba(59,91,219,0.22);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      letter-spacing: 0.01em;
-    }
-
-    .shuffle-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 34px rgba(59,91,219,0.28);
-    }
-
-    .shuffle-btn:active { transform: translateY(-1px); }
-
-    .dice {
-      font-size: 1.15rem;
-      transition: transform 0.4s ease;
-      display: inline-block;
-    }
-
-    .shuffle-btn:hover .dice { transform: rotate(180deg); }
-
-    /* ── GRID ── */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 2.5rem;
-    }
-
-    /* ── CARD ── */
-    .card {
-      background: var(--surface);
-      border-radius: var(--radius);
-      border: 1.5px solid var(--border);
-      box-shadow: var(--shadow-xs);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease, border-color 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(59,91,219,0.28);
-    }
-
-    /* Review section */
-    .card-review {
-      padding: 1.25rem 1.25rem 1rem;
-      flex: 1;
-      position: relative;
-
-      /* Subtle highlight (calm) */
-      background: linear-gradient(135deg, #F4F7FF 0%, #EEF3FF 100%);
-      border-bottom: 1px solid rgba(59,91,219,0.10);
-    }
-
-    .card:hover .card-review{
-      background: linear-gradient(135deg, #EEF3FF 0%, #E8EEFF 100%);
-    }
-
-    .q-icon {
-      width: 34px;
-      height: 34px;
-      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.90));
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0.9rem;
-      flex-shrink: 0;
-      box-shadow: 0 10px 24px rgba(59,91,219,0.18);
-    }
-
-    .q-icon svg { width: 16px; height: 16px; fill: white; }
-
-    .review-text {
-      font-size: 0.93rem; /* ✅ change here if you want bigger */
-      line-height: 1.7;
-      color: var(--text-2);
-      font-weight: 500;
-    }
-
-    /* Student section */
-    .card-student {
-      padding: 0.9rem 1.25rem;
-      background: #F6F7FB; /* subtle */
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .avatar {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--surface);
-      box-shadow: var(--shadow-xs);
-      flex-shrink: 0;
-    }
-
-    .student-meta { flex: 1; min-width: 0; }
-
-    .s-name {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--text-1);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-bottom: 0.15rem;
-    }
-
-    .s-roll {
-      font-size: 0.78rem;
-      color: var(--text-3);
-      font-weight: 500;
-      margin-bottom: 0.35rem;
-    }
-
-    .s-badge {
-      display: inline-block;
-      padding: 0.22rem 0.6rem;
-      background: #EEF3FF;
-      color: #2E4AD6;
-      border-radius: 6px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      border: 1px solid rgba(59,91,219,0.10);
-    }
-
-    /* ── PAGINATION ── */
-    .pagination {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      padding: 0.5rem 0;
-    }
-
-    .pg-btn {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      color: var(--text-2);
-      padding: 0.55rem 1.1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 0.85rem;
-      box-shadow: var(--shadow-xs);
-      transition: all 0.22s ease;
-      white-space: nowrap;
-    }
-
-    .pg-btn:hover:not(:disabled) {
-      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
-      border-color: transparent;
-      color: white;
-      box-shadow: var(--shadow-sm);
-      transform: translateY(-2px);
-    }
-
-    .pg-btn:disabled { opacity: 0.38; cursor: not-allowed; }
-
-    .pg-nums {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-    }
-
-    .pg-num {
-      width: 38px;
-      height: 38px;
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      border-radius: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 0.85rem;
-      color: var(--text-2);
-      box-shadow: var(--shadow-xs);
-      transition: all 0.22s ease;
-      flex-shrink: 0;
-    }
-
-    .pg-num:hover {
-      border-color: rgba(59,91,219,0.35);
-      color: #2E4AD6;
-      transform: translateY(-2px);
-    }
-
-    .pg-num.active {
-      background: linear-gradient(135deg, rgba(59,91,219,0.95), rgba(109,40,217,0.92));
-      border-color: transparent;
-      color: white;
-      box-shadow: 0 10px 26px rgba(59,91,219,0.20);
-    }
-
-    .pg-dots {
-      color: var(--text-3);
-      font-weight: 700;
-      font-size: 0.9rem;
-      width: 28px;
-      text-align: center;
-      user-select: none;
-    }
-
-    /* ── LOADING ── */
-    .loading-wrap {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 5rem 1rem;
-    }
-
-    .spinner {
-      width: 46px;
-      height: 46px;
-      border: 4px solid var(--border);
-      border-top-color: var(--indigo);
-      border-radius: 50%;
-      animation: spin 0.85s linear infinite;
-      margin: 0 auto 1.25rem;
-    }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    .loading-txt {
-      color: var(--text-3);
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    /* ── ERROR ── */
-    .err-wrap {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 3rem 1rem;
-      background: var(--surface);
-      border-radius: var(--radius);
-      max-width: 580px;
-      margin: 0 auto;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border);
-    }
-
-    .err-icon { font-size: 3rem; margin-bottom: 1rem; }
-    .err-title { font-size: 1.5rem; font-weight: 800; color: var(--rose); margin-bottom: 0.75rem; }
-    .err-body { color: var(--text-3); line-height: 1.65; margin-bottom: 1.25rem; font-size: 0.95rem; }
-    .err-detail {
-      background: #F6F7FB; padding: 1rem; border-radius: 10px;
-      font-size: 0.82rem; color: var(--text-3); text-align: left;
-      border-left: 4px solid var(--rose);
-      border: 1px solid var(--border);
-    }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 640px) {
-      .hero { padding: 3rem 1rem 2.5rem; }
-      .stat-card { padding: 1.1rem 1.4rem; min-width: 120px; }
-      .stat-value { font-size: 1.9rem; }
-      .main { padding: 1.75rem 0.75rem 2.5rem; }
-      .grid { grid-template-columns: 1fr; gap: 1rem; }
-      .card-review { padding: 1rem 1rem 0.85rem; }
-      .card-student { padding: 0.8rem 1rem; }
-      .avatar { width: 44px; height: 44px; }
-      .s-name { font-size: 0.85rem; }
-      .pg-num { width: 34px; height: 34px; font-size: 0.8rem; }
-      .pg-btn { padding: 0.5rem 0.85rem; font-size: 0.8rem; }
-      .shuffle-btn { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
-      .sec-title { font-size: 1.35rem; }
-    }
-
-    @media (max-width: 400px) {
-      .stats-row { gap: 0.75rem; }
-      .stat-card { padding: 1rem 1.1rem; }
-      .stat-value { font-size: 1.6rem; }
-    }
-
-    /* fade-in on load */
-    .card { animation: fadeUp 0.4s ease both; }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials - AI Karyashala Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        *,* ::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --indigo: #4f46e5;
+            --indigo-light: #818cf8;
+            --indigo-pale: #eef2ff;
+            --violet: #7c3aed;
+            --rose: #f43f5e;
+            --amber: #f59e0b;
+            --green: #10b981;
+            --surface: #ffffff;
+            --bg: #f5f6fa;
+            --text-1: #111827;
+            --text-2: #374151;
+            --text-3: #6b7280;
+            --border: #e5e7eb;
+            --shadow-xs: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-sm: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-md: 0 8px 28px rgba(0,0,0,0.12);
+            --shadow-lg: 0 20px 60px rgba(0,0,0,0.16);
+            --radius: 18px;
+            --radius-sm: 10px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text-1);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: linear-gradient(150deg, #1e1b4b 0%, #312e81 40%, #4c1d95 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 3.5rem 1.25rem 3rem;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 50% at 15% 20%, rgba(99,102,241,0.35) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 60% at 85% 75%, rgba(124,58,237,0.28) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        /* Decorative dots */
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.45rem 1.1rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 1.4rem;
+        }
+
+        .hero-title {
+            font-family: 'Fraunces', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 0.9rem;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+            color: rgba(255,255,255,0.75);
+            line-height: 1.65;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+        }
+
+        /* ── STATS ── */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.18);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 16px;
+            padding: 1.4rem 2rem;
+            min-width: 140px;
+            flex: 1;
+            max-width: 220px;
+        }
+
+        .stat-value {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #fff;
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.65);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* Stars displayed in hero */
+        .hero-stars {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            justify-content: center;
+            margin-top: 0.5rem;
+        }
+
+        .hstar {
+            font-size: 1.1rem;
+            color: var(--amber);
+            text-shadow: 0 0 8px rgba(245,158,11,0.5);
+        }
+
+        /* ── MAIN CONTAINER ── */
+        .main {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 2.5rem 1rem 3rem;
+        }
+
+        /* ── SECTION HEADER ── */
+        .sec-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .sec-title {
+            font-size: 1.55rem;
+            font-weight: 800;
+            color: var(--text-1);
+            margin-bottom: 0.35rem;
+        }
+
+        .sec-sub {
+            font-size: 0.95rem;
+            color: var(--text-3);
+        }
+
+        /* ── CONTROL BUTTONS ── */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .shuffle-btn, .reset-btn {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            color: #fff;
+            border: none;
+            padding: 0.85rem 2rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            letter-spacing: 0.01em;
+        }
+
+        .shuffle-btn {
+            background: linear-gradient(135deg, var(--indigo), var(--violet));
+            box-shadow: 0 6px 20px rgba(79,70,229,0.35);
+        }
+
+        .shuffle-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(79,70,229,0.45);
+        }
+
+        .reset-btn {
+            background: linear-gradient(135deg, #059669, #10b981);
+            box-shadow: 0 6px 20px rgba(16,185,129,0.35);
+        }
+
+        .reset-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(16,185,129,0.45);
+        }
+
+        .shuffle-btn:active, .reset-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .dice, .reset-icon {
+            font-size: 1.15rem;
+            transition: transform 0.4s ease;
+            display: inline-block;
+        }
+
+        .shuffle-btn:hover .dice {
+            transform: rotate(180deg);
+        }
+
+        .reset-btn:hover .reset-icon {
+            transform: rotate(-180deg);
+        }
+
+        /* ── GRID ── */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ── CARD ── */
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            border: 1.5px solid var(--border);
+            box-shadow: var(--shadow-xs);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--indigo-light);
+        }
+
+        /* HIGHLIGHTED Review section */
+        .card-review {
+            padding: 1.5rem 1.5rem 1.25rem;
+            flex: 1;
+            position: relative;
+            /* HIGHLIGHTED BACKGROUND */
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8eeff 100%);
+            border-bottom: 2px solid var(--indigo-pale);
+        }
+
+        .card:hover .card-review {
+            background: linear-gradient(135deg, #e8eeff 0%, #dfe6ff 100%);
+        }
+
+        /* HIGHLIGHTED review text with proper quotes */
+        .review-text {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: var(--text-1);
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .review-text::before {
+            content: '"';
+            font-family: Georgia, serif;
+            color: var(--indigo);
+            opacity: 0.5;
+        }
+
+        .review-text::after {
+            content: '"';
+            font-family: Georgia, serif;
+            color: var(--indigo);
+            opacity: 0.5;
+        }
+
+        /* Student section */
+        .card-student {
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--bg);
+            box-shadow: var(--shadow-xs);
+            flex-shrink: 0;
+        }
+
+        .student-meta {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .s-name {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-1);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.4rem;
+        }
+
+        .s-badge {
+            display: inline-block;
+            padding: 0.25rem 0.7rem;
+            background: var(--indigo-pale);
+            color: var(--indigo);
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── PAGINATION ── */
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            padding: 0.5rem 0;
+        }
+
+        .pg-btn {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            color: var(--text-2);
+            padding: 0.55rem 1.1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.85rem;
+            box-shadow: var(--shadow-xs);
+            transition: all 0.22s ease;
+            white-space: nowrap;
+        }
+
+        .pg-btn:hover:not(:disabled) {
+            background: linear-gradient(135deg, var(--indigo), var(--violet));
+            border-color: transparent;
+            color: white;
+            box-shadow: var(--shadow-sm);
+            transform: translateY(-2px);
+        }
+
+        .pg-btn:disabled {
+            opacity: 0.38;
+            cursor: not-allowed;
+        }
+
+        .pg-nums {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            flex-wrap: wrap;
+        }
+
+        .pg-num {
+            width: 38px;
+            height: 38px;
+            background: var(--surface);
+            border: 1.5px solid var(--border);
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--text-2);
+            box-shadow: var(--shadow-xs);
+            transition: all 0.22s ease;
+            flex-shrink: 0;
+        }
+
+        .pg-num:hover {
+            border-color: var(--indigo-light);
+            color: var(--indigo);
+            transform: translateY(-2px);
+        }
+
+        .pg-num.active {
+            background: linear-gradient(135deg, var(--indigo), var(--violet));
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 4px 12px rgba(79,70,229,0.38);
+        }
+
+        .pg-dots {
+            color: var(--text-3);
+            font-weight: 700;
+            font-size: 0.9rem;
+            width: 28px;
+            text-align: center;
+            user-select: none;
+        }
+
+        /* ── LOADING ── */
+        .loading-wrap {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .spinner {
+            width: 46px;
+            height: 46px;
+            border: 4px solid var(--border);
+            border-top-color: var(--indigo);
+            border-radius: 50%;
+            animation: spin 0.85s linear infinite;
+            margin: 0 auto 1.25rem;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .loading-txt {
+            color: var(--text-3);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        /* ── ERROR ── */
+        .err-wrap {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem 1rem;
+            background: var(--surface);
+            border-radius: var(--radius);
+            max-width: 580px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .err-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .err-title { font-size: 1.5rem; font-weight: 800; color: var(--rose); margin-bottom: 0.75rem; }
+        .err-body { color: var(--text-3); line-height: 1.65; margin-bottom: 1.25rem; font-size: 0.95rem; }
+        .err-detail {
+            background: var(--bg); padding: 1rem; border-radius: 10px;
+            font-size: 0.82rem; color: var(--text-3); text-align: left;
+            border-left: 4px solid var(--rose);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 640px) {
+            .hero { padding: 3rem 1rem 2.5rem; }
+            .stat-card { padding: 1.1rem 1.4rem; min-width: 120px; }
+            .stat-value { font-size: 1.9rem; }
+            .main { padding: 1.75rem 0.75rem 2.5rem; }
+            .grid { grid-template-columns: 1fr; gap: 1rem; }
+            .card-review { padding: 1.25rem 1.25rem 1rem; }
+            .card-student { padding: 0.9rem 1rem; }
+            .avatar { width: 44px; height: 44px; }
+            .s-name { font-size: 0.88rem; }
+            .pg-num { width: 34px; height: 34px; font-size: 0.8rem; }
+            .pg-btn { padding: 0.5rem 0.85rem; font-size: 0.8rem; }
+            .shuffle-btn, .reset-btn { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+            .sec-title { font-size: 1.35rem; }
+            .controls { gap: 0.5rem; }
+        }
+
+        @media (max-width: 400px) {
+            .stats-row { gap: 0.75rem; }
+            .stat-card { padding: 1rem 1.1rem; }
+            .stat-value { font-size: 1.6rem; }
+        }
+
+        /* fade-in on load */
+        .card {
+            animation: fadeUp 0.4s ease both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hide reset button initially */
+        .reset-btn.hidden {
+            display: none;
+        }
+    </style>
 </head>
-
 <body>
-  <!-- ── HERO ── -->
-  <div class="hero">
+
+<!-- ── HERO ── -->
+<div class="hero">
     <div class="hero-inner">
-      <div class="hero-pill">⭐ Authentic Student Reviews</div>
-      <h1 class="hero-title">What Our Students Say</h1>
-      <p class="hero-subtitle">
-        Discover how AI Karyashala Bootcamp has transformed the careers and lives of hundreds of students across India
-      </p>
+        <div class="hero-pill">⭐ Authentic Student Reviews</div>
+        <h1 class="hero-title">What Our Students Say</h1>
+        <p class="hero-subtitle">
+            Discover how AI Karyashala Bootcamp has transformed the careers and lives of hundreds of students across India
+        </p>
 
-      <div class="stats-row">
-        <div class="stat-card">
-          <span class="stat-value" id="totalStudents">0</span>
-          <span class="stat-label">Total Reviews</span>
+        <div class="stats-row">
+            <div class="stat-card">
+                <span class="stat-value" id="totalStudents">0</span>
+                <span class="stat-label">Total Reviews</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="averageRating">0.0</span>
+                <div class="hero-stars" id="heroStars">
+                    <span class="hstar">★</span><span class="hstar">★</span><span class="hstar">★</span>
+                    <span class="hstar">★</span><span class="hstar">★</span>
+                </div>
+                <span class="stat-label">Average Rating</span>
+            </div>
         </div>
-        <div class="stat-card">
-          <span class="stat-value" id="averageRating">0.0</span>
-          <div class="hero-stars" id="heroStars">
-            <span class="hstar">★</span><span class="hstar">★</span><span class="hstar">★</span>
-            <span class="hstar">★</span><span class="hstar">★</span>
-          </div>
-          <span class="stat-label">Average Rating</span>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- ── MAIN ── -->
-  <div class="main">
+<!-- ── MAIN ── -->
+<div class="main">
     <div class="sec-header">
-      <h2 class="sec-title">Student Testimonials</h2>
-      <p class="sec-sub">Real experiences from real students</p>
+        <h2 class="sec-title">Student Testimonials</h2>
+        <p class="sec-sub">Real experiences from real students</p>
     </div>
 
     <div class="controls">
-      <button class="shuffle-btn" onclick="showRandomProfiles()">
-        <span class="dice">🎲</span>
-        Show 10 Random Reviews
-      </button>
+        <button class="shuffle-btn" onclick="showRandomProfiles()">
+            <span class="dice">🎲</span>
+            Show 10 Random Reviews
+        </button>
+        <button class="reset-btn hidden" id="resetBtn" onclick="resetToPagination()">
+            <span class="reset-icon">↻</span>
+            Back to All Reviews
+        </button>
     </div>
 
     <div id="grid" class="grid">
-      <div class="loading-wrap">
-        <div class="spinner"></div>
-        <p class="loading-txt">Loading testimonials…</p>
-      </div>
+        <div class="loading-wrap">
+            <div class="spinner"></div>
+            <p class="loading-txt">Loading testimonials…</p>
+        </div>
     </div>
 
     <div id="pagination" class="pagination"></div>
-  </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script>
-    // ── CONFIG ──
-    const SUPABASE_URL      = 'https://pwghpxxfejmxvwhdjkda.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3Z2hweHhmZWpteHZ3aGRqa2RhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA3OTE2ODUsImV4cCI6MjA4NjM2NzY4NX0.eU-k1WuDN01cHZ4wibMwNhJkPz6JfrfqJqbed7yPKEY';
-    const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// ── CONFIG ──
+const SUPABASE_URL      = 'https://pwghpxxfejmxvwhdjkda.supabase.co[';](https://pwghpxxfejmxvwhdjkda.supabase.co';)
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB3Z2hweHhmZWpteHZ3aGRqa2RhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA3OTE2ODUsImV4cCI6MjA4NjM2NzY4NX0.eU-k1WuDN01cHZ4wibMwNhJkPz6JfrfqJqbed7yPKEY';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    let students = [];
-    let page = 1;
-    const PER_PAGE = 10;
-    let randomMode = false;
+let students = [];
+let page = 1;
+const PER_PAGE = 10;
+let randomMode = false;
 
-    // ── COUNTER ANIMATION ──
-    function animateCounter(el, start, end, duration, isFloat, suffix) {
-      const startTime = performance.now();
-      function update(now) {
+// ── COUNTER ANIMATION ──
+function animateCounter(el, start, end, duration, isFloat, suffix) {
+    const startTime = performance.now();
+    function update(now) {
         const elapsed = now - startTime;
         const progress = Math.min(elapsed / duration, 1);
         // ease-out quad
         const eased = 1 - (1 - progress) * (1 - progress);
         const current = start + (end - start) * eased;
         if (isFloat) {
-          el.textContent = current.toFixed(1) + (progress === 1 ? suffix : '');
+            el.textContent = current.toFixed(1) + (progress === 1 ? suffix : '');
         } else {
-          el.textContent = Math.floor(current) + (progress === 1 ? suffix : '');
+            el.textContent = Math.floor(current) + (progress === 1 ? suffix : '');
         }
         if (progress < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
     }
+    requestAnimationFrame(update);
+}
 
-    // ── HERO STARS ──
-    function renderHeroStars(rating) {
-      const container = document.getElementById('heroStars');
-      const r = Math.round(rating);
-      container.innerHTML = '';
-      for (let i = 1; i <= 5; i++) {
+// ── HERO STARS ──
+function renderHeroStars(rating) {
+    const container = document.getElementById('heroStars');
+    const r = Math.round(rating);
+    container.innerHTML = '';
+    for (let i = 1; i <= 5; i++) {
         const s = document.createElement('span');
         s.className = 'hstar';
         s.style.color = i <= r ? '' : 'rgba(255,255,255,0.25)';
         s.textContent = '★';
         container.appendChild(s);
-      }
     }
+}
 
-    // ── LOAD ──
-    async function loadStudents() {
-      try {
+// ── LOAD ──
+async function loadStudents() {
+    try {
         const { data: urlData } = sb.storage.from('data').getPublicUrl('students_data.json');
         const res = await fetch(urlData.publicUrl);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -616,9 +644,9 @@
 
         // Resolve image URLs
         students = students.map(s => {
-          const imgPath = (s.image || '').replace('student_images/', '');
-          const { data: imgUrl } = sb.storage.from('student-images').getPublicUrl(imgPath);
-          return { ...s, image: imgUrl.publicUrl };
+            const imgPath = (s.image || '').replace('student_images/', '');
+            const { data: imgUrl } = sb.storage.from('student-images').getPublicUrl(imgPath);
+            return { ...s, image: imgUrl.publicUrl };
         });
 
         const total = students.length;
@@ -630,143 +658,153 @@
         renderHeroStars(avgRaw);
 
         displayStudents();
-      } catch (err) {
+    } catch (err) {
         document.getElementById('grid').innerHTML = `
-          <div class="err-wrap">
-            <div class="err-icon">⚠️</div>
-            <h2 class="err-title">Unable to Load Testimonials</h2>
-            <p class="err-body">We're experiencing technical difficulties. Please refresh the page or try again later.</p>
-            <div class="err-detail"><strong>Error:</strong> ${err.message}</div>
-          </div>`;
-      }
+            <div class="err-wrap">
+                <div class="err-icon">⚠️</div>
+                <h2 class="err-title">Unable to Load Testimonials</h2>
+                <p class="err-body">We're experiencing technical difficulties. Please refresh the page or try again later.</p>
+                <div class="err-detail"><strong>Error:</strong> ${err.message}</div>
+            </div>`;
     }
+}
 
-    // ── HELPERS ──
-    function cleanRoll(r) { return String(r || '').replace(/^AIK/, ''); }
-
-    function fallbackAvatar(name) {
-      const letter = String(name || 'S').charAt(0).toUpperCase();
-      return `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'>
-        <rect fill='%233B5BDB' width='100' height='100' rx='50'/>
+// ── HELPERS ──
+function fallbackAvatar(name) {
+    const letter = String(name || 'S').charAt(0).toUpperCase();
+    return `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg['](http://www.w3.org/2000/svg') width='100' height='100'>
+        <rect fill='%234f46e5' width='100' height='100' rx='50'/>
         <text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle'
               fill='white' font-size='42' font-weight='800' font-family='sans-serif'>${letter}</text>
-      </svg>`;
-    }
+    </svg>`;
+}
 
-    // ── RENDER CARDS ──
-    function renderCards(list) {
-      const grid = document.getElementById('grid');
-      if (!list || !list.length) {
+// ── RENDER CARDS ──
+function renderCards(list) {
+    const grid = document.getElementById('grid');
+    if (!list || !list.length) {
         grid.innerHTML = '<div class="loading-wrap"><p class="loading-txt">No testimonials found.</p></div>';
         return;
-      }
-      grid.innerHTML = list.map((s, i) => `
+    }
+    grid.innerHTML = list.map((s, i) => `
         <div class="card" style="animation-delay:${i * 40}ms">
-          <div class="card-review">
-            <div class="q-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-              </svg>
+            <div class="card-review">
+                <p class="review-text">${s.review || ''}</p>
             </div>
-            <p class="review-text">${s.review || ''}</p>
-          </div>
-          <div class="card-student">
-            <img class="avatar"
-                 src="${s.image}"
-                 alt="${s.name || ''}"
-                 onerror="this.src='${fallbackAvatar(s.name)}'">
-            <div class="student-meta">
-              <div class="s-name">${s.name || ''}</div>
-              <div class="s-roll">${cleanRoll(s.roll_number)}</div>
-              <span class="s-badge">${s.branch || ''}</span>
+            <div class="card-student">
+                <img class="avatar"
+                     src="${s.image}"
+                     alt="${s.name || ''}"
+                     onerror="this.src='${fallbackAvatar(s.name)}'">
+                <div class="student-meta">
+                    <div class="s-name">${s.name || ''}</div>
+                    <span class="s-badge">${s.branch || ''}</span>
+                </div>
             </div>
-          </div>
         </div>
-      `).join('');
-    }
+    `).join('');
+}
 
-    // ── RANDOM ──
-    function showRandomProfiles() {
-      if (!students.length) { alert('Please wait for data to load.'); return; }
-      randomMode = true;
-      const shuffled = [...students].sort(() => Math.random() - 0.5).slice(0, 10);
-      renderCards(shuffled);
-      document.getElementById('pagination').innerHTML = '';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+// ── RANDOM ──
+function showRandomProfiles() {
+    if (!students.length) { alert('Please wait for data to load.'); return; }
+    randomMode = true;
+    const shuffled = [...students].sort(() => Math.random() - 0.5).slice(0, 10);
+    renderCards(shuffled);
+    
+    // Hide pagination and show reset button
+    document.getElementById('pagination').style.display = 'none';
+    document.getElementById('resetBtn').classList.remove('hidden');
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-    // ── PAGINATED DISPLAY ──
-    function displayStudents() {
-      randomMode = false;
-      const start = (page - 1) * PER_PAGE;
-      renderCards(students.slice(start, start + PER_PAGE));
-      buildPagination();
-      document.getElementById('pagination').style.display = 'flex';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+// ── RESET TO PAGINATION ──
+function resetToPagination() {
+    randomMode = false;
+    page = 1; // Reset to first page
+    displayStudents();
+    
+    // Hide reset button
+    document.getElementById('resetBtn').classList.add('hidden');
+}
 
-    // ── PAGINATION ──
-    // Always shows: Prev | 1 2 3 ... lastPage | Next
-    function buildPagination() {
-      const total = Math.ceil(students.length / PER_PAGE);
-      const pg = document.getElementById('pagination');
-      if (total <= 1) { pg.innerHTML = ''; return; }
+// ── PAGINATED DISPLAY ──
+function displayStudents() {
+    randomMode = false;
+    const start = (page - 1) * PER_PAGE;
+    renderCards(students.slice(start, start + PER_PAGE));
+    buildPagination();
+    document.getElementById('pagination').style.display = 'flex';
+    
+    // Hide reset button in pagination mode
+    document.getElementById('resetBtn').classList.add('hidden');
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-      // Always show pages 1, 2, 3, then "…", then last
-      const showPages = [];
-      const FIXED = 3; // always show first 3
+// ── PAGINATION ──
+// Always shows: Prev | 1 2 3 ... lastPage | Next
+function buildPagination() {
+    const total = Math.ceil(students.length / PER_PAGE);
+    const pg = document.getElementById('pagination');
+    if (total <= 1) { pg.innerHTML = ''; return; }
 
-      for (let i = 1; i <= Math.min(FIXED, total); i++) showPages.push(i);
+    // Always show pages 1, 2, 3, then "…", then last
+    const showPages = [];
+    const FIXED = 3; // always show first 3
 
-      // If current page is beyond FIXED and not the last, include it + neighbors
-      if (page > FIXED && page < total) {
+    for (let i = 1; i <= Math.min(FIXED, total); i++) showPages.push(i);
+
+    // If current page is beyond FIXED and not the last, include it + neighbors
+    if (page > FIXED && page < total) {
         if (page - 1 > FIXED) showPages.push('…1');
         if (page - 1 > FIXED) showPages.push(page - 1);
         showPages.push(page);
         if (page + 1 < total) showPages.push(page + 1);
         if (page + 1 < total - 1) showPages.push('…2');
-      } else if (page > FIXED) {
+    } else if (page > FIXED) {
         if (page - 1 > FIXED) showPages.push('…1');
-      }
+    }
 
-      // Always show last
-      if (!showPages.includes(total)) {
+    // Always show last
+    if (!showPages.includes(total)) {
         if (showPages[showPages.length - 1] !== total - 1 &&
             !String(showPages[showPages.length - 1]).startsWith('…')) {
-          showPages.push('…last');
+            showPages.push('…last');
         }
         showPages.push(total);
-      }
+    }
 
-      let html = `
+    let html = `
         <button class="pg-btn" onclick="goPage(${page - 1})" ${page === 1 ? 'disabled' : ''}>← Prev</button>
         <div class="pg-nums">
-      `;
+    `;
 
-      showPages.forEach(p => {
+    showPages.forEach(p => {
         if (String(p).startsWith('…')) {
-          html += `<span class="pg-dots">…</span>`;
+            html += `<span class="pg-dots">…</span>`;
         } else {
-          html += `<div class="pg-num ${p === page ? 'active' : ''}" onclick="goPage(${p})">${p}</div>`;
+            html += `<div class="pg-num ${p === page ? 'active' : ''}" onclick="goPage(${p})">${p}</div>`;
         }
-      });
+    });
 
-      html += `</div>
+    html += `</div>
         <button class="pg-btn" onclick="goPage(${page + 1})" ${page === total ? 'disabled' : ''}>Next →</button>`;
 
-      pg.innerHTML = html;
-    }
+    pg.innerHTML = html;
+}
 
-    function goPage(p) {
-      const total = Math.ceil(students.length / PER_PAGE);
-      if (p < 1 || p > total) return;
-      page = p;
-      displayStudents();
-    }
+function goPage(p) {
+    const total = Math.ceil(students.length / PER_PAGE);
+    if (p < 1 || p > total) return;
+    page = p;
+    displayStudents();
+}
 
-    // ── INIT ──
-    loadStudents();
-  </script>
+// ── INIT ──
+loadStudents();
+</script>
 </body>
 </html>
 
