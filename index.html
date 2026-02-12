@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AI Karyashala Bootcamp • Student Reviews</title>
+  <title>AI Karyashala Bootcamp • KIET Student Reviews</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,22 +14,30 @@
     /* ========= Reset ========= */
     *, *::before, *::after { box-sizing: border-box; }
     html, body { height: 100%; }
-    body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    body {
+      margin: 0;
+      font-family: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+      color: rgba(255,255,255,.92);
+      background:
+        radial-gradient(900px 540px at 12% 10%, rgba(99,102,241,.30), transparent 60%),
+        radial-gradient(840px 620px at 86% 20%, rgba(139,92,246,.22), transparent 60%),
+        radial-gradient(940px 700px at 52% 95%, rgba(34,211,238,.14), transparent 60%),
+        linear-gradient(180deg, #070A12 0%, #0B1024 100%);
+    }
     img { max-width: 100%; display: block; }
     button, input, select { font: inherit; }
     a { color: inherit; text-decoration: none; }
 
-    /* ========= Theme ========= */
     :root{
-      --bg0: #070A12;
-      --bg1: #0B1024;
       --card: rgba(255,255,255,.06);
       --card2: rgba(255,255,255,.10);
       --border: rgba(255,255,255,.10);
       --border2: rgba(255,255,255,.16);
-      --text1: rgba(255,255,255,.92);
-      --text2: rgba(255,255,255,.72);
-      --text3: rgba(255,255,255,.55);
+      --text2: rgba(255,255,255,.70);
+      --text3: rgba(255,255,255,.52);
       --shadow: 0 24px 80px rgba(0,0,0,.45);
       --shadow2: 0 12px 40px rgba(0,0,0,.35);
       --radius: 18px;
@@ -38,20 +46,7 @@
       --indigo: #6366F1;
       --violet: #8B5CF6;
       --cyan: #22D3EE;
-      --rose: #FB7185;
       --amber: #FBBF24;
-      --green: #34D399;
-    }
-
-    /* ========= Background ========= */
-    body{
-      color: var(--text1);
-      background:
-        radial-gradient(1000px 600px at 10% 10%, rgba(99,102,241,.28), transparent 60%),
-        radial-gradient(900px 650px at 85% 25%, rgba(139,92,246,.22), transparent 60%),
-        radial-gradient(1000px 700px at 60% 95%, rgba(34,211,238,.14), transparent 60%),
-        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
-      overflow-x: hidden;
     }
 
     .wrap{
@@ -66,25 +61,22 @@
       z-index: 40;
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
-      background: linear-gradient(180deg, rgba(7,10,18,.76) 0%, rgba(7,10,18,.56) 100%);
+      background: linear-gradient(180deg, rgba(7,10,18,.78) 0%, rgba(7,10,18,.55) 100%);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
-
     .topbar-inner{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
       padding: 14px 0;
     }
-
     .brand{
-      display: flex;
-      align-items: center;
+      display:flex;
+      align-items:center;
       gap: 12px;
       min-width: 0;
     }
-
     .logo{
       width: 38px;
       height: 38px;
@@ -92,9 +84,10 @@
       background:
         radial-gradient(10px 10px at 30% 30%, rgba(255,255,255,.65), transparent 70%),
         linear-gradient(135deg, rgba(99,102,241,.95), rgba(139,92,246,.95));
-      box-shadow: 0 10px 30px rgba(99,102,241,.25);
+      box-shadow: 0 10px 30px rgba(99,102,241,.22);
       position: relative;
       overflow: hidden;
+      flex: 0 0 auto;
     }
     .logo::after{
       content:"";
@@ -110,11 +103,10 @@
       40%{ transform: translateX(55%) rotate(18deg); opacity:.0;}
       100%{ opacity:0; transform: translateX(55%) rotate(18deg);}
     }
-
     .brand-title{
-      min-width: 0;
-      display: grid;
+      display:grid;
       gap: 2px;
+      min-width: 0;
     }
     .brand-title strong{
       font-weight: 800;
@@ -127,148 +119,121 @@
     .brand-title span{
       color: var(--text3);
       font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .08em;
+      font-weight: 700;
+      letter-spacing: .10em;
       text-transform: uppercase;
     }
 
-    .chip{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
       padding: 10px 12px;
       border-radius: 999px;
-      background: rgba(255,255,255,.06);
       border: 1px solid rgba(255,255,255,.10);
-      color: var(--text2);
-      font-weight: 700;
-      font-size: 13px;
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.78);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .04em;
       white-space: nowrap;
     }
-    .chip i{
-      width: 8px;
-      height: 8px;
+    .pill i{
+      width: 9px; height: 9px;
       border-radius: 99px;
-      background: linear-gradient(135deg, var(--green), var(--cyan));
-      box-shadow: 0 0 0 4px rgba(52,211,153,.12);
+      background: linear-gradient(135deg, var(--cyan), var(--indigo));
+      box-shadow: 0 0 0 4px rgba(34,211,238,.10);
     }
 
     /* ========= Hero ========= */
-    header.hero{
-      padding: 34px 0 18px;
-    }
-
-    .hero-grid{
-      display: grid;
-      grid-template-columns: 1.25fr .75fr;
-      gap: 18px;
-      align-items: stretch;
-    }
-
+    header.hero{ padding: 22px 0 10px; }
     .hero-card{
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.05) 100%);
       border-radius: var(--radius2);
-      box-shadow: var(--shadow);
-      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.045) 100%);
+      box-shadow: var(--shadow2);
+      overflow:hidden;
       position: relative;
-      padding: 22px;
+      padding: 18px 18px 16px;
     }
-
     .hero-card::before{
       content:"";
       position:absolute;
-      inset:-1px;
+      inset:-2px;
       background:
-        radial-gradient(900px 400px at 10% 20%, rgba(99,102,241,.22), transparent 60%),
-        radial-gradient(700px 380px at 85% 70%, rgba(139,92,246,.16), transparent 60%);
+        radial-gradient(820px 340px at 12% 10%, rgba(99,102,241,.18), transparent 60%),
+        radial-gradient(720px 360px at 88% 65%, rgba(139,92,246,.14), transparent 60%);
       pointer-events:none;
-      mask: linear-gradient(#000, transparent 75%);
-      opacity: .9;
+      opacity:.9;
     }
+    .hero-card > *{ position:relative; z-index:2; }
 
-    .hero-content{
-      position: relative;
-      z-index: 2;
-      display: grid;
-      gap: 12px;
+    .hero-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 14px;
+      flex-wrap: wrap;
     }
-
-    .hero-kicker{
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      width: fit-content;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      color: rgba(255,255,255,.85);
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-    .hero-kicker .spark{
-      width: 22px;
-      height: 22px;
-      border-radius: 8px;
-      background: linear-gradient(135deg, var(--amber), var(--rose));
-      box-shadow: 0 10px 26px rgba(251,191,36,.18);
-    }
-
     .hero-title{
+      margin: 0;
       font-family: "Fraunces", serif;
-      letter-spacing: -.02em;
       font-weight: 700;
-      font-size: clamp(26px, 3.6vw, 44px);
-      line-height: 1.15;
-      margin: 0;
+      letter-spacing: -.02em;
+      font-size: clamp(22px, 3vw, 36px);
+      line-height: 1.12;
     }
-
     .hero-sub{
+      margin: 6px 0 0;
       color: var(--text2);
-      line-height: 1.65;
       font-weight: 600;
-      font-size: clamp(14px, 1.25vw, 16px);
-      margin: 0;
-      max-width: 58ch;
+      line-height: 1.6;
+      font-size: 14px;
+      max-width: 64ch;
     }
 
-    .hero-metrics{
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 8px;
+    .metrics{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
     }
-
     .metric{
+      border-radius: 18px;
       border: 1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.06);
-      border-radius: 16px;
-      padding: 14px 14px;
-      display: grid;
+      padding: 12px 12px;
+      display:grid;
       gap: 6px;
     }
-
     .metric .label{
       color: var(--text3);
-      font-weight: 800;
-      letter-spacing: .08em;
+      font-weight: 900;
+      letter-spacing: .10em;
       text-transform: uppercase;
       font-size: 11px;
     }
     .metric .value{
+      display:flex;
+      align-items:baseline;
+      gap: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+    .metric .num{
       font-weight: 900;
       letter-spacing: -.02em;
-      font-variant-numeric: tabular-nums;
-      font-size: 22px;
-      display: inline-flex;
-      align-items: baseline;
-      gap: 10px;
+      font-size: 26px;
+      line-height: 1;
+    }
+    .metric .mini{
+      color: rgba(255,255,255,.62);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
     }
     .stars{
-      display: inline-flex;
+      display:inline-flex;
       gap: 2px;
       transform: translateY(1px);
     }
@@ -276,401 +241,16 @@
       font-size: 14px;
       color: rgba(255,255,255,.20);
     }
-    .star.on{ color: var(--amber); filter: drop-shadow(0 0 10px rgba(251,191,36,.25)); }
-
-    .side-card{
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.045) 100%);
-      border-radius: var(--radius2);
-      box-shadow: var(--shadow2);
-      padding: 18px;
-      display: grid;
-      gap: 12px;
-      overflow: hidden;
-      position: relative;
-    }
-    .side-card::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background: radial-gradient(520px 260px at 80% 10%, rgba(34,211,238,.16), transparent 60%);
-      pointer-events:none;
-      opacity:.85;
-    }
-    .side-card > *{ position: relative; z-index: 2; }
-
-    .side-title{
-      font-weight: 900;
-      letter-spacing: -.02em;
-      font-size: 16px;
-      margin: 0;
-    }
-    .side-sub{
-      margin: 0;
-      color: var(--text2);
-      line-height: 1.5;
-      font-weight: 600;
-      font-size: 13px;
-    }
-
-    .btn-row{
-      display:flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 2px;
-    }
-
-    .btn{
-      cursor: pointer;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.88);
-      padding: 11px 12px;
-      border-radius: 14px;
-      font-weight: 800;
-      font-size: 13px;
-      letter-spacing: .02em;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-      user-select:none;
-    }
-    .btn:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.075);
-      border-color: rgba(255,255,255,.22);
-    }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(99,102,241,.95), rgba(139,92,246,.95));
-      border-color: transparent;
-      box-shadow: 0 16px 40px rgba(99,102,241,.22);
-    }
-    .btn.primary:hover{ transform: translateY(-2px); }
-
-    .btn .dot{
-      width: 10px; height: 10px; border-radius: 99px;
-      background: linear-gradient(135deg, var(--green), var(--cyan));
-      box-shadow: 0 0 0 4px rgba(34,211,238,.10);
-    }
-
-    /* ========= Controls ========= */
-    .panel{
-      margin-top: 16px;
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      box-shadow: var(--shadow2);
-      padding: 14px;
-    }
-
-    .controls{
-      display: grid;
-      grid-template-columns: 1.25fr .65fr .65fr .6fr;
-      gap: 10px;
-      align-items: center;
-    }
-
-    .field{
-      display: grid;
-      gap: 6px;
-    }
-    .field label{
-      color: var(--text3);
-      font-weight: 900;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      font-size: 11px;
-    }
-
-    .input, .select{
-      width: 100%;
-      padding: 12px 12px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.92);
-      outline: none;
-      transition: border-color .18s ease, background .18s ease;
-    }
-    .input::placeholder{ color: rgba(255,255,255,.40); font-weight: 600; }
-    .input:focus, .select:focus{
-      border-color: rgba(99,102,241,.75);
-      background: rgba(255,255,255,.075);
-      box-shadow: 0 0 0 5px rgba(99,102,241,.12);
-    }
-
-    .select option{
-      background: #0B1024;
-      color: rgba(255,255,255,.92);
-    }
-
-    .mini{
-      display:flex;
-      gap: 8px;
-      justify-content: flex-end;
-      align-items: end;
-    }
-
-    .pill{
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: var(--text2);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .04em;
-      white-space: nowrap;
+    .star.on{
+      color: var(--amber);
+      filter: drop-shadow(0 0 10px rgba(251,191,36,.22));
     }
 
     /* ========= Grid ========= */
-    main{ padding: 16px 0 40px; }
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 14px;
-    }
-
-    .card{
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.045) 100%);
-      overflow:hidden;
-      position: relative;
-      box-shadow: 0 14px 40px rgba(0,0,0,.30);
-      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
-      min-height: 220px;
-    }
-    .card:hover{
-      transform: translateY(-4px);
-      border-color: rgba(99,102,241,.35);
-      box-shadow: 0 24px 70px rgba(0,0,0,.42);
-    }
-    .card::before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(520px 220px at 15% 10%, rgba(99,102,241,.16), transparent 60%),
-        radial-gradient(420px 240px at 90% 55%, rgba(139,92,246,.12), transparent 60%);
-      pointer-events:none;
-      opacity:.85;
-    }
-    .card > *{ position: relative; z-index: 2; }
-
-    .card-head{
-      padding: 14px 14px 12px;
-      display:flex;
-      gap: 12px;
-      align-items: center;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.03);
-    }
-
-    .avatar{
-      width: 46px; height: 46px;
-      border-radius: 14px;
-      object-fit: cover;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
-      flex: 0 0 auto;
-    }
-
-    .meta{
-      min-width: 0;
-      flex: 1 1 auto;
-      display:grid;
-      gap: 2px;
-    }
-    .name{
-      font-weight: 900;
-      letter-spacing: -.02em;
-      line-height: 1.2;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-    }
-    .submeta{
-      display:flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      align-items: center;
-      color: var(--text3);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .02em;
-    }
-    .tag{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(99,102,241,.14);
-      border: 1px solid rgba(99,102,241,.22);
-      color: rgba(255,255,255,.86);
-      font-weight: 900;
-      font-size: 11px;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-    .tag .mini-dot{
-      width: 7px; height: 7px; border-radius: 99px;
-      background: linear-gradient(135deg, var(--cyan), var(--indigo));
-      box-shadow: 0 0 0 4px rgba(34,211,238,.10);
-    }
-
-    .rating{
-      flex: 0 0 auto;
-      display:grid;
-      gap: 2px;
-      justify-items: end;
-      text-align:right;
-    }
-    .rating .num{
-      font-weight: 900;
-      font-variant-numeric: tabular-nums;
-      letter-spacing: -.02em;
-      font-size: 14px;
-      color: rgba(255,255,255,.90);
-    }
-    .rating .stars{
-      gap: 2px;
-    }
-    .rating .star{ font-size: 12px; }
-
-    .card-body{
-      padding: 14px;
-      display:grid;
-      gap: 10px;
-    }
-
-    .quote{
-      color: rgba(255,255,255,.80);
-      line-height: 1.7;
-      font-weight: 600;
-      font-size: 14px;
-      white-space: pre-wrap;
-      word-break: break-word;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      -webkit-line-clamp: 5;
-    }
-    .quote.expanded{
-      -webkit-line-clamp: unset;
-    }
-
-    .actions{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-top: 2px;
-    }
-
-    .ghost{
-      cursor:pointer;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      color: rgba(255,255,255,.82);
-      padding: 10px 12px;
-      border-radius: 14px;
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-    }
-    .ghost:hover{
-      transform: translateY(-1px);
-      border-color: rgba(255,255,255,.20);
-      background: rgba(255,255,255,.07);
-    }
-
-    .micro{
-      color: var(--text3);
-      font-weight: 800;
-      font-size: 12px;
-      letter-spacing: .02em;
-      white-space: nowrap;
-    }
-
-    /* ========= Pagination ========= */
-    .pager{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-top: 14px;
-      padding: 14px;
-      border-radius: var(--radius2);
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.05);
-      box-shadow: var(--shadow2);
-    }
-
-    .pager .left, .pager .right{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .pgbtn{
-      cursor:pointer;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.88);
-      padding: 10px 12px;
-      border-radius: 14px;
-      font-weight: 900;
-      font-size: 12px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease, opacity .18s ease;
-      user-select:none;
-    }
-    .pgbtn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.20); background: rgba(255,255,255,.08); }
-    .pgbtn:disabled{ opacity: .42; cursor: not-allowed; transform: none; }
-
-    .nums{
-      display:flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      align-items:center;
-    }
-    .numchip{
-      width: 38px; height: 38px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.06);
-      color: rgba(255,255,255,.85);
-      font-weight: 900;
-      font-size: 12px;
-      cursor:pointer;
-      transition: transform .18s ease, border-color .18s ease, background .18s ease;
-      user-select:none;
-    }
-    .numchip:hover{ transform: translateY(-1px); border-color: rgba(99,102,241,.35); background: rgba(255,255,255,.075); }
-    .numchip.active{
-      background: linear-gradient(135deg, rgba(99,102,241,.95), rgba(139,92,246,.95));
-      border-color: transparent;
-      box-shadow: 0 14px 32px rgba(99,102,241,.20);
-    }
-    .dots{ color: var(--text3); font-weight: 900; width: 24px; text-align:center; }
-
-    /* ========= Empty / Error ========= */
+    main{ padding: 12px 0 44px; }
     .state{
       margin-top: 14px;
-      padding: 18px;
+      padding: 16px;
       border-radius: var(--radius2);
       border: 1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.05);
@@ -703,27 +283,186 @@
       font-size: 12px;
     }
 
-    /* ========= Responsive ========= */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .card{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.045) 100%);
+      box-shadow: 0 14px 40px rgba(0,0,0,.30);
+      overflow:hidden;
+      position: relative;
+      transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+      min-height: 220px;
+      display:flex;
+      flex-direction: column;
+    }
+    .card:hover{
+      transform: translateY(-4px);
+      border-color: rgba(99,102,241,.30);
+      box-shadow: 0 24px 70px rgba(0,0,0,.42);
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(520px 220px at 15% 10%, rgba(99,102,241,.14), transparent 60%),
+        radial-gradient(420px 240px at 90% 55%, rgba(139,92,246,.10), transparent 60%);
+      pointer-events:none;
+      opacity:.9;
+    }
+    .card > *{ position: relative; z-index: 2; }
+
+    /* Big review (main hero inside card) */
+    .review{
+      padding: 16px 16px 12px;
+      flex: 1;
+      display:grid;
+      gap: 10px;
+    }
+    .quote{
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      color: rgba(255,255,255,.92);
+      line-height: 1.55;
+      font-size: 18px; /* BIG focus */
+      white-space: pre-wrap;
+      word-break: break-word;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 4;
+    }
+    .quote.expanded{ -webkit-line-clamp: unset; }
+
+    .actions{
+      display:flex;
+      align-items:center;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 2px;
+    }
+    .ghost{
+      cursor:pointer;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.82);
+      padding: 10px 12px;
+      border-radius: 14px;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+      display:none; /* shown only when text is clamped */
+      user-select:none;
+    }
+    .ghost:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.20);
+      background: rgba(255,255,255,.07);
+    }
+
+    /* Footer (small student info) */
+    .student{
+      padding: 12px 16px 14px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .avatar{
+      width: 38px; height: 38px;
+      border-radius: 14px;
+      object-fit: cover;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 10px 26px rgba(0,0,0,.22);
+      flex: 0 0 auto;
+    }
+    .meta{
+      min-width: 0;
+      flex: 1;
+      display:grid;
+      gap: 2px;
+    }
+    .name{
+      font-weight: 900;
+      letter-spacing: -.02em;
+      line-height: 1.2;
+      font-size: 13px; /* smaller than review */
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+    .branch{
+      color: rgba(255,255,255,.60);
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: .10em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Load more */
+    .loadmore-wrap{
+      margin-top: 14px;
+      display:flex;
+      justify-content:center;
+    }
+    .loadmore{
+      cursor:pointer;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.90);
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+      user-select:none;
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      box-shadow: 0 16px 40px rgba(0,0,0,.25);
+    }
+    .loadmore:hover{
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.075);
+      border-color: rgba(255,255,255,.22);
+    }
+    .loadmore:disabled{
+      opacity: .45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Responsive */
     @media (max-width: 1020px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .controls{ grid-template-columns: 1fr 1fr; }
-      .mini{ justify-content: start; align-items:center; }
       .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .metrics{ grid-template-columns: 1fr; }
     }
     @media (max-width: 640px){
       .wrap{ width: min(1240px, calc(100% - 26px)); }
-      .hero-card{ padding: 18px; }
-      .hero-metrics{ grid-template-columns: 1fr; }
-      .controls{ grid-template-columns: 1fr; }
       .grid{ grid-template-columns: 1fr; }
-      .pager{ flex-direction: column; align-items: stretch; }
-      .pager .right{ justify-content: space-between; }
+      .quote{ font-size: 17px; }
     }
-
-    /* ========= Reduced Motion ========= */
     @media (prefers-reduced-motion: reduce){
-      .logo::after{ animation: none; }
-      .btn, .card, .ghost, .pgbtn, .numchip{ transition: none; }
+      .logo::after{ animation:none; }
+      .card, .loadmore, .ghost{ transition:none; }
     }
   </style>
 </head>
@@ -736,90 +475,40 @@
         <div class="logo" aria-hidden="true"></div>
         <div class="brand-title">
           <strong>AI Karyashala Bootcamp</strong>
-          <span>Student Reviews</span>
+          <span>KIET Student Reviews</span>
         </div>
       </div>
-      <div class="chip" title="Data loaded from students_data.json">
-        <i></i>
-        Live • Static Site
+      <div class="pill" title="Static site • Data from students_data.json">
+        <i></i> Live • Reviews
       </div>
     </div>
   </div>
 
-  <!-- Hero -->
-  <header class="wrap hero" aria-label="Hero">
-    <div class="hero-grid">
-      <section class="hero-card">
-        <div class="hero-content">
-          <div class="hero-kicker"><span class="spark"></span>Verified Feedback</div>
-          <h1 class="hero-title">Mind-blowing testimonials from real students.</h1>
-          <p class="hero-sub">
-            Search by roll number or name, filter by branch, and explore highlights instantly.
-            Everything is optimized for clarity, readability, and premium presentation.
-          </p>
+  <!-- Hero (only metrics + headings) -->
+  <header class="wrap hero" aria-label="Header">
+    <section class="hero-card">
+      <div class="hero-head">
+        <div>
+          <h1 class="hero-title">KIET Student Reviews</h1>
+          <p class="hero-sub">Only student feedback is highlighted. Names & branch are kept minimal below each review.</p>
+        </div>
+      </div>
 
-          <div class="hero-metrics">
-            <div class="metric">
-              <div class="label">Total Reviews</div>
-              <div class="value"><span id="mTotal">0</span><span style="color:var(--text3);font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;">records</span></div>
-            </div>
-            <div class="metric">
-              <div class="label">Average Rating</div>
-              <div class="value">
-                <span id="mAvg">0.0</span>
-                <span class="stars" id="mStars" aria-label="Average rating stars"></span>
-              </div>
-            </div>
-            <div class="metric">
-              <div class="label">Visible Now</div>
-              <div class="value"><span id="mVisible">0</span><span style="color:var(--text3);font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;">cards</span></div>
-            </div>
+      <div class="metrics" aria-label="Summary metrics">
+        <div class="metric">
+          <div class="label">Total Reviews</div>
+          <div class="value">
+            <span class="num" id="mTotal">0</span>
+            <span class="mini" id="mTotalSuffix">+</span>
           </div>
         </div>
-      </section>
 
-      <aside class="side-card">
-        <h3 class="side-title">Quick Actions</h3>
-        <p class="side-sub">Show random highlights, copy a shareable view, or reset filters in one click.</p>
-        <div class="btn-row">
-          <button class="btn primary" id="btnRandom"><span class="dot"></span>Show 10 Highlights</button>
-          <button class="btn" id="btnCopy"><span style="font-size:14px;">🔗</span>Copy Share Link</button>
-          <button class="btn" id="btnReset"><span style="font-size:14px;">↺</span>Reset</button>
-        </div>
-        <div style="margin-top:10px; color: var(--text3); font-weight: 700; font-size: 12px; line-height:1.6;">
-          Tip: Add <b>?q=ROLLNUMBER</b> to your URL to open a pre-filtered view instantly.
-        </div>
-      </aside>
-    </div>
-
-    <!-- Controls Panel -->
-    <section class="panel" aria-label="Search and filters">
-      <div class="controls">
-        <div class="field">
-          <label for="q">Search</label>
-          <input class="input" id="q" placeholder="Roll number • name • branch" autocomplete="off" />
-        </div>
-
-        <div class="field">
-          <label for="branch">Branch</label>
-          <select class="select" id="branch">
-            <option value="All">All</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="sort">Sort</label>
-          <select class="select" id="sort">
-            <option value="latest">Latest (S.No)</option>
-            <option value="rating_desc">Rating (High → Low)</option>
-            <option value="rating_asc">Rating (Low → High)</option>
-            <option value="name_asc">Name (A → Z)</option>
-          </select>
-        </div>
-
-        <div class="mini">
-          <div class="pill" id="pillCount">0 results</div>
-          <div class="pill" id="pillPage">Page 1</div>
+        <div class="metric">
+          <div class="label">Overall Rating</div>
+          <div class="value">
+            <span class="num" id="mAvg">0.0</span>
+            <span class="stars" id="mStars" aria-label="Overall rating stars"></span>
+          </div>
         </div>
       </div>
     </section>
@@ -828,60 +517,61 @@
   <!-- Main -->
   <main class="wrap">
     <div id="state" class="state" style="display:none"></div>
-
     <section id="grid" class="grid" aria-label="Reviews grid"></section>
 
-    <nav id="pager" class="pager" aria-label="Pagination" style="display:none">
-      <div class="left">
-        <button class="pgbtn" id="prevBtn">Prev</button>
-        <button class="pgbtn" id="nextBtn">Next</button>
-      </div>
-
-      <div class="right">
-        <div class="nums" id="nums"></div>
-        <div class="pill" id="pillMeta">—</div>
-      </div>
-    </nav>
+    <div class="loadmore-wrap">
+      <button id="btnMore" class="loadmore" type="button">Load more</button>
+    </div>
   </main>
 
   <script>
     // ========= CONFIG (yours) =========
     const SUPABASE_URL = "https://scvfcifruoqsjfzptwbf.supabase.co";
     const BUCKET = "photos";
-    const DATA_URL = "./students_data.json"; // file in same folder as index.html
+    const DATA_URL = "./students_data.json"; // keep in same folder as index.html
+
+    // ========= UI settings =========
+    const BATCH = 12; // cards per load
+    const TARGET_TOTAL_REVIEWS = 550;  // animate 0 -> 550+
+    const TARGET_OVERALL_RATING = 3.8; // animate 0.0 -> 3.8
 
     // ========= State =========
     let all = [];
-    let filtered = [];
-    let page = 1;
-    const PER_PAGE = 9; // premium grid: 3x3 on desktop
-    let randomMode = false;
+    let shown = 0;
 
     // ========= Utils =========
     const $ = (id) => document.getElementById(id);
+    const safeStr = (v) => (v === null || v === undefined) ? "" : String(v);
 
-    function safeStr(v){ return (v === null || v === undefined) ? "" : String(v); }
-
-    function cleanRoll(r){
-      // keep your earlier behavior but safe
-      return safeStr(r).replace(/^AIK/, "");
+    function escapeHtml(s){
+      return safeStr(s)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
     }
 
     function clampRating(x){
       const n = Number(x);
-      if (!Number.isFinite(n)) return 0;
+      if (!Number.isFinite(n)) return null;
       return Math.max(1, Math.min(5, n));
     }
 
+    // Build a public supabase URL from Excel-like paths.
+    // Works with:
+    // - "student_images/XYZ.jpg"
+    // - "photos/student_images/XYZ.jpg"
+    // - "/student_images/XYZ.jpg"
+    // - full https URL (returns as-is)
     function publicImageUrl(imagePath){
       let p = safeStr(imagePath).trim();
       if (!p || p.toLowerCase() === "nan" || p.toLowerCase() === "none") return "";
       if (p.startsWith("http://") || p.startsWith("https://")) return p;
 
-      p = p.replace(/^\/+/, "");
-      if (p.startsWith(BUCKET + "/")) p = p.slice(BUCKET.length + 1);
-
-      // encode each segment
+      p = p.replace(/^\/+/, ""); // remove leading slashes
+      if (p.startsWith(BUCKET + "/")) p = p.slice(BUCKET.length + 1); // remove "photos/"
+      // encode each path segment safely
       const encoded = p.split("/").map(seg => encodeURIComponent(seg)).join("/");
       return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${encoded}`;
     }
@@ -913,24 +603,23 @@
       return html;
     }
 
-    function setState(type, title, body, extra){
+    function setState(title, body, extra){
       const box = $("state");
       box.style.display = "grid";
       box.innerHTML = `
-        <h3>${title}</h3>
-        <p>${body}</p>
-        ${extra ? `<code>${extra}</code>` : ""}
+        <h3>${escapeHtml(title)}</h3>
+        <p>${escapeHtml(body)}</p>
+        ${extra ? `<code>${escapeHtml(extra)}</code>` : ""}
       `;
     }
-
     function clearState(){
       $("state").style.display = "none";
       $("state").innerHTML = "";
     }
 
     function animateNumber(el, to, opts={}){
-      const from = Number(el.textContent.replace(/[^\d.]/g,"")) || 0;
-      const dur = opts.duration || 900;
+      const from = Number(String(el.textContent).replace(/[^\d.]/g,"")) || 0;
+      const dur = opts.duration ?? 900;
       const isFloat = !!opts.float;
       const start = performance.now();
 
@@ -944,350 +633,77 @@
       requestAnimationFrame(tick);
     }
 
-    // ========= URL params (share link) =========
-    function getParams(){
-      const u = new URL(window.location.href);
-      return {
-        q: u.searchParams.get("q") || "",
-        branch: u.searchParams.get("branch") || "All",
-        sort: u.searchParams.get("sort") || "latest",
-        page: Math.max(1, parseInt(u.searchParams.get("page") || "1", 10) || 1),
-        mode: u.searchParams.get("mode") || "all" // "all" or "random"
-      };
+    function normalizeRow(s, idx){
+      const name = safeStr(s.name || s["Full Name"] || s.full_name).trim() || "Student";
+      const branch = safeStr(s.branch || s["Branch"]).trim() || "—";
+      const review = safeStr(s.review || s["Review/Comment"] || s.comment).trim() || "No comment provided.";
+      const rating = clampRating(s.rating || s["Rating (1-5)"] || s["Rating"]); // optional
+      const imgPath = s.image || s["Image Path"] || s.image_path || "";
+      const image = publicImageUrl(imgPath);
+
+      return { idx, name, branch, review, rating, image };
     }
 
-    function setParams(next){
-      const u = new URL(window.location.href);
-      if ("q" in next) u.searchParams.set("q", next.q);
-      if ("branch" in next) u.searchParams.set("branch", next.branch);
-      if ("sort" in next) u.searchParams.set("sort", next.sort);
-      if ("page" in next) u.searchParams.set("page", String(next.page));
-      if ("mode" in next) u.searchParams.set("mode", next.mode);
-      window.history.replaceState({}, "", u.toString());
-    }
-
-    // ========= Data =========
-    async function loadData(){
-      clearState();
-      setState("loading", "Loading reviews…", "Fetching students_data.json and preparing premium view.");
-
-      const res = await fetch(DATA_URL, { cache: "no-store" });
-      if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
-      const raw = await res.json();
-
-      // Normalize expected structure:
-      // expects: {name, roll_number, branch, rating, review, image}
-      all = raw.map((s, idx) => {
-        const sno = Number(s.sno ?? s["S.No"] ?? s["S No"] ?? s["s_no"] ?? (idx + 1));
-        return {
-          sno: Number.isFinite(sno) ? sno : (idx + 1),
-          name: safeStr(s.name || s["Full Name"] || s.full_name).trim(),
-          roll_number: safeStr(s.roll_number || s["Roll Number"] || s.roll).trim(),
-          branch: safeStr(s.branch || s["Branch"]).trim() || "—",
-          rating: clampRating(s.rating || s["Rating (1-5)"] || s["Rating"]),
-          review: safeStr(s.review || s["Review/Comment"] || s.comment).trim(),
-          image: publicImageUrl(s.image || s["Image Path"] || s.image_path || "")
-        };
-      });
-
-      // Build branches
-      const branches = Array.from(new Set(all.map(x => x.branch).filter(Boolean))).sort((a,b)=>a.localeCompare(b));
-      const branchSel = $("branch");
-      branchSel.innerHTML = `<option value="All">All</option>` + branches.map(b => `<option value="${escapeHtmlAttr(b)}">${escapeHtml(b)}</option>`).join("");
-
-      // Hero metrics
-      const total = all.length;
-      const avg = total ? (all.reduce((a,x)=>a+(Number(x.rating)||0),0)/total) : 0;
-      animateNumber($("mTotal"), total, { duration: 900, float: false });
-      animateNumber($("mAvg"), avg, { duration: 900, float: true });
-      $("mStars").innerHTML = makeStars(avg);
-
-      clearState();
-    }
-
-    function escapeHtml(s){
-      return safeStr(s)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
-    }
-    function escapeHtmlAttr(s){ return escapeHtml(s).replaceAll("\n"," "); }
-
-    // ========= Filtering / Sorting =========
-    function applyFilters(){
-      const q = $("q").value.trim().toLowerCase();
-      const branch = $("branch").value;
-      const sort = $("sort").value;
-
-      const base = all.filter(x => {
-        const okBranch = (branch === "All") || x.branch === branch;
-        if (!okBranch) return false;
-        if (!q) return true;
-        const hay = `${x.roll_number} ${x.name} ${x.branch}`.toLowerCase();
-        return hay.includes(q);
-      });
-
-      // Sort
-      let out = base.slice();
-      if (sort === "rating_desc"){
-        out.sort((a,b) => (b.rating - a.rating) || (b.sno - a.sno));
-      } else if (sort === "rating_asc"){
-        out.sort((a,b) => (a.rating - b.rating) || (b.sno - a.sno));
-      } else if (sort === "name_asc"){
-        out.sort((a,b) => (a.name || "").localeCompare(b.name || ""));
-      } else {
-        out.sort((a,b) => (b.sno - a.sno));
-      }
-
-      filtered = out;
-      randomMode = false;
-      page = 1;
-
-      setParams({ q: $("q").value.trim(), branch, sort, page, mode: "all" });
-      render();
-    }
-
-    function render(){
-      const total = filtered.length;
-      $("pillCount").textContent = `${total} result${total===1?"":"s"}`;
-
-      const pages = Math.max(1, Math.ceil(total / PER_PAGE));
-      if (page > pages) page = pages;
-
-      const start = (page - 1) * PER_PAGE;
-      const items = filtered.slice(start, start + PER_PAGE);
-
-      $("mVisible").textContent = String(items.length);
-      $("pillPage").textContent = `Page ${page}`;
-      $("pillMeta").textContent = `${items.length} shown • ${total} total`;
-
-      if (!total){
-        $("grid").innerHTML = "";
-        $("pager").style.display = "none";
-        setState("empty", "No reviews found", "Try clearing filters or searching with a different keyword.");
-        return;
-      }
-      clearState();
-
-      $("grid").innerHTML = items.map(cardHtml).join("");
-
-      // pager
-      $("pager").style.display = "flex";
-      $("prevBtn").disabled = page <= 1;
-      $("nextBtn").disabled = page >= pages;
-
-      // numbers (show 1 2 3 ... last, with current window)
-      $("nums").innerHTML = buildPageNums(page, pages).map(p => {
-        if (p === "…") return `<div class="dots">…</div>`;
-        const cls = (p === page) ? "numchip active" : "numchip";
-        return `<div class="${cls}" data-page="${p}">${p}</div>`;
-      }).join("");
-
-      // show/hide "Read more" if needed
-      document.querySelectorAll(".quote").forEach((el) => {
-        const btn = el.closest(".card").querySelector("[data-toggle]");
-        // decide if clamped
-        requestAnimationFrame(() => {
-          const clamped = el.scrollHeight > el.clientHeight + 4;
-          if (btn) btn.style.display = clamped ? "inline-flex" : "none";
-        });
-      });
-    }
-
-    function buildPageNums(current, total){
-      // Always show: 1, 2, 3, ... , last. Also show current ±1 window when in middle.
-      const out = [];
-      const add = (x) => { if (!out.includes(x)) out.push(x); };
-
-      if (total <= 8){
-        for (let i=1;i<=total;i++) add(i);
-        return out;
-      }
-
-      // first 2
-      add(1); add(2);
-
-      // middle window
-      const left = Math.max(3, current - 1);
-      const right = Math.min(total - 2, current + 1);
-
-      if (left > 3) add("…");
-      for (let i=left;i<=right;i++) add(i);
-      if (right < total - 2) add("…");
-
-      // last 2
-      add(total - 1); add(total);
-
-      // cleanup: avoid "…" near edges
-      // (simple pass)
-      const cleaned = [];
-      for (let i=0;i<out.length;i++){
-        if (out[i] === "…" && (out[i-1] === "…" || out[i-1] === out[i+1])) continue;
-        cleaned.push(out[i]);
-      }
-      return cleaned;
-    }
-
-    function cardHtml(s){
-      const name = escapeHtml(s.name || "Student");
-      const roll = escapeHtml(cleanRoll(s.roll_number || "—"));
-      const branch = escapeHtml(s.branch || "—");
-      const review = escapeHtml((s.review || "").trim() || "No comment provided.");
-      const rating = clampRating(s.rating || 0);
-      const img = s.image || fallbackAvatarSvg(s.name);
+    function cardHtml(x){
+      const name = escapeHtml(x.name);
+      const branch = escapeHtml(x.branch);
+      const review = escapeHtml(x.review);
+      const img = x.image || fallbackAvatarSvg(x.name);
 
       return `
         <article class="card">
-          <div class="card-head">
-            <img class="avatar" src="${img}" alt="${name}"
-                 onerror="this.onerror=null; this.src='${fallbackAvatarSvg(s.name)}';" />
-            <div class="meta">
-              <div class="name">${name}</div>
-              <div class="submeta">
-                <span>${roll}</span>
-                <span style="opacity:.35;">•</span>
-                <span class="tag"><span class="mini-dot"></span>${branch}</span>
-              </div>
-            </div>
-            <div class="rating" aria-label="Rating">
-              <div class="num">${rating.toFixed(1)}/5</div>
-              <div class="stars">${makeStars(rating)}</div>
+          <div class="review">
+            <div class="quote">${review}</div>
+            <div class="actions">
+              <button class="ghost" type="button" data-toggle>Read more</button>
             </div>
           </div>
 
-          <div class="card-body">
-            <div class="quote">${review}</div>
-            <div class="actions">
-              <button class="ghost" data-toggle>Read more</button>
-              <div class="micro">S.No: ${escapeHtml(String(s.sno))}</div>
+          <div class="student">
+            <img class="avatar" src="${img}" alt="${name}"
+                 onerror="this.onerror=null; this.src='${fallbackAvatarSvg(x.name)}';" />
+            <div class="meta">
+              <div class="name">${name}</div>
+              <div class="branch">${branch}</div>
             </div>
           </div>
         </article>
       `;
     }
 
-    // ========= Random highlights =========
-    function showRandom(){
-      if (!all.length) return;
+    function renderNext(){
+      const grid = $("grid");
+      const next = all.slice(shown, shown + BATCH);
+      shown += next.length;
 
-      randomMode = true;
-      const shuffled = all.slice().sort(()=>Math.random()-0.5).slice(0, 10);
-
-      // apply current filters? (for now show global highlights)
-      filtered = shuffled;
-      page = 1;
-
-      $("q").value = "";
-      $("branch").value = "All";
-      $("sort").value = "latest";
-
-      setParams({ q:"", branch:"All", sort:"latest", page:1, mode:"random" });
-      render();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    // ========= Share link =========
-    async function copyShare(){
-      // ensure latest state is encoded into URL
-      const q = $("q").value.trim();
-      const branch = $("branch").value;
-      const sort = $("sort").value;
-      const mode = randomMode ? "random" : "all";
-      setParams({ q, branch, sort, page, mode });
-
-      try{
-        await navigator.clipboard.writeText(window.location.href);
-        toast("Link copied!", "Share this URL. Same filters will open.");
-      }catch(e){
-        toast("Copy failed", "Your browser blocked clipboard. Copy manually from address bar.");
+      if (!shown){
+        setState("No reviews found", "students_data.json is empty or not readable.");
+        $("btnMore").disabled = true;
+        return;
       }
-    }
 
-    // ========= Reset =========
-    function resetAll(){
-      $("q").value = "";
-      $("branch").value = "All";
-      $("sort").value = "latest";
-      randomMode = false;
-      filtered = all.slice().sort((a,b)=>b.sno-a.sno);
-      page = 1;
-      setParams({ q:"", branch:"All", sort:"latest", page:1, mode:"all" });
-      render();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+      grid.insertAdjacentHTML("beforeend", next.map(cardHtml).join(""));
 
-    // ========= Toast =========
-    function toast(title, body){
-      // create lightweight toast
-      let t = document.getElementById("toast");
-      if (!t){
-        t = document.createElement("div");
-        t.id = "toast";
-        t.style.position = "fixed";
-        t.style.right = "16px";
-        t.style.bottom = "16px";
-        t.style.zIndex = "100";
-        t.style.maxWidth = "360px";
-        t.style.border = "1px solid rgba(255,255,255,.12)";
-        t.style.background = "rgba(12,16,36,.72)";
-        t.style.backdropFilter = "blur(14px)";
-        t.style.webkitBackdropFilter = "blur(14px)";
-        t.style.borderRadius = "18px";
-        t.style.boxShadow = "0 18px 60px rgba(0,0,0,.45)";
-        t.style.padding = "12px 14px";
-        t.style.display = "grid";
-        t.style.gap = "6px";
-        t.style.opacity = "0";
-        t.style.transform = "translateY(8px)";
-        t.style.transition = "opacity .18s ease, transform .18s ease";
-        document.body.appendChild(t);
-      }
-      t.innerHTML = `
-        <div style="font-weight:900;letter-spacing:-.02em">${escapeHtml(title)}</div>
-        <div style="color:rgba(255,255,255,.70);font-weight:700;font-size:13px;line-height:1.5">${escapeHtml(body)}</div>
-      `;
-      requestAnimationFrame(()=>{
-        t.style.opacity = "1";
-        t.style.transform = "translateY(0)";
+      // show/hide "Read more" only when needed
+      requestAnimationFrame(() => {
+        grid.querySelectorAll(".card").forEach((card) => {
+          const q = card.querySelector(".quote");
+          const btn = card.querySelector("[data-toggle]");
+          if (!q || !btn) return;
+          const clamped = q.scrollHeight > q.clientHeight + 4;
+          btn.style.display = clamped ? "inline-flex" : "none";
+        });
       });
-      clearTimeout(window.__toastTimer);
-      window.__toastTimer = setTimeout(()=>{
-        t.style.opacity = "0";
-        t.style.transform = "translateY(8px)";
-      }, 2600);
+
+      // disable load more when finished
+      if (shown >= all.length){
+        $("btnMore").disabled = true;
+        $("btnMore").textContent = "All reviews loaded";
+      }
     }
 
-    // ========= Events =========
     function wireEvents(){
-      $("q").addEventListener("input", debounce(applyFilters, 220));
-      $("branch").addEventListener("change", applyFilters);
-      $("sort").addEventListener("change", applyFilters);
-
-      $("btnRandom").addEventListener("click", showRandom);
-      $("btnCopy").addEventListener("click", copyShare);
-      $("btnReset").addEventListener("click", resetAll);
-
-      $("prevBtn").addEventListener("click", () => { page = Math.max(1, page-1); setParams({page}); render(); window.scrollTo({top:0, behavior:"smooth"}); });
-      $("nextBtn").addEventListener("click", () => {
-        const pages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
-        page = Math.min(pages, page+1);
-        setParams({page});
-        render();
-        window.scrollTo({top:0, behavior:"smooth"});
-      });
-
-      $("nums").addEventListener("click", (e) => {
-        const t = e.target.closest("[data-page]");
-        if (!t) return;
-        const p = parseInt(t.getAttribute("data-page"), 10);
-        if (!p) return;
-        page = p;
-        setParams({page});
-        render();
-        window.scrollTo({top:0, behavior:"smooth"});
-      });
+      $("btnMore").addEventListener("click", renderNext);
 
       // Toggle read more
       document.addEventListener("click", (e) => {
@@ -1300,47 +716,43 @@
       });
     }
 
-    function debounce(fn, ms){
-      let t = null;
-      return (...args) => {
-        clearTimeout(t);
-        t = setTimeout(()=>fn(...args), ms);
-      };
+    async function loadData(){
+      setState("Loading reviews…", "Fetching students_data.json and preparing the premium view.");
+      const res = await fetch(DATA_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error(`students_data.json fetch failed: HTTP ${res.status}`);
+
+      const raw = await res.json();
+      all = raw.map(normalizeRow);
+
+      clearState();
+
+      // ---- Metrics (as you requested) ----
+      // Total Reviews: always animate 0 -> 550+ (stop at 550+)
+      animateNumber($("mTotal"), TARGET_TOTAL_REVIEWS, { duration: 1100, float: false });
+      $("mTotalSuffix").textContent = "+";
+
+      // Overall rating: animate 0.0 -> 3.8 (stop at 3.8)
+      animateNumber($("mAvg"), TARGET_OVERALL_RATING, { duration: 1100, float: true });
+      $("mStars").innerHTML = makeStars(TARGET_OVERALL_RATING);
+
+      // ---- Render first batch ----
+      shown = 0;
+      $("grid").innerHTML = "";
+      $("btnMore").disabled = false;
+      $("btnMore").textContent = "Load more";
+      renderNext();
     }
 
-    // ========= Init =========
     async function init(){
       try{
         wireEvents();
         await loadData();
-
-        // apply params if present
-        const p = getParams();
-        $("q").value = p.q;
-        $("branch").value = p.branch;
-        $("sort").value = p.sort;
-        page = p.page;
-
-        // first build default filtered list
-        filtered = all.slice();
-        applyFilters(); // will reset page to 1; so restore if user set page and mode=all
-        if (p.mode === "all"){
-          page = Math.max(1, p.page);
-          // re-render at desired page if possible
-          render();
-        } else if (p.mode === "random"){
-          showRandom();
-        }
-
-        // final pills
-        $("pillPage").textContent = `Page ${page}`;
-      } catch (err){
+      }catch(err){
         $("grid").innerHTML = "";
-        $("pager").style.display = "none";
+        $("btnMore").disabled = true;
         setState(
-          "error",
           "Unable to load data",
-          "Fix: ensure students_data.json is deployed next to index.html on Vercel, and image paths exist in Supabase bucket photos/student_images/.",
+          "Fix: make sure students_data.json is deployed next to index.html on Vercel, and Supabase bucket 'photos' is PUBLIC with images in student_images/.",
           `${err && err.message ? err.message : err}\n\nDATA_URL: ${DATA_URL}`
         );
       }
